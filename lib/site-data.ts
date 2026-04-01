@@ -95,7 +95,7 @@ export const projects: Project[] = [
   {
     slug: "knoah",
     name: "Knoah",
-    tagline: "Smart Knowledge Base for Teams",
+    tagline: "AI-Powered Knowledge Base for Teams",
     description:
       "Upload docs, get instant answers with source citations. Built for teams drowning in Notion pages and Google Drives nobody reads.",
     challenge:
@@ -117,9 +117,9 @@ export const projects: Project[] = [
   {
     slug: "clippified",
     name: "Clippified",
-    tagline: "Video Clip Generator",
+    tagline: "AI-Powered Clip Generator",
     description:
-      "Paste a YouTube URL, get viral-ready clips with captions. AI finds the best moments, transcribes with Deepgram, and renders with FFmpeg.",
+      "Paste a YouTube URL, get viral-ready clips with captions. Automatically finds the best moments, transcribes with Deepgram, and renders with FFmpeg.",
     challenge:
       "Content creators spend 4-6 hours editing a single long video into short clips. Existing tools are either expensive or produce low-quality captions.",
     solution:
@@ -139,9 +139,9 @@ export const projects: Project[] = [
   {
     slug: "resumeidol",
     name: "ResumeIdol",
-    tagline: "Smart Resume Tailor",
+    tagline: "AI-Powered Resume Tailor",
     description:
-      "Paste your resume and a job description — get a perfectly tailored version in seconds. AI rewrites bullet points to match the role.",
+      "Paste your resume and a job description — get a perfectly tailored version in seconds. Automatically rewrites bullet points to match the role.",
     challenge:
       "Job seekers send the same generic resume everywhere. Tailoring manually takes 30-60 minutes per application.",
     solution:
@@ -226,7 +226,7 @@ export const projects: Project[] = [
   {
     slug: "crucible",
     name: "Crucible",
-    tagline: "Smart Fitness Companion",
+    tagline: "AI-Powered Fitness Companion",
     description:
       "Native SwiftUI fitness app with HealthKit integration, personalized workout plans, and progress tracking with Swift Charts. Currently in development.",
     challenge:
