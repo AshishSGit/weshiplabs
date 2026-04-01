@@ -5,9 +5,7 @@ export const SITE = {
   email: "hello@weshiplabs.com",
   calendly: "", // Set up Calendly and paste your link here
   socials: {
-    linkedin: "https://linkedin.com/company/weshiplabs",
     github: "https://github.com/AshishSGit",
-    twitter: "https://x.com/weshiplabs",
   },
 };
 
