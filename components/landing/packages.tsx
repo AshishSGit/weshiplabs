@@ -41,7 +41,7 @@ const packages = [
   {
     name: "Web App / MVP",
     price: "From $8,000",
-    description: "A complete web application — designed, built, and deployed. Auth, payments, dashboards, the works. Ready for users.",
+    description: "A complete web application — designed, built, and deployed. Auth, payments, dashboards — everything included. Ready for users.",
     icon: <Rocket size={24} />,
     features: [
       "Full-stack web application",
