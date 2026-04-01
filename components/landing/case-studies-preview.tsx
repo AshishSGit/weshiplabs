@@ -39,7 +39,7 @@ export default function CaseStudiesPreview() {
               {/* Category badge */}
               <div className="flex items-center justify-between mb-4">
                 <span className="tech-badge">
-                  {project.category === "ai" ? "AI" : project.category === "web" ? "Web" : "Mobile"}
+                  {project.category === "web" ? "Web" : "Mobile"}
                 </span>
                 {project.liveUrl && (
                   <a

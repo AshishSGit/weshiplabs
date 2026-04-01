@@ -27,7 +27,7 @@ export default function Footer() {
             <span className="gradient-text">&lt;/&gt;</span> {SITE.name}
           </p>
           <p className="text-sm text-text-subtle leading-relaxed">
-            AI-powered software that ships. From idea to production in weeks, not months.
+            Software that ships. From idea to production in weeks, not months.
           </p>
         </div>
         <div>

@@ -95,7 +95,7 @@ export const projects: Project[] = [
   {
     slug: "knoah",
     name: "Knoah",
-    tagline: "AI Knowledge Base for Teams",
+    tagline: "Smart Knowledge Base for Teams",
     description:
       "Upload docs, get instant answers with source citations. Built for teams drowning in Notion pages and Google Drives nobody reads.",
     challenge:
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     results:
       "Live SaaS product with paying customers. Sub-2-second response times on 10K+ document corpora. Stripe billing, team invites, and usage analytics built in.",
     techStack: ["Next.js", "TypeScript", "Claude API", "OpenAI Embeddings", "Supabase", "Stripe", "Tailwind"],
-    category: "ai",
+    category: "web",
     liveUrl: "https://www.getknoah.com",
     metrics: [
       { label: "Response Time", value: "<2s" },
@@ -117,7 +117,7 @@ export const projects: Project[] = [
   {
     slug: "clippified",
     name: "Clippified",
-    tagline: "AI Video Clip Generator",
+    tagline: "Video Clip Generator",
     description:
       "Paste a YouTube URL, get viral-ready clips with captions. AI finds the best moments, transcribes with Deepgram, and renders with FFmpeg.",
     challenge:
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     results:
       "Production SaaS with Stripe subscriptions. Processes videos up to 3 hours long. Average clip generation under 90 seconds.",
     techStack: ["Next.js", "Deepgram", "Claude API", "FFmpeg", "Cloudflare R2", "Supabase", "Stripe"],
-    category: "ai",
+    category: "web",
     liveUrl: "https://clippified.com",
     metrics: [
       { label: "Processing Time", value: "<90s" },
@@ -139,7 +139,7 @@ export const projects: Project[] = [
   {
     slug: "resumeidol",
     name: "ResumeIdol",
-    tagline: "AI Resume Tailor",
+    tagline: "Smart Resume Tailor",
     description:
       "Paste your resume and a job description — get a perfectly tailored version in seconds. AI rewrites bullet points to match the role.",
     challenge:
@@ -149,7 +149,7 @@ export const projects: Project[] = [
     results:
       "Live product with magic-link auth, saved resumes, and job URL auto-fetch. Pro tier with Stripe billing.",
     techStack: ["Next.js", "TypeScript", "Claude API", "Supabase Auth", "Stripe", "Tailwind"],
-    category: "ai",
+    category: "web",
     liveUrl: "https://resumeidol.com",
     metrics: [
       { label: "Tailor Time", value: "<10s" },
@@ -161,9 +161,9 @@ export const projects: Project[] = [
   {
     slug: "blushwed",
     name: "BlushWed",
-    tagline: "AI Wedding Planner",
+    tagline: "Wedding Planning Platform",
     description:
-      "Complete wedding planning platform with AI-powered vendor recommendations, budget tracking, and timeline management.",
+      "Complete wedding planning platform with smart vendor recommendations, budget tracking, and timeline management.",
     challenge:
       "Wedding planning is overwhelming — couples juggle spreadsheets, Pinterest boards, and vendor emails across 12+ months.",
     solution:
@@ -226,9 +226,9 @@ export const projects: Project[] = [
   {
     slug: "crucible",
     name: "Crucible",
-    tagline: "AI Fitness Companion",
+    tagline: "Smart Fitness Companion",
     description:
-      "Native SwiftUI fitness app with HealthKit integration, AI-generated workout plans, and progress tracking with Swift Charts. Currently in development.",
+      "Native SwiftUI fitness app with HealthKit integration, personalized workout plans, and progress tracking with Swift Charts. Currently in development.",
     challenge:
       "Most fitness apps are either too simple (just a timer) or too complex (require a personal trainer to understand).",
     solution:

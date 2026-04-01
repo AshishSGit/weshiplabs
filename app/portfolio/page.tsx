@@ -27,7 +27,7 @@ export default function PortfolioPage() {
             <div key={project.slug} className="glass-card p-8 flex flex-col">
               <div className="flex items-center justify-between mb-4">
                 <span className="tech-badge">
-                  {project.category === "ai" ? "AI" : project.category === "web" ? "Web" : "Mobile"}
+                  {project.category === "web" ? "Web" : "Mobile"}
                 </span>
                 <div className="flex items-center gap-3">
                   {project.liveUrl && (

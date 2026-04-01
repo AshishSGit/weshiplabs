@@ -35,7 +35,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
             <span className="tech-badge">
-              {project.category === "ai" ? "AI" : project.category === "web" ? "Web" : "Mobile"}
+              {project.category === "web" ? "Web" : "Mobile"}
             </span>
             {project.liveUrl && (
               <a href={project.liveUrl} target="_blank" rel="noopener" className="text-xs text-text-subtle hover:text-violet-400 flex items-center gap-1 transition-colors">
