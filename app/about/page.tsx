@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 };
 
 const skills = [
-  { icon: <Code2 size={20} />, label: "Frontend", items: ["Next.js / React", "TypeScript", "Tailwind CSS", "Framer Motion", "SwiftUI"] },
-  { icon: <Smartphone size={20} />, label: "Mobile", items: ["React Native", "Expo", "SwiftUI", "HealthKit", "StoreKit / IAP"] },
-  { icon: <Brain size={20} />, label: "Smart Features", items: ["RAG Systems", "Claude / GPT APIs", "Whisper / Deepgram", "Vector Search", "Document Processing"] },
-  { icon: <Zap size={20} />, label: "Backend", items: ["Node.js", "Python / Flask", "REST APIs", "WebSockets", "FFmpeg"] },
-  { icon: <Globe size={20} />, label: "Infrastructure", items: ["Railway", "Vercel", "AWS", "Cloudflare R2", "CI/CD"] },
-  { icon: <CreditCard size={20} />, label: "Business", items: ["Stripe Billing", "Supabase / Firebase", "SEO", "App Store", "Analytics"] },
+  { icon: <Code2 size={20} />, label: "Frontend", items: ["Next.js / React", "TypeScript", "JavaScript", "Tailwind CSS", "Framer Motion", "HTML / CSS", "Responsive Design", "SwiftUI"] },
+  { icon: <Smartphone size={20} />, label: "Mobile", items: ["React Native", "Expo", "SwiftUI", "HealthKit", "StoreKit / IAP", "Google Play Billing", "Push Notifications", "Deep Linking", "Camera / Location / Sensors"] },
+  { icon: <Brain size={20} />, label: "Smart Features", items: ["RAG Systems", "Claude / GPT / Gemini APIs", "Whisper / Deepgram (Speech-to-Text)", "Vector Search & Embeddings", "Document Processing (PDF, DOCX, Images)", "Chatbots & Conversational UI", "Content Generation & Summarization", "Workflow Automation", "Video Processing & Clip Generation"] },
+  { icon: <Zap size={20} />, label: "Backend", items: ["Node.js", "Python / Flask", "REST APIs", "WebSockets / Real-time", "FFmpeg (Audio / Video)", "Cron Jobs & Background Tasks", "File Upload & Processing", "Email (Resend, SendGrid)", "Rate Limiting & Security"] },
+  { icon: <Globe size={20} />, label: "Infrastructure", items: ["Railway", "Vercel", "AWS (S3, Lambda, EC2)", "Cloudflare R2 / CDN", "CI/CD Pipelines", "Docker", "DNS & Domain Setup", "SSL & HTTPS", "Monitoring & Logging"] },
+  { icon: <CreditCard size={20} />, label: "Business & Integrations", items: ["Stripe (Payments, Subscriptions, Invoicing)", "Supabase / Firebase", "Google Analytics", "SEO (Sitemap, Meta, Structured Data)", "App Store & Play Store Submission", "OAuth (Google, GitHub, Apple Sign-In)", "Magic Link Auth", "Webhooks & Third-party APIs", "Cloudflare, YouTube, LRC APIs"] },
 ];
 
 export default function AboutPage() {
