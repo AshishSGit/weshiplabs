@@ -11,7 +11,7 @@ const packages = [
     description: "We look at your business, product, or codebase and tell you exactly what to build, fix, or automate — and what it'll cost.",
     icon: <Search size={24} />,
     features: [
-      "60-minute strategy session",
+      "We review your product or business",
       "Written report with recommendations",
       "Architecture plan or AI opportunity map",
       "Implementation roadmap with costs",
