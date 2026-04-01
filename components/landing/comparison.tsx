@@ -38,29 +38,29 @@ export default function Comparison() {
         </motion.div>
 
         <motion.div
-          className="glass-card overflow-hidden"
+          className="glass-card overflow-x-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <table className="w-full text-sm">
+          <table className="w-full text-sm min-w-[480px]">
             <thead>
               <tr className="border-b border-border">
-                <th className="text-left p-4 text-text-subtle font-medium"></th>
-                <th className="p-4 text-center">
-                  <span className="gradient-text font-bold">WeShipLabs</span>
+                <th className="text-left p-3 md:p-4 text-text-subtle font-medium text-xs md:text-sm"></th>
+                <th className="p-3 md:p-4 text-center whitespace-nowrap">
+                  <span className="gradient-text font-bold text-xs md:text-sm">WeShipLabs</span>
                 </th>
-                <th className="p-4 text-center text-text-subtle font-medium">Big Agency</th>
-                <th className="p-4 text-center text-text-subtle font-medium">Freelancer</th>
+                <th className="p-3 md:p-4 text-center text-text-subtle font-medium text-xs md:text-sm whitespace-nowrap">Big Agency</th>
+                <th className="p-3 md:p-4 text-center text-text-subtle font-medium text-xs md:text-sm whitespace-nowrap">Freelancer</th>
               </tr>
             </thead>
             <tbody>
               {rows.map((row) => (
                 <tr key={row.feature} className="border-b border-border/50 hover:bg-surface-elevated/30 transition-colors">
-                  <td className="p-4 text-text-muted text-xs md:text-sm">{row.feature}</td>
-                  <td className="p-4 text-center"><Cell val={row.us} /></td>
-                  <td className="p-4 text-center"><Cell val={row.agency} /></td>
-                  <td className="p-4 text-center"><Cell val={row.freelancer} /></td>
+                  <td className="p-3 md:p-4 text-text-muted text-xs md:text-sm">{row.feature}</td>
+                  <td className="p-3 md:p-4 text-center"><Cell val={row.us} /></td>
+                  <td className="p-3 md:p-4 text-center"><Cell val={row.agency} /></td>
+                  <td className="p-3 md:p-4 text-center"><Cell val={row.freelancer} /></td>
                 </tr>
               ))}
             </tbody>

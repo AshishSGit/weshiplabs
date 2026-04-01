@@ -54,7 +54,7 @@ export default function AboutPage() {
               What we <span className="gradient-text">work with</span>
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {skills.map((skill) => (
               <div key={skill.label} className="glass-card p-6">
                 <div className="flex items-center gap-2 mb-4">

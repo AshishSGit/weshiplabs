@@ -241,8 +241,40 @@ body {
 
 /* === Section spacing === */
 .section {
-  padding: 100px 0;
+  padding: 80px 0;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 100px 0;
+  }
+}
+
+/* === Mobile fixes === */
+@media (max-width: 767px) {
+  .btn-primary, .btn-ghost {
+    padding: 12px 20px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .glass-card {
+    border-radius: 12px;
+  }
+
+  .glass-card:hover {
+    transform: none;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  table th, table td {
+    padding: 8px 6px !important;
+  }
 }
 
 /* === Marquee === */

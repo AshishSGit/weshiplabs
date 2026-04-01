@@ -60,9 +60,9 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
           {/* Form */}
-          <div className="glass-card p-8">
+          <div className="glass-card p-5 sm:p-8">
             {status === "sent" ? (
               <div className="text-center py-12">
                 <div className="w-16 h-16 rounded-full bg-emerald-500/10 flex items-center justify-center mx-auto mb-4">
@@ -73,7 +73,7 @@ export default function ContactPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <input
                     type="text"
                     placeholder="Your name *"

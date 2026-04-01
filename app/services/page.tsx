@@ -72,7 +72,7 @@ export default function ServicesPage() {
                   <p className="text-violet-400 font-medium mb-4">{service.subtitle}</p>
                   <p className="text-text-muted leading-relaxed mb-8">{service.description}</p>
 
-                  <div className="flex gap-6 mb-8">
+                  <div className="flex flex-wrap gap-4 sm:gap-6 mb-8">
                     <div className="px-4 py-3 rounded-xl bg-surface-elevated border border-border">
                       <p className="text-xs text-text-subtle mb-1">Starting at</p>
                       <p className="font-heading text-xl font-bold gradient-text">{service.startingAt}</p>

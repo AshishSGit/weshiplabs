@@ -22,9 +22,9 @@ export default function PortfolioPage() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-5">
           {projects.map((project) => (
-            <div key={project.slug} className="glass-card p-8 flex flex-col">
+            <div key={project.slug} className="glass-card p-5 sm:p-8 flex flex-col">
               <div className="flex items-center justify-between mb-4">
                 <span className="tech-badge">
                   {project.category === "web" ? "Web" : "Mobile"}

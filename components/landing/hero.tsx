@@ -18,9 +18,9 @@ export default function Hero() {
       <div className="orb orb-violet w-[600px] h-[600px] -top-60 left-1/2 -translate-x-1/2" />
       <div className="orb orb-blue w-[300px] h-[300px] bottom-20 -right-20" />
 
-      <div className="max-w-5xl mx-auto px-6 py-32 w-full">
+      <div className="max-w-5xl mx-auto px-6 py-20 sm:py-32 w-full">
         <motion.h1
-          className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold text-center leading-[1.05] mb-6"
+          className="font-heading text-4xl md:text-7xl lg:text-8xl font-bold text-center leading-[1.05] mb-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -42,15 +42,15 @@ export default function Hero() {
         </motion.p>
 
         <motion.div
-          className="flex flex-wrap justify-center gap-4 mb-20"
+          className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-16 sm:mb-20 px-4 sm:px-0"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <Link href="/contact" className="btn-primary text-base py-3.5 px-10">
+          <Link href="/contact" className="btn-primary text-base py-3.5 px-10 justify-center">
             Get a Free Quote <ArrowRight size={16} />
           </Link>
-          <Link href="/portfolio" className="btn-ghost text-base py-3.5 px-10">
+          <Link href="/portfolio" className="btn-ghost text-base py-3.5 px-10 justify-center">
             See Our Work <ArrowRight size={14} />
           </Link>
         </motion.div>
