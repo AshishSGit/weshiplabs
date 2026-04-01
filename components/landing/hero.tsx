@@ -38,7 +38,7 @@ export default function Hero() {
         >
           We design, build, and deploy web apps, mobile apps, and smart features.
           <br className="hidden md:block" />
-          You get working software every week — not status updates.
+          You get working software every week  - not status updates.
         </motion.p>
 
         <motion.div
@@ -62,7 +62,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <p className="text-xs font-semibold uppercase tracking-wider text-text-subtle mb-4">
-            These are ours. Click any of them — they&apos;re live right now.
+            These are ours. Click any of them  - they&apos;re live right now.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {liveProducts.map((product) => (

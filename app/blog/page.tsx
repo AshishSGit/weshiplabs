@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Blog — Software Development Insights",
+  title: "Blog  - Software Development Insights",
   description: "Real lessons from building and shipping software. AI chatbot costs, RAG vs fine-tuning, how to ship MVPs fast, and more.",
   alternates: { canonical: "https://weshiplabs.com/blog" },
 };
@@ -12,7 +12,7 @@ const posts = [
   {
     slug: "how-much-does-ai-chatbot-cost",
     title: "How Much Does an AI Chatbot Cost in 2026?",
-    description: "A real breakdown of what it costs to build a production AI chatbot — from simple FAQ bots to full RAG systems. No fluff, actual numbers.",
+    description: "A real breakdown of what it costs to build a production AI chatbot  - from simple FAQ bots to full RAG systems. No fluff, actual numbers.",
     date: "2026-03-31",
     readTime: "8 min",
     category: "AI",
@@ -45,7 +45,7 @@ export default function BlogPage() {
             Insights from the <span className="gradient-text">build floor</span>
           </h1>
           <p className="text-text-muted text-lg">
-            Real lessons from shipping real products. No theory — just what works.
+            Real lessons from shipping real products. No theory  - just what works.
           </p>
         </div>
 

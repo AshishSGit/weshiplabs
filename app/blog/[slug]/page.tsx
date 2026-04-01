@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 const posts: Record<string, { title: string; description: string; date: string; readTime: string; category: string; content: string }> = {
   "how-much-does-ai-chatbot-cost": {
     title: "How Much Does an AI Chatbot Cost in 2026?",
-    description: "A real breakdown of what it costs to build a production AI chatbot — from simple FAQ bots to full RAG systems.",
+    description: "A real breakdown of what it costs to build a production AI chatbot  - from simple FAQ bots to full RAG systems.",
     date: "2026-03-31",
     readTime: "8 min",
     category: "AI",
@@ -31,7 +31,7 @@ A bot that answers predefined questions from a knowledge base. Think customer su
 
 ## Tier 2: RAG-Powered Knowledge Bot ($8,000–$15,000)
 
-This is where it gets interesting. The bot reads your actual documents — PDFs, Google Docs, Notion pages — and answers questions with source citations.
+This is where it gets interesting. The bot reads your actual documents  - PDFs, Google Docs, Notion pages  - and answers questions with source citations.
 
 We built [Knoah](https://www.getknoah.com) as exactly this. Upload your docs, ask questions, get answers with page-number citations.
 
@@ -48,7 +48,7 @@ We built [Knoah](https://www.getknoah.com) as exactly this. Upload your docs, as
 
 ## Tier 3: Full Conversational AI Product ($15,000–$25,000+)
 
-A product where AI is the core feature — not just a support widget. Think AI-powered onboarding, AI content generation, or AI analysis tools.
+A product where AI is the core feature  - not just a support widget. Think AI-powered onboarding, AI content generation, or AI analysis tools.
 
 **What you get:**
 - Everything in Tier 2
@@ -64,10 +64,10 @@ A product where AI is the core feature — not just a support widget. Think AI-p
 
 ## The Hidden Costs Most Agencies Don't Tell You
 
-1. **API costs** — Claude/GPT API calls cost $0.003–$0.06 per query depending on model and context length. Budget $50–$500/month for a typical B2B product.
-2. **Vector database** — Supabase pgvector is nearly free at small scale. Pinecone starts at $70/month.
-3. **Hosting** — $5–$50/month on Railway or Vercel for most apps.
-4. **Ongoing maintenance** — Models update, APIs change, edge cases surface. Budget $150–$300/month or handle it yourself.
+1. **API costs**  - Claude/GPT API calls cost $0.003–$0.06 per query depending on model and context length. Budget $50–$500/month for a typical B2B product.
+2. **Vector database**  - Supabase pgvector is nearly free at small scale. Pinecone starts at $70/month.
+3. **Hosting**  - $5–$50/month on Railway or Vercel for most apps.
+4. **Ongoing maintenance**  - Models update, APIs change, edge cases surface. Budget $150–$300/month or handle it yourself.
 
 ## What We'd Recommend
 
@@ -89,7 +89,7 @@ For most businesses, **Tier 2 (RAG-powered)** is the sweet spot. You get genuine
 
 **Use fine-tuning** when you need the AI to behave in a specific way consistently (brand voice, domain-specific reasoning, structured outputs).
 
-**Use neither** when a well-crafted prompt with examples does the job. Seriously — start here.
+**Use neither** when a well-crafted prompt with examples does the job. Seriously  - start here.
 
 ## What is RAG?
 
@@ -118,11 +118,11 @@ Training a model on your specific data so it "learns" patterns, tone, and domain
 
 ## Our Honest Take
 
-90% of businesses that think they need fine-tuning actually need RAG — or just better prompts.
+90% of businesses that think they need fine-tuning actually need RAG  - or just better prompts.
 
 RAG is cheaper, faster to build, and easier to update (just add new documents). Fine-tuning is powerful but overkill for most use cases.
 
-**Not sure which you need?** [Let's talk](/contact) — we'll recommend the simplest approach that actually works.
+**Not sure which you need?** [Let's talk](/contact)  - we'll recommend the simplest approach that actually works.
     `,
   },
   "ship-mvp-in-4-weeks": {
@@ -138,7 +138,7 @@ Every product we build follows the same 4-week cadence. Here's exactly what happ
 
 ## Week 1: Discovery + Architecture
 
-**Day 1–2: Discovery call.** We learn your business, your users, and what success looks like. Not requirements gathering — understanding.
+**Day 1–2: Discovery call.** We learn your business, your users, and what success looks like. Not requirements gathering  - understanding.
 
 **Day 3–5: Architecture + tech decisions.** We pick the stack, design the database schema, map out the API, and identify the riskiest technical unknowns. You get a document explaining every decision.
 
@@ -186,7 +186,7 @@ Auth, payments, deployment, error handling. The stuff that turns a prototype int
 
 ## What We Skip (On Purpose)
 
-- Figma mockups (we design in code — faster feedback)
+- Figma mockups (we design in code  - faster feedback)
 - Sprint ceremonies (we ship, not meeting)
 - Feature flags (v1 doesn't need them)
 - Microservices (monolith until you need to scale)

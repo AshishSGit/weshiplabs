@@ -4,7 +4,7 @@ import { ArrowRight, Brain, Rocket, Smartphone, Wrench, Check } from "lucide-rea
 import { services } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Services — Web Apps, Mobile Apps, AI Integration",
+  title: "Services  - Web Apps, Mobile Apps, AI Integration",
   description:
     "Custom web app development from $3K. Mobile apps from $8K. AI integration from $5K. Fixed pricing, delivered in weeks. See what's included.",
   alternates: { canonical: "https://weshiplabs.com/services" },
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "What happens after launch?",
-    a: "Every project includes 30 days of free support. After that, we offer maintenance retainers ($150–300/mo) for updates, bug fixes, and scaling. Or we hand over the code and docs — it's your product.",
+    a: "Every project includes 30 days of free support. After that, we offer maintenance retainers ($150–300/mo) for updates, bug fixes, and scaling. Or we hand over the code and docs  - it's your product.",
   },
   {
     q: "Can you work with our existing codebase?",
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "Do you do design?",
-    a: "Yes. We design directly in code — no Figma mockups that look nothing like the final product. You see real, working UI from week one.",
+    a: "Yes. We design directly in code  - no Figma mockups that look nothing like the final product. You see real, working UI from week one.",
   },
 ];
 

@@ -6,7 +6,7 @@ export const services: Service[] = [
     title: "Web Applications",
     subtitle: "Full-stack web apps that actually work",
     description:
-      "SaaS platforms, dashboards, internal tools, marketplaces, landing pages — anything that runs in a browser. We handle frontend, backend, database, auth, payments, deployment, and SEO. You get a running product, not a zip file.",
+      "SaaS platforms, dashboards, internal tools, marketplaces, landing pages  - anything that runs in a browser. We handle frontend, backend, database, auth, payments, deployment, and SEO. You get a running product, not a zip file.",
     features: [
       "SaaS platforms & subscription products",
       "Admin dashboards & analytics panels",
@@ -50,7 +50,7 @@ export const services: Service[] = [
     title: "AI Features & Automation",
     subtitle: "Make your product smarter",
     description:
-      "We add AI to your existing product or build AI-first tools from scratch. RAG chatbots, document processing, voice transcription, content generation, workflow automation — production-grade, not a ChatGPT wrapper.",
+      "We add AI to your existing product or build AI-first tools from scratch. RAG chatbots, document processing, voice transcription, content generation, workflow automation  - production-grade, not a ChatGPT wrapper.",
     features: [
       "RAG knowledge bases with source citations",
       "AI chatbots & conversational interfaces",
@@ -141,7 +141,7 @@ export const projects: Project[] = [
     name: "ResumeIdol",
     tagline: "AI-Powered Resume Tailor",
     description:
-      "Paste your resume and a job description — get a perfectly tailored version in seconds. Automatically rewrites bullet points to match the role.",
+      "Paste your resume and a job description  - get a perfectly tailored version in seconds. Automatically rewrites bullet points to match the role.",
     challenge:
       "Job seekers send the same generic resume everywhere. Tailoring manually takes 30-60 minutes per application.",
     solution:
@@ -165,7 +165,7 @@ export const projects: Project[] = [
     description:
       "Complete wedding planning platform with smart vendor recommendations, budget tracking, and timeline management.",
     challenge:
-      "Wedding planning is overwhelming — couples juggle spreadsheets, Pinterest boards, and vendor emails across 12+ months.",
+      "Wedding planning is overwhelming  - couples juggle spreadsheets, Pinterest boards, and vendor emails across 12+ months.",
     solution:
       "Built a comprehensive planning platform with AI-powered suggestions for venues, vendors, and timelines. Stripe subscriptions for premium features, SEO-optimized blog for organic traffic.",
     results:
@@ -250,7 +250,7 @@ export const stats = [
   { value: "5", label: "Live Products You Can Click Right Now" },
   { value: "3", label: "Platforms (Web, iOS, Android)" },
   { value: "<4wk", label: "Average Time from Call to Launch" },
-  { value: "$0", label: "Quote — Always Free" },
+  { value: "$0", label: "Quote  - Always Free" },
 ];
 
 export const techLogos = [

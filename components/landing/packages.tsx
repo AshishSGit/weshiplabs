@@ -8,14 +8,14 @@ const packages = [
   {
     name: "Quick Audit",
     price: "$500",
-    description: "We look at your business, product, or codebase and tell you exactly what to build, fix, or automate — and what it'll cost.",
+    description: "We look at your business, product, or codebase and tell you exactly what to build, fix, or automate  - and what it'll cost.",
     icon: <Search size={24} />,
     features: [
       "We review your product or business",
       "Written report with recommendations",
       "Architecture plan or AI opportunity map",
       "Implementation roadmap with costs",
-      "No obligation — keep the report either way",
+      "No obligation  - keep the report either way",
     ],
     timeline: "3–5 days",
     popular: false,
@@ -24,7 +24,7 @@ const packages = [
   {
     name: "Landing Page / Website",
     price: "From $3,000",
-    description: "A fast, beautiful, SEO-optimized website that converts visitors into customers. Not a WordPress template — custom built.",
+    description: "A fast, beautiful, SEO-optimized website that converts visitors into customers. Not a WordPress template  - custom built.",
     icon: <Globe size={24} />,
     features: [
       "Custom design (not templates)",
@@ -41,7 +41,7 @@ const packages = [
   {
     name: "Web App / MVP",
     price: "From $8,000",
-    description: "A complete web application — designed, built, and deployed. Auth, payments, dashboards — everything included. Ready for users.",
+    description: "A complete web application  - designed, built, and deployed. Auth, payments, dashboards  - everything included. Ready for users.",
     icon: <Rocket size={24} />,
     features: [
       "Full-stack web application",
@@ -60,7 +60,7 @@ const packages = [
   {
     name: "Mobile App",
     price: "From $8,000",
-    description: "iOS, Android, or both. App Store submission included. In-app purchases, push notifications, HealthKit — whatever you need.",
+    description: "iOS, Android, or both. App Store submission included. In-app purchases, push notifications, HealthKit  - whatever you need.",
     icon: <Smartphone size={24} />,
     features: [
       "React Native (cross-platform) or SwiftUI (native iOS)",
@@ -186,7 +186,7 @@ export default function Packages() {
           viewport={{ once: true }}
         >
           <p className="text-sm text-text-subtle">
-            Need something custom? <Link href="/contact" className="text-violet-400 hover:underline">Tell us what you&apos;re building</Link> — we&apos;ll scope it for free.
+            Need something custom? <Link href="/contact" className="text-violet-400 hover:underline">Tell us what you&apos;re building</Link>  - we&apos;ll scope it for free.
           </p>
           <p className="text-sm text-text-subtle">
             All projects include <span className="text-text-muted">30 days free support</span> + optional maintenance retainers from <span className="text-text-muted">$150/mo</span>.

@@ -26,7 +26,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — Software That Ships`,
+    default: `${SITE.name}  - Software That Ships`,
     template: `%s | ${SITE.name}`,
   },
   description:
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   ],
   icons: { icon: "/icon.svg", apple: "/icon.svg" },
   openGraph: {
-    title: `${SITE.name} — Software That Ships`,
+    title: `${SITE.name}  - Software That Ships`,
     description: "We design, build, and deploy web apps, mobile apps, and smart features. From idea to production in weeks.",
     type: "website",
     siteName: SITE.name,
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} — Software That Ships`,
+    title: `${SITE.name}  - Software That Ships`,
     description: "We design, build, and deploy web apps, mobile apps, and smart features. From idea to production in weeks.",
   },
 };

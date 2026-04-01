@@ -16,7 +16,7 @@ const steps = [
   {
     week: "Week 2–3",
     title: "Core product + features",
-    desc: "The real thing comes together — auth, payments, AI features, mobile responsiveness. You see demos every 7 days.",
+    desc: "The real thing comes together  - auth, payments, AI features, mobile responsiveness. You see demos every 7 days.",
   },
   {
     week: "Week 4",

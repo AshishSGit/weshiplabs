@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Code2, Brain, Smartphone, Zap, Globe, CreditCard } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About — Who We Are and How We Work",
+  title: "About  - Who We Are and How We Work",
   description: "WeShipLabs builds web apps, mobile apps, and AI-powered features. Full-stack expertise across Next.js, React Native, SwiftUI, Python, and more.",
   alternates: { canonical: "https://weshiplabs.com/about" },
 };
@@ -32,7 +32,7 @@ export default function AboutPage() {
           <div className="space-y-4 text-text-muted leading-relaxed text-lg text-left">
             <p>
               WeShipLabs exists because too many businesses wait months for agencies
-              to deliver half-working prototypes. We do things differently — you see
+              to deliver half-working prototypes. We do things differently  - you see
               working software every week, and your product goes live in weeks, not months.
             </p>
             <p>
@@ -41,7 +41,7 @@ export default function AboutPage() {
               design, development, testing, deployment, and 30 days of support.
             </p>
             <p>
-              Our portfolio speaks for itself — live products with real users and real
+              Our portfolio speaks for itself  - live products with real users and real
               payments that you can click on right now. No NDAs hiding empty promises.
               No Figma mockups pretending to be progress.
             </p>
@@ -80,9 +80,9 @@ export default function AboutPage() {
           <div className="space-y-8">
             {[
               { num: "01", title: "Understand the business, not just the ticket", desc: "We dig into why you need this, who it's for, and what success looks like before writing a line of code." },
-              { num: "02", title: "Ship fast, iterate faster", desc: "You see working software every week. Not Figma comps — actual deployed code you can click on." },
-              { num: "03", title: "Full stack, no handoffs", desc: "Frontend, backend, database, payments, deployment, App Store — one team handles everything. No gaps." },
-              { num: "04", title: "Your product, your code", desc: "We hand over everything — clean codebase, documentation, deployment access. No lock-in, no hostage situations." },
+              { num: "02", title: "Ship fast, iterate faster", desc: "You see working software every week. Not Figma comps  - actual deployed code you can click on." },
+              { num: "03", title: "Full stack, no handoffs", desc: "Frontend, backend, database, payments, deployment, App Store  - one team handles everything. No gaps." },
+              { num: "04", title: "Your product, your code", desc: "We hand over everything  - clean codebase, documentation, deployment access. No lock-in, no hostage situations." },
             ].map((step) => (
               <div key={step.num} className="flex gap-5">
                 <span className="font-heading text-2xl font-bold text-violet-500/30">{step.num}</span>

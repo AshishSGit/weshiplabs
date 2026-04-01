@@ -17,7 +17,7 @@ export async function POST(req: Request) {
         from: "WeShipLabs <noreply@weshiplabs.com>",
         to: "ashishstav@gmail.com",
         replyTo: email,
-        subject: `New Lead: ${name} — ${type || "General"}`,
+        subject: `New Lead: ${name}  - ${type || "General"}`,
         html: `
           <h2>New Contact Form Submission</h2>
           <p><strong>Name:</strong> ${name}</p>
