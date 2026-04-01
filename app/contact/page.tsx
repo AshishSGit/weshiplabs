@@ -158,23 +158,25 @@ export default function ContactPage() {
               </ol>
             </div>
 
-            <div className="glass-card p-6">
-              <h3 className="font-heading font-bold mb-3 flex items-center gap-2">
-                <Clock size={18} className="text-violet-400" />
-                Prefer a call instead?
-              </h3>
-              <p className="text-sm text-text-muted mb-4">
-                Totally fine. Book a free 30-minute call.
-              </p>
-              <a
-                href={SITE.calendly}
-                target="_blank"
-                rel="noopener"
-                className="btn-ghost text-sm w-full justify-center"
-              >
-                Open Calendly <ArrowRight size={14} />
-              </a>
-            </div>
+            {SITE.calendly && (
+              <div className="glass-card p-6">
+                <h3 className="font-heading font-bold mb-3 flex items-center gap-2">
+                  <Clock size={18} className="text-violet-400" />
+                  Prefer a call instead?
+                </h3>
+                <p className="text-sm text-text-muted mb-4">
+                  Totally fine. Book a free 30-minute call.
+                </p>
+                <a
+                  href={SITE.calendly}
+                  target="_blank"
+                  rel="noopener"
+                  className="btn-ghost text-sm w-full justify-center"
+                >
+                  Open Calendly <ArrowRight size={14} />
+                </a>
+              </div>
+            )}
 
             <div className="glass-card p-6">
               <h3 className="font-heading font-bold mb-3 flex items-center gap-2">

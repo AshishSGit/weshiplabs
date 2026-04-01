@@ -1,12 +1,12 @@
 export const SITE = {
   name: "WeShipLabs",
-  tagline: "We build AI-powered software that ships.",
+  tagline: "Software that ships.",
   url: "https://weshiplabs.com",
   email: "hello@weshiplabs.com",
-  calendly: "https://calendly.com/weshiplabs/30min",
+  calendly: "", // Set up Calendly and paste your link here
   socials: {
     linkedin: "https://linkedin.com/company/weshiplabs",
-    github: "https://github.com/weshiplabs",
+    github: "https://github.com/AshishSGit",
     twitter: "https://x.com/weshiplabs",
   },
 };
