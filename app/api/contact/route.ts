@@ -15,7 +15,7 @@ export async function POST(req: Request) {
 
       await resend.emails.send({
         from: "WeShipLabs <noreply@weshiplabs.com>",
-        to: "ashishstav@gmail.com",
+        to: "hello@weshiplabs.com",
         replyTo: email,
         subject: `New Lead: ${name} — ${type || "General"}`,
         html: `
