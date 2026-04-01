@@ -55,7 +55,7 @@ export default function Footer() {
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-text-subtle mb-4">Connect</p>
           <div className="flex flex-col gap-2">
-            <a href={SITE.socials.github} target="_blank" rel="noopener" className="text-sm text-text-muted hover:text-text-primary transition-colors">GitHub</a>
+            <Link href="/contact" className="text-sm text-text-muted hover:text-text-primary transition-colors">Contact</Link>
             <Link href="/contact" className="text-sm text-text-muted hover:text-text-primary transition-colors">Get a Quote</Link>
           </div>
         </div>
