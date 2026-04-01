@@ -198,7 +198,7 @@ export const projects: Project[] = [
     metrics: [
       { label: "Songs Available", value: "Unlimited" },
       { label: "Lyrics Sync", value: "Real-time" },
-      { label: "Time to Build", value: "1 week" },
+      { label: "Time to Build", value: "3 weeks" },
     ],
     featured: false,
   },
