@@ -204,7 +204,7 @@ export const projects: Project[] = [
   },
   {
     slug: "hersync",
-    name: "HerSync",
+    name: "PinkSync",
     tagline: "Cycle Syncing iOS App",
     description:
       "Meals, workouts, and hormone insights synced to menstrual cycle phases. Native iOS app with in-app purchases.",
@@ -228,19 +228,19 @@ export const projects: Project[] = [
     name: "Crucible",
     tagline: "AI Fitness Companion",
     description:
-      "Native SwiftUI fitness app with HealthKit integration, AI-generated workout plans, and progress tracking with Swift Charts.",
+      "Native SwiftUI fitness app with HealthKit integration, AI-generated workout plans, and progress tracking with Swift Charts. Currently in development.",
     challenge:
       "Most fitness apps are either too simple (just a timer) or too complex (require a personal trainer to understand).",
     solution:
       "Built a native SwiftUI app that reads HealthKit data and uses Claude to generate personalized workout plans. Swift Charts for beautiful progress visualization.",
     results:
-      "Native iOS app with HealthKit, Charts, and AI integration. Clean SwiftUI architecture.",
+      "Native iOS app with HealthKit, Charts, and AI integration. Clean SwiftUI architecture. Launching soon on the App Store.",
     techStack: ["SwiftUI", "HealthKit", "Swift Charts", "Claude API", "iOS 16+"],
     category: "mobile",
     metrics: [
       { label: "Platform", value: "Native iOS" },
       { label: "Framework", value: "SwiftUI" },
-      { label: "Time to Build", value: "2 weeks" },
+      { label: "Status", value: "Coming Soon" },
     ],
     featured: false,
   },
