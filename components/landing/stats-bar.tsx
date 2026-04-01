@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const proofPoints = [
   { value: "5", label: "Live Products You Can Click Right Now" },
   { value: "3", label: "Platforms (Web, iOS, Android)" },
-  { value: "<4wk", label: "Average Time from Call to Launch" },
-  { value: "$0", label: "Discovery Call — Always Free" },
+  { value: "<4wk", label: "Average Time to Launch" },
+  { value: "30 days", label: "Free Support on Every Project" },
 ];
 
 export default function StatsBar() {

@@ -5,9 +5,9 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const liveProducts = [
-  { name: "Knoah", url: "https://www.getknoah.com", desc: "AI Knowledge Base" },
-  { name: "Clippified", url: "https://clippified.com", desc: "AI Clip Generator" },
-  { name: "ResumeIdol", url: "https://resumeidol.com", desc: "AI Resume Tailor" },
+  { name: "Knoah", url: "https://www.getknoah.com", desc: "Knowledge Base" },
+  { name: "Clippified", url: "https://clippified.com", desc: "Clip Generator" },
+  { name: "ResumeIdol", url: "https://resumeidol.com", desc: "Resume Tailor" },
   { name: "BlushWed", url: "https://blushwed.com", desc: "Wedding Planner" },
   { name: "KaraokeLover", url: "https://www.karaokelover.com", desc: "Karaoke Platform" },
 ];
@@ -19,27 +19,15 @@ export default function Hero() {
       <div className="orb orb-blue w-[300px] h-[300px] bottom-20 -right-20" />
 
       <div className="max-w-5xl mx-auto px-6 py-32 w-full">
-        <motion.div
-          className="flex justify-center mb-10"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border-hover bg-surface">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="text-xs text-text-muted font-medium">Taking new projects for Q2 2026</span>
-          </div>
-        </motion.div>
-
         <motion.h1
           className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold text-center leading-[1.05] mb-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          We don&apos;t pitch.
+          Your idea.
           <br />
-          <span className="gradient-text">We ship.</span>
+          <span className="gradient-text">Live in weeks.</span>
         </motion.h1>
 
         <motion.p
@@ -48,9 +36,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.25 }}
         >
-          Web apps. Mobile apps. AI features.
+          We design, build, and deploy web apps, mobile apps, and smart features.
           <br className="hidden md:block" />
-          From first message to production in weeks.
+          You get working software every week — not status updates.
         </motion.p>
 
         <motion.div
@@ -63,7 +51,7 @@ export default function Hero() {
             Get a Free Quote <ArrowRight size={16} />
           </Link>
           <Link href="/portfolio" className="btn-ghost text-base py-3.5 px-10">
-            See the Proof <ArrowRight size={14} />
+            See Our Work <ArrowRight size={14} />
           </Link>
         </motion.div>
 
@@ -74,7 +62,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <p className="text-xs font-semibold uppercase tracking-wider text-text-subtle mb-4">
-            Don&apos;t take our word for it — click these. They&apos;re live.
+            These are ours. Click any of them — they&apos;re live right now.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {liveProducts.map((product) => (

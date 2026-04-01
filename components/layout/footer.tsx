@@ -46,9 +46,10 @@ export default function Footer() {
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-text-subtle mb-4">Services</p>
           <div className="flex flex-col gap-2">
-            <Link href="/services#ai-integration" className="text-sm text-text-muted hover:text-text-primary transition-colors">AI Integration</Link>
-            <Link href="/services#product-builds" className="text-sm text-text-muted hover:text-text-primary transition-colors">Product Builds</Link>
+            <Link href="/services#web-apps" className="text-sm text-text-muted hover:text-text-primary transition-colors">Web Applications</Link>
             <Link href="/services#mobile-apps" className="text-sm text-text-muted hover:text-text-primary transition-colors">Mobile Apps</Link>
+            <Link href="/services#ai-features" className="text-sm text-text-muted hover:text-text-primary transition-colors">Smart Features</Link>
+            <Link href="/services#consulting" className="text-sm text-text-muted hover:text-text-primary transition-colors">Consulting & Rescue</Link>
           </div>
         </div>
         <div>

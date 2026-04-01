@@ -26,11 +26,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — AI-Powered Software That Ships`,
+    default: `${SITE.name} — Software That Ships`,
     template: `%s | ${SITE.name}`,
   },
   description:
-    "We build AI integrations, web platforms, and mobile apps. From idea to production in weeks. 7+ live products shipped.",
+    "We design, build, and deploy web apps, mobile apps, and smart features. From idea to production in weeks. 7+ live products shipped.",
   keywords: [
     "AI software development",
     "AI integration services",
@@ -44,16 +44,16 @@ export const metadata: Metadata = {
   ],
   icons: { icon: "/icon.svg", apple: "/icon.svg" },
   openGraph: {
-    title: `${SITE.name} — AI-Powered Software That Ships`,
-    description: "We build AI integrations, web platforms, and mobile apps. From idea to production in weeks.",
+    title: `${SITE.name} — Software That Ships`,
+    description: "We design, build, and deploy web apps, mobile apps, and smart features. From idea to production in weeks.",
     type: "website",
     siteName: SITE.name,
     url: SITE.url,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} — AI-Powered Software That Ships`,
-    description: "We build AI integrations, web platforms, and mobile apps. From idea to production in weeks.",
+    title: `${SITE.name} — Software That Ships`,
+    description: "We design, build, and deploy web apps, mobile apps, and smart features. From idea to production in weeks.",
   },
 };
 

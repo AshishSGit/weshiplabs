@@ -7,7 +7,7 @@ const rows = [
   { feature: "Fixed pricing upfront", us: true, agency: false, freelancer: false },
   { feature: "Ships in under 4 weeks", us: true, agency: false, freelancer: "maybe" },
   { feature: "You talk to the person writing code", us: true, agency: false, freelancer: true },
-  { feature: "AI integration (RAG, chatbots, voice)", us: true, agency: "maybe", freelancer: false },
+  { feature: "Smart features (search, chatbots, automation)", us: true, agency: "maybe", freelancer: false },
   { feature: "Full-stack (web + mobile + backend)", us: true, agency: true, freelancer: false },
   { feature: "Auth, payments, deployment included", us: true, agency: true, freelancer: false },
   { feature: "Live portfolio you can click", us: true, agency: false, freelancer: false },
