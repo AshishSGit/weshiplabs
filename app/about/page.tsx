@@ -4,13 +4,13 @@ import { ArrowRight, Code2, Brain, Smartphone, Zap, Globe, CreditCard } from "lu
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Meet the engineer behind WeShipLabs. 7+ production apps, AI expertise, full-stack across web and mobile.",
+  description: "Meet the team behind WeShipLabs. Full-stack expertise across web, mobile, and AI.",
 };
 
 const skills = [
-  { icon: <Brain size={20} />, label: "AI & ML", items: ["RAG Systems", "Claude / GPT APIs", "Whisper / Deepgram", "Vector Search", "Document Processing"] },
   { icon: <Code2 size={20} />, label: "Frontend", items: ["Next.js / React", "TypeScript", "Tailwind CSS", "Framer Motion", "SwiftUI"] },
   { icon: <Smartphone size={20} />, label: "Mobile", items: ["React Native", "Expo", "SwiftUI", "HealthKit", "StoreKit / IAP"] },
+  { icon: <Brain size={20} />, label: "Smart Features", items: ["RAG Systems", "Claude / GPT APIs", "Whisper / Deepgram", "Vector Search", "Document Processing"] },
   { icon: <Zap size={20} />, label: "Backend", items: ["Node.js", "Python / Flask", "REST APIs", "WebSockets", "FFmpeg"] },
   { icon: <Globe size={20} />, label: "Infrastructure", items: ["Railway", "Vercel", "AWS", "Cloudflare R2", "CI/CD"] },
   { icon: <CreditCard size={20} />, label: "Business", items: ["Stripe Billing", "Supabase / Firebase", "SEO", "App Store", "Analytics"] },
@@ -21,46 +21,29 @@ export default function AboutPage() {
     <div className="section pt-32">
       <div className="max-w-6xl mx-auto px-6">
         {/* Hero */}
-        <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-violet-400 mb-3">About</p>
-            <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
-              One engineer.<br />
-              <span className="gradient-text">Seven live products.</span>
-            </h1>
-            <div className="space-y-4 text-text-muted leading-relaxed">
-              <p>
-                I&apos;m Ashish — a full-stack engineer who builds AI-powered software.
-                Not concept decks. Not wireframes. Production apps with real users, real
-                payments, and real infrastructure.
-              </p>
-              <p>
-                I started WeShipLabs because I kept seeing the same gap: founders with
-                great ideas stuck waiting months for agencies to deliver half-working
-                prototypes. I build faster, leaner, and with AI baked in from day one.
-              </p>
-              <p>
-                Every product in our portfolio — from Knoah&apos;s RAG knowledge base to
-                Clippified&apos;s video pipeline — was architected, built, and deployed
-                by me. When you hire WeShipLabs, you get the person who actually writes the code.
-              </p>
-            </div>
-          </div>
-
-          {/* Avatar / Visual */}
-          <div className="flex justify-center">
-            <div className="relative">
-              <div className="w-64 h-64 rounded-3xl bg-gradient-to-br from-violet-600/20 to-blue-600/20 border border-border flex items-center justify-center">
-                <span className="font-heading text-7xl font-bold gradient-text">AS</span>
-              </div>
-              <div className="absolute -bottom-4 -right-4 glass-card px-4 py-2">
-                <p className="text-xs text-text-subtle">Status</p>
-                <p className="text-sm font-semibold text-emerald-400 flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  Taking new projects
-                </p>
-              </div>
-            </div>
+        <div className="max-w-3xl mx-auto text-center mb-24">
+          <p className="text-sm font-semibold uppercase tracking-wider text-violet-400 mb-3">About</p>
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
+            We build software that
+            <br />
+            <span className="gradient-text">actually ships.</span>
+          </h1>
+          <div className="space-y-4 text-text-muted leading-relaxed text-lg text-left">
+            <p>
+              WeShipLabs exists because too many businesses wait months for agencies
+              to deliver half-working prototypes. We do things differently — you see
+              working software every week, and your product goes live in weeks, not months.
+            </p>
+            <p>
+              We specialize in full-stack web apps, mobile apps, and smart features
+              that make products faster, smarter, and more useful. Every project includes
+              design, development, testing, deployment, and 30 days of support.
+            </p>
+            <p>
+              Our portfolio speaks for itself — live products with real users and real
+              payments that you can click on right now. No NDAs hiding empty promises.
+              No Figma mockups pretending to be progress.
+            </p>
           </div>
         </div>
 
@@ -68,7 +51,7 @@ export default function AboutPage() {
         <div className="mb-24">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl font-bold">
-              Full-stack <span className="gradient-text">expertise</span>
+              What we <span className="gradient-text">work with</span>
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -91,14 +74,14 @@ export default function AboutPage() {
         {/* Approach */}
         <div className="max-w-3xl mx-auto mb-24">
           <h2 className="font-heading text-3xl font-bold text-center mb-12">
-            How I <span className="gradient-text">work</span>
+            How we <span className="gradient-text">work</span>
           </h2>
           <div className="space-y-8">
             {[
-              { num: "01", title: "Understand the business, not just the ticket", desc: "I dig into why you need this, who it's for, and what success looks like before writing a line of code." },
+              { num: "01", title: "Understand the business, not just the ticket", desc: "We dig into why you need this, who it's for, and what success looks like before writing a line of code." },
               { num: "02", title: "Ship fast, iterate faster", desc: "You see working software every week. Not Figma comps — actual deployed code you can click on." },
-              { num: "03", title: "AI-first, not AI-afterthought", desc: "I architect AI into the product from the start, not bolted on later. Better UX, lower costs, fewer rewrites." },
-              { num: "04", title: "Own the full stack", desc: "Auth, payments, deployment, SEO, App Store submission — I don't hand you a half-finished project and wish you luck." },
+              { num: "03", title: "Full stack, no handoffs", desc: "Frontend, backend, database, payments, deployment, App Store — one team handles everything. No gaps." },
+              { num: "04", title: "Your product, your code", desc: "We hand over everything — clean codebase, documentation, deployment access. No lock-in, no hostage situations." },
             ].map((step) => (
               <div key={step.num} className="flex gap-5">
                 <span className="font-heading text-2xl font-bold text-violet-500/30">{step.num}</span>
