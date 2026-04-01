@@ -181,11 +181,9 @@ export default function ContactPage() {
             <div className="glass-card p-6">
               <h3 className="font-heading font-bold mb-3 flex items-center gap-2">
                 <Mail size={18} className="text-violet-400" />
-                Or just email us
+                Response time
               </h3>
-              <a href={`mailto:${SITE.email}`} className="text-sm text-violet-400 hover:underline">
-                {SITE.email}
-              </a>
+              <p className="text-sm text-text-muted">We reply to every quote request within <span className="text-text-primary font-medium">24 hours</span>. Usually faster.</p>
             </div>
           </div>
         </div>
