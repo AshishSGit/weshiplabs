@@ -3,8 +3,9 @@ import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Blog",
-  description: "Insights on AI development, building MVPs, and shipping software fast.",
+  title: "Blog — Software Development Insights",
+  description: "Real lessons from building and shipping software. AI chatbot costs, RAG vs fine-tuning, how to ship MVPs fast, and more.",
+  alternates: { canonical: "https://weshiplabs.com/blog" },
 };
 
 const posts = [

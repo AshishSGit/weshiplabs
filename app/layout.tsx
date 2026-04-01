@@ -30,17 +30,26 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description:
-    "We design, build, and deploy web apps, mobile apps, and smart features. From idea to production in weeks. 7+ live products shipped.",
+    "We design, build, and deploy web apps, mobile apps, and AI-powered features. Fixed pricing, delivered in weeks. Get a free quote today.",
   keywords: [
-    "AI software development",
-    "AI integration services",
     "custom software development",
-    "MVP development",
+    "web app development company",
+    "MVP development agency",
+    "mobile app development",
     "React Native development",
-    "SwiftUI development",
-    "RAG chatbot development",
-    "AI consulting",
-    "software consultancy",
+    "SwiftUI app development",
+    "AI integration services",
+    "hire software developer",
+    "build web app",
+    "build mobile app",
+    "software development agency",
+    "fixed price software development",
+    "startup MVP builder",
+    "SaaS development",
+    "AI chatbot development cost",
+    "RAG development services",
+    "app development cost",
+    "website development cost",
   ],
   icons: { icon: "/icon.svg", apple: "/icon.svg" },
   openGraph: {
@@ -57,9 +66,74 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "WeShipLabs",
+  url: "https://weshiplabs.com",
+  logo: "https://weshiplabs.com/icon.svg",
+  description: "We design, build, and deploy web apps, mobile apps, and AI-powered features. Fixed pricing, delivered in weeks.",
+  foundingDate: "2026",
+  areaServed: "Worldwide",
+  serviceType: [
+    "Web Application Development",
+    "Mobile App Development",
+    "AI Integration",
+    "MVP Development",
+    "Software Consulting",
+  ],
+  knowsAbout: [
+    "Next.js", "React", "React Native", "SwiftUI", "TypeScript",
+    "Python", "Node.js", "Supabase", "Firebase", "Stripe",
+    "Claude API", "OpenAI", "Deepgram", "RAG", "AI Chatbots",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Software Development Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Quick Audit", description: "Business and codebase review with recommendations" },
+        priceSpecification: { "@type": "PriceSpecification", price: "500", priceCurrency: "USD" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Landing Page / Website", description: "Custom-built SEO-optimized website" },
+        priceSpecification: { "@type": "PriceSpecification", price: "3000", priceCurrency: "USD", minPrice: "3000" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Web App / MVP", description: "Full-stack web application with auth, payments, and deployment" },
+        priceSpecification: { "@type": "PriceSpecification", price: "8000", priceCurrency: "USD", minPrice: "8000" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Mobile App", description: "iOS and Android app with App Store submission" },
+        priceSpecification: { "@type": "PriceSpecification", price: "8000", priceCurrency: "USD", minPrice: "8000" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "AI Integration", description: "AI-powered features for existing or new products" },
+        priceSpecification: { "@type": "PriceSpecification", price: "5000", priceCurrency: "USD", minPrice: "5000" },
+      },
+    ],
+  },
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "WeShipLabs",
+  url: "https://weshiplabs.com",
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${dmSans.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+      </head>
       <body>
         <Navbar />
         <main className="min-h-screen pt-16">{children}</main>

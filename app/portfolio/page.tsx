@@ -4,8 +4,9 @@ import { ExternalLink, ArrowRight } from "lucide-react";
 import { projects } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "7+ production apps shipped — AI SaaS, web platforms, and mobile apps. See our live work.",
+  title: "Portfolio — Live Products We Built and Shipped",
+  description: "See our live work — web apps, mobile apps, and AI-powered products. Every project here is running in production with real users and payments.",
+  alternates: { canonical: "https://weshiplabs.com/portfolio" },
 };
 
 export default function PortfolioPage() {

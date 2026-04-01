@@ -4,9 +4,10 @@ import { ArrowRight, Brain, Rocket, Smartphone, Wrench, Check } from "lucide-rea
 import { services } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Services — Web Apps, Mobile Apps, AI Integration",
   description:
-    "Web apps, mobile apps, AI integration, and consulting. From landing pages to full SaaS platforms. Fixed pricing, no surprises.",
+    "Custom web app development from $3K. Mobile apps from $8K. AI integration from $5K. Fixed pricing, delivered in weeks. See what's included.",
+  alternates: { canonical: "https://weshiplabs.com/services" },
 };
 
 const iconMap: Record<string, React.ReactNode> = {
