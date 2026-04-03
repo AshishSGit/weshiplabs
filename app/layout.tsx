@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { DM_Sans, Inter, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { SITE } from "@/lib/constants";
 import "./globals.css";
+
+const GA_ID = "G-1FF3GS765X";
 
 const dmSans = DM_Sans({
   variable: "--font-heading",
@@ -131,6 +134,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${dmSans.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
       <head>
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');`}
+        </Script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       </head>
