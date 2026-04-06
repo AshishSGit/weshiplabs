@@ -196,6 +196,161 @@ Auth, payments, deployment, error handling. The stuff that turns a prototype int
 [Tell us what you need](/contact) and we'll scope your MVP in 30 minutes.
     `,
   },
+  "how-much-does-web-app-cost": {
+    title: "How Much Does It Cost to Build a Web App in 2026?",
+    description: "Real pricing for landing pages, web apps, and SaaS platforms. What you should expect to pay and what you get at each price point.",
+    date: "2026-04-03",
+    readTime: "7 min",
+    category: "Engineering",
+    content: `
+## The Quick Answer
+
+A web app costs anywhere from **$3,000 to $50,000+** depending on what it does. Here's the honest breakdown by complexity.
+
+## Landing Page / Marketing Site ($3,000 - $5,000)
+
+A fast, SEO-optimized website that looks great and converts visitors into leads or customers.
+
+**What you get:**
+- Custom design (not a template)
+- Mobile responsive
+- Contact form or lead capture
+- SEO setup (sitemap, meta tags, structured data)
+- Analytics integration
+- Hosting and deployment
+
+**Timeline:** 1-2 weeks.
+
+**When you need this:** You have a business and need a professional web presence. You don't need user accounts or a dashboard.
+
+## Web App with Auth and Dashboard ($8,000 - $15,000)
+
+A real application where users sign up, log in, and do something useful.
+
+**What you get:**
+- Everything from the landing page tier
+- User authentication (email, Google, magic link)
+- User dashboard with real functionality
+- Database and API
+- Basic admin panel
+- Production deployment with SSL
+
+**Timeline:** 2-4 weeks.
+
+**When you need this:** You're building a tool, marketplace, or internal app. Users need accounts and data.
+
+## Full SaaS Platform ($15,000 - $30,000+)
+
+A complete software product with billing, teams, and advanced features.
+
+**What you get:**
+- Everything above plus:
+- Stripe subscriptions and billing portal
+- Team management and invitations
+- Role-based access control
+- Usage tracking and analytics
+- Email notifications (welcome, billing, etc.)
+- Blog for SEO
+- Multiple user flows
+
+**Timeline:** 4-8 weeks.
+
+**When you need this:** You're launching a product that people pay monthly for. You need billing, teams, and a polished experience.
+
+## What Drives the Cost Up
+
+1. **Number of user roles** - one type of user is simple. Admin + regular user + team leads = more complexity.
+2. **Integrations** - Stripe, third-party APIs, and webhooks add time.
+3. **Real-time features** - chat, live updates, and notifications require WebSockets.
+4. **Mobile app on top** - if you need iOS/Android too, budget an additional $8,000+.
+
+## What to Ask Before Hiring
+
+- Can I see your live work? (not mockups)
+- Is the price fixed or hourly?
+- What's included in post-launch support?
+- How often will I see working software during development?
+
+If an agency can't answer these clearly, keep looking.
+
+**Need a quote?** [Tell us what you're building](/contact) and we'll send you a clear scope and price within 24 hours.
+    `,
+  },
+  "add-ai-to-existing-product": {
+    title: "How to Add AI to Your Existing Product (Without Starting Over)",
+    description: "A practical guide to integrating AI features into your current app. What works, what doesn't, and what it costs.",
+    date: "2026-04-05",
+    readTime: "8 min",
+    category: "AI",
+    content: `
+## You Don't Need to Rebuild
+
+The most common mistake: thinking you need to throw away your current product and start from scratch with "AI." You don't. AI features plug into existing products.
+
+Here's what that actually looks like.
+
+## The 5 Most Useful AI Features You Can Add Today
+
+### 1. Smart Search ($3,000 - $5,000)
+
+Replace your basic keyword search with semantic search. Users describe what they want in plain language and your product finds it.
+
+**How it works:** Convert your content into vector embeddings. When a user searches, convert their query to a vector and find the closest matches. Way more accurate than keyword matching.
+
+**Best for:** E-commerce, documentation sites, knowledge bases, any product with lots of content.
+
+### 2. Document Q&A / Chatbot ($5,000 - $10,000)
+
+Let users ask questions about their documents and get answers with citations.
+
+**How it works:** This is RAG (Retrieval-Augmented Generation). Upload documents, chunk them, create embeddings, and use an LLM to answer questions based on the relevant chunks.
+
+**Best for:** Internal tools, customer support, legal tech, education platforms.
+
+### 3. Content Generation ($3,000 - $8,000)
+
+Auto-generate product descriptions, email drafts, summaries, or reports based on user data.
+
+**How it works:** Take user input or existing data, send it to Claude or GPT with a well-crafted prompt, return the result. The quality depends entirely on the prompt engineering.
+
+**Best for:** Marketing tools, CRM systems, reporting dashboards, any product where users write repetitive content.
+
+### 4. Classification and Routing ($2,000 - $5,000)
+
+Automatically categorize incoming data - support tickets, leads, content, transactions.
+
+**How it works:** Send the item to an LLM with examples of each category. It classifies with 90%+ accuracy. Much cheaper than training a custom model.
+
+**Best for:** Help desks, CRM, e-commerce (product categorization), content platforms.
+
+### 5. Voice Transcription ($3,000 - $6,000)
+
+Turn audio into text with Whisper or Deepgram. Then do something useful with that text.
+
+**How it works:** User records or uploads audio. Whisper/Deepgram transcribes it. Optionally, an LLM summarizes or extracts action items.
+
+**Best for:** Meeting tools, voice journals, podcast platforms, customer call analysis.
+
+## What It Actually Costs
+
+The AI API costs are tiny. Claude costs $0.003-0.06 per query. The real cost is the engineering to integrate it properly - error handling, streaming, caching, rate limiting, and making it feel good in the UI.
+
+**Budget:**
+- Simple feature (search, classification): $2,000-5,000
+- Medium feature (chatbot, content gen): $5,000-10,000
+- Complex feature (multi-model pipeline, voice + analysis): $8,000-15,000
+
+## What to Avoid
+
+- **Don't use AI where a simple rule works.** If-else is cheaper and more reliable.
+- **Don't build a "ChatGPT wrapper."** Users can already talk to ChatGPT. Your AI feature needs to do something specific that generic AI can't.
+- **Don't skip the prompt engineering.** A bad prompt with a great model gives bad results. Spend time on this.
+
+## Ready to Add AI to Your Product?
+
+[Tell us what you're building](/contact) and we'll recommend the simplest approach that actually works. No obligation - we'll send you a clear plan and price within 24 hours.
+    `,
+  },
 };
 
 export function generateStaticParams() {
@@ -206,7 +361,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = posts[slug];
   if (!post) return {};
-  return { title: post.title, description: post.description };
+  return {
+    title: post.title,
+    description: post.description,
+    alternates: { canonical: `https://weshiplabs.com/blog/${slug}` },
+  };
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -214,8 +373,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const post = posts[slug];
   if (!post) notFound();
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: { "@type": "Organization", name: "WeShipLabs", url: "https://weshiplabs.com" },
+    publisher: { "@type": "Organization", name: "WeShipLabs", url: "https://weshiplabs.com" },
+    mainEntityOfPage: `https://weshiplabs.com/blog/${slug}`,
+  };
+
   return (
     <div className="section pt-32">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <div className="max-w-3xl mx-auto px-6">
         <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-text-subtle hover:text-violet-400 transition-colors mb-8">
           <ArrowLeft size={14} /> All Posts

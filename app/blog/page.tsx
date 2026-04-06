@@ -10,9 +10,25 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "add-ai-to-existing-product",
+    title: "How to Add AI to Your Existing Product (Without Starting Over)",
+    description: "A practical guide to integrating AI features into your current app. What works, what doesn't, and what it costs.",
+    date: "2026-04-05",
+    readTime: "8 min",
+    category: "AI",
+  },
+  {
+    slug: "how-much-does-web-app-cost",
+    title: "How Much Does It Cost to Build a Web App in 2026?",
+    description: "Real pricing for landing pages, web apps, and SaaS platforms. What you should expect to pay and what you get at each price point.",
+    date: "2026-04-03",
+    readTime: "7 min",
+    category: "Engineering",
+  },
+  {
     slug: "how-much-does-ai-chatbot-cost",
     title: "How Much Does an AI Chatbot Cost in 2026?",
-    description: "A real breakdown of what it costs to build a production AI chatbot  - from simple FAQ bots to full RAG systems. No fluff, actual numbers.",
+    description: "A real breakdown of what it costs to build a production AI chatbot - from simple FAQ bots to full RAG systems. No fluff, actual numbers.",
     date: "2026-03-31",
     readTime: "8 min",
     category: "AI",

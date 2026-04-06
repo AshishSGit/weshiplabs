@@ -5,6 +5,8 @@ const blogSlugs = [
   "how-much-does-ai-chatbot-cost",
   "rag-vs-fine-tuning",
   "ship-mvp-in-4-weeks",
+  "how-much-does-web-app-cost",
+  "add-ai-to-existing-product",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
