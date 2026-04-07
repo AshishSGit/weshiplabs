@@ -5,11 +5,11 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 const liveProducts = [
+  { name: "KaraokeLover", url: "https://www.karaokelover.com", desc: "Karaoke" },
+  { name: "ResumeIdol", url: "https://resumeidol.com", desc: "Resume Tailor" },
   { name: "Knoah", url: "https://www.getknoah.com", desc: "Knowledge Base" },
   { name: "Clippified", url: "https://clippified.com", desc: "Clip Generator" },
-  { name: "ResumeIdol", url: "https://resumeidol.com", desc: "Resume Tailor" },
   { name: "BlushWed", url: "https://blushwed.com", desc: "Wedding Planner" },
-  { name: "KaraokeLover", url: "https://www.karaokelover.com", desc: "Karaoke" },
 ];
 
 export default function Hero() {

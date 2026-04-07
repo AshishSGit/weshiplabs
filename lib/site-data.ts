@@ -93,6 +93,52 @@ export const services: Service[] = [
 
 export const projects: Project[] = [
   {
+    slug: "karaoke-lover",
+    name: "KaraokeLover",
+    tagline: "YouTube Karaoke Platform",
+    description:
+      "Search any song, get the YouTube video with synchronized lyrics. Firebase auth, Firestore favorites, and a beautiful singing experience.",
+    challenge:
+      "Karaoke apps are either expensive monthly subscriptions or have terrible song libraries. YouTube has every song but no lyrics overlay.",
+    solution:
+      "Combined YouTube Data API for video search with LRCLib for synchronized lyrics. Firebase Auth for user accounts, Firestore for favorites and history.",
+    results:
+      "Live at karaokelover.com with real users. Deployed on Railway with automatic deploys from GitHub.",
+    techStack: ["Python", "Flask", "YouTube API", "LRCLib", "Firebase Auth", "Firestore", "Railway"],
+    category: "web",
+    liveUrl: "https://www.karaokelover.com",
+    image: "/portfolio/karaokelover.png",
+    metrics: [
+      { label: "Songs Available", value: "Unlimited" },
+      { label: "Lyrics Sync", value: "Real-time" },
+      { label: "Time to Build", value: "3 weeks" },
+    ],
+    featured: true,
+  },
+  {
+    slug: "resumeidol",
+    name: "ResumeIdol",
+    tagline: "AI-Powered Resume Tailor",
+    description:
+      "Paste your resume and a job description  - get a perfectly tailored version in seconds. Automatically rewrites bullet points to match the role.",
+    challenge:
+      "Job seekers send the same generic resume everywhere. Tailoring manually takes 30-60 minutes per application.",
+    solution:
+      "Claude analyzes the job description, identifies key requirements, and rewrites resume bullet points to highlight relevant experience. Preserves voice while optimizing for the role.",
+    results:
+      "Live product with magic-link auth, saved resumes, and job URL auto-fetch. Pro tier with Stripe billing.",
+    techStack: ["Next.js", "TypeScript", "Claude API", "Supabase Auth", "Stripe", "Tailwind"],
+    category: "web",
+    liveUrl: "https://resumeidol.com",
+    image: "/portfolio/resumeidol.png",
+    metrics: [
+      { label: "Tailor Time", value: "<10s" },
+      { label: "Auth", value: "Magic Link" },
+      { label: "Time to Build", value: "2 weeks" },
+    ],
+    featured: true,
+  },
+  {
     slug: "knoah",
     name: "Knoah",
     tagline: "AI-Powered Knowledge Base for Teams",
@@ -139,29 +185,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "resumeidol",
-    name: "ResumeIdol",
-    tagline: "AI-Powered Resume Tailor",
-    description:
-      "Paste your resume and a job description  - get a perfectly tailored version in seconds. Automatically rewrites bullet points to match the role.",
-    challenge:
-      "Job seekers send the same generic resume everywhere. Tailoring manually takes 30-60 minutes per application.",
-    solution:
-      "Claude analyzes the job description, identifies key requirements, and rewrites resume bullet points to highlight relevant experience. Preserves voice while optimizing for the role.",
-    results:
-      "Live product with magic-link auth, saved resumes, and job URL auto-fetch. Pro tier with Stripe billing.",
-    techStack: ["Next.js", "TypeScript", "Claude API", "Supabase Auth", "Stripe", "Tailwind"],
-    category: "web",
-    liveUrl: "https://resumeidol.com",
-    image: "/portfolio/resumeidol.png",
-    metrics: [
-      { label: "Tailor Time", value: "<10s" },
-      { label: "Auth", value: "Magic Link" },
-      { label: "Time to Build", value: "2 weeks" },
-    ],
-    featured: true,
-  },
-  {
     slug: "blushwed",
     name: "BlushWed",
     tagline: "Wedding Planning Platform",
@@ -181,71 +204,6 @@ export const projects: Project[] = [
       { label: "Pages", value: "33 routes" },
       { label: "Blog Posts", value: "5 SEO" },
       { label: "Time to Build", value: "2 weeks" },
-    ],
-    featured: false,
-  },
-  {
-    slug: "karaoke-lover",
-    name: "KaraokeLover",
-    tagline: "YouTube Karaoke Platform",
-    description:
-      "Search any song, get the YouTube video with synchronized lyrics. Firebase auth, Firestore favorites, and a beautiful singing experience.",
-    challenge:
-      "Karaoke apps are either expensive monthly subscriptions or have terrible song libraries. YouTube has every song but no lyrics overlay.",
-    solution:
-      "Combined YouTube Data API for video search with LRCLib for synchronized lyrics. Firebase Auth for user accounts, Firestore for favorites and history.",
-    results:
-      "Live at karaokelover.com with real users. Deployed on Railway with automatic deploys from GitHub.",
-    techStack: ["Python", "Flask", "YouTube API", "LRCLib", "Firebase Auth", "Firestore", "Railway"],
-    category: "web",
-    liveUrl: "https://www.karaokelover.com",
-    image: "/portfolio/karaokelover.png",
-    metrics: [
-      { label: "Songs Available", value: "Unlimited" },
-      { label: "Lyrics Sync", value: "Real-time" },
-      { label: "Time to Build", value: "3 weeks" },
-    ],
-    featured: false,
-  },
-  {
-    slug: "hersync",
-    name: "PinkSync",
-    tagline: "Cycle Syncing iOS App",
-    description:
-      "Meals, workouts, and hormone insights synced to menstrual cycle phases. Native iOS app with in-app purchases.",
-    challenge:
-      "Generic fitness apps ignore hormonal cycles. Women's energy, nutrition needs, and optimal workout types change throughout the month.",
-    solution:
-      "Built a React Native app that tracks cycle phases and provides phase-specific meal plans, workout routines, and hormone insights. StoreKit integration for subscriptions.",
-    results:
-      "Published on App Store. In-app purchases live with monthly and annual tiers.",
-    techStack: ["React Native", "Expo", "Supabase", "Claude API", "StoreKit", "iOS"],
-    category: "mobile",
-    metrics: [
-      { label: "Platform", value: "iOS" },
-      { label: "IAP", value: "Monthly + Annual" },
-      { label: "Time to Build", value: "3 weeks" },
-    ],
-    featured: false,
-  },
-  {
-    slug: "crucible",
-    name: "Crucible",
-    tagline: "AI-Powered Fitness Companion",
-    description:
-      "Native SwiftUI fitness app with HealthKit integration, personalized workout plans, and progress tracking with Swift Charts. Currently in development.",
-    challenge:
-      "Most fitness apps are either too simple (just a timer) or too complex (require a personal trainer to understand).",
-    solution:
-      "Built a native SwiftUI app that reads HealthKit data and uses Claude to generate personalized workout plans. Swift Charts for beautiful progress visualization.",
-    results:
-      "Native iOS app with HealthKit, Charts, and AI integration. Clean SwiftUI architecture. Launching soon on the App Store.",
-    techStack: ["SwiftUI", "HealthKit", "Swift Charts", "Claude API", "iOS 16+"],
-    category: "mobile",
-    metrics: [
-      { label: "Platform", value: "Native iOS" },
-      { label: "Framework", value: "SwiftUI" },
-      { label: "Status", value: "Coming Soon" },
     ],
     featured: false,
   },
