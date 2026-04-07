@@ -107,6 +107,7 @@ export const projects: Project[] = [
     techStack: ["Next.js", "TypeScript", "Claude API", "OpenAI Embeddings", "Supabase", "Stripe", "Tailwind"],
     category: "web",
     liveUrl: "https://www.getknoah.com",
+    image: "/portfolio/getknoah.png",
     metrics: [
       { label: "Response Time", value: "<2s" },
       { label: "Document Types", value: "PDF, DOCX, URL" },
@@ -129,6 +130,7 @@ export const projects: Project[] = [
     techStack: ["Next.js", "Deepgram", "Claude API", "FFmpeg", "Cloudflare R2", "Supabase", "Stripe"],
     category: "web",
     liveUrl: "https://clippified.com",
+    image: "/portfolio/clippified.png",
     metrics: [
       { label: "Processing Time", value: "<90s" },
       { label: "Max Video Length", value: "3 hours" },
@@ -151,6 +153,7 @@ export const projects: Project[] = [
     techStack: ["Next.js", "TypeScript", "Claude API", "Supabase Auth", "Stripe", "Tailwind"],
     category: "web",
     liveUrl: "https://resumeidol.com",
+    image: "/portfolio/resumeidol.png",
     metrics: [
       { label: "Tailor Time", value: "<10s" },
       { label: "Auth", value: "Magic Link" },
@@ -173,6 +176,7 @@ export const projects: Project[] = [
     techStack: ["Next.js", "TypeScript", "Claude API", "Supabase", "Stripe", "Tailwind", "Framer Motion"],
     category: "web",
     liveUrl: "https://blushwed.com",
+    image: "/portfolio/blushwed.png",
     metrics: [
       { label: "Pages", value: "33 routes" },
       { label: "Blog Posts", value: "5 SEO" },
@@ -195,6 +199,7 @@ export const projects: Project[] = [
     techStack: ["Python", "Flask", "YouTube API", "LRCLib", "Firebase Auth", "Firestore", "Railway"],
     category: "web",
     liveUrl: "https://www.karaokelover.com",
+    image: "/portfolio/karaokelover.png",
     metrics: [
       { label: "Songs Available", value: "Unlimited" },
       { label: "Lyrics Sync", value: "Real-time" },

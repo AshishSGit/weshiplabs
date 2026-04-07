@@ -20,6 +20,7 @@ export type Project = {
   techStack: string[];
   category: "ai" | "web" | "mobile";
   liveUrl?: string;
+  image?: string;
   metrics: { label: string; value: string }[];
   featured: boolean;
 };
