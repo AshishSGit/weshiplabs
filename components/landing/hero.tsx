@@ -15,22 +15,19 @@ const liveProducts = [
 export default function Hero() {
   return (
     <section className="relative overflow-hidden min-h-[100vh] flex items-center">
-      {/* Background video layer */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-          poster="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80"
-        >
-          <source
-            src="https://videos.pexels.com/video-files/3129957/3129957-uhd_2560_1440_30fps.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-bg/60 via-bg/85 to-bg" />
+      {/* Animated aurora background */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="aurora-blob aurora-blob-1" />
+        <div className="aurora-blob aurora-blob-2" />
+        <div className="aurora-blob aurora-blob-3" />
+        <div className="absolute inset-0 bg-gradient-to-b from-bg/40 via-bg/70 to-bg" />
+        {/* Noise texture overlay */}
+        <div
+          className="absolute inset-0 opacity-[0.04] mix-blend-overlay"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`,
+          }}
+        />
       </div>
 
       {/* Animated orbs */}
