@@ -93,6 +93,29 @@ export const services: Service[] = [
 
 export const projects: Project[] = [
   {
+    slug: "blushwed",
+    name: "BlushWed",
+    tagline: "Wedding Planning Platform",
+    description:
+      "Complete wedding planning platform with smart vendor recommendations, budget tracking, and timeline management.",
+    challenge:
+      "Wedding planning is overwhelming  - couples juggle spreadsheets, Pinterest boards, and vendor emails across 12+ months.",
+    solution:
+      "Built a comprehensive planning platform with AI-powered suggestions for venues, vendors, and timelines. Stripe subscriptions for premium features, SEO-optimized blog for organic traffic.",
+    results:
+      "33 routes, 5 blog posts, full Stripe integration. SEO driving organic signups from wedding-related searches.",
+    techStack: ["Next.js", "TypeScript", "Claude API", "Supabase", "Stripe", "Tailwind", "Framer Motion"],
+    category: "web",
+    liveUrl: "https://blushwed.com",
+    image: "/portfolio/blushwed.png",
+    metrics: [
+      { label: "Pages", value: "33 routes" },
+      { label: "Blog Posts", value: "5 SEO" },
+      { label: "Time to Build", value: "2 weeks" },
+    ],
+    featured: true,
+  },
+  {
     slug: "karaoke-lover",
     name: "KaraokeLover",
     tagline: "YouTube Karaoke Platform",
@@ -183,29 +206,6 @@ export const projects: Project[] = [
       { label: "Time to Build", value: "2 weeks" },
     ],
     featured: true,
-  },
-  {
-    slug: "blushwed",
-    name: "BlushWed",
-    tagline: "Wedding Planning Platform",
-    description:
-      "Complete wedding planning platform with smart vendor recommendations, budget tracking, and timeline management.",
-    challenge:
-      "Wedding planning is overwhelming  - couples juggle spreadsheets, Pinterest boards, and vendor emails across 12+ months.",
-    solution:
-      "Built a comprehensive planning platform with AI-powered suggestions for venues, vendors, and timelines. Stripe subscriptions for premium features, SEO-optimized blog for organic traffic.",
-    results:
-      "33 routes, 5 blog posts, full Stripe integration. SEO driving organic signups from wedding-related searches.",
-    techStack: ["Next.js", "TypeScript", "Claude API", "Supabase", "Stripe", "Tailwind", "Framer Motion"],
-    category: "web",
-    liveUrl: "https://blushwed.com",
-    image: "/portfolio/blushwed.png",
-    metrics: [
-      { label: "Pages", value: "33 routes" },
-      { label: "Blog Posts", value: "5 SEO" },
-      { label: "Time to Build", value: "2 weeks" },
-    ],
-    featured: false,
   },
 ];
 
