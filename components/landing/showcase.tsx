@@ -8,7 +8,7 @@ import { ExternalLink, ArrowRight } from "lucide-react";
 const showcase = [
   {
     name: "Knoah",
-    tagline: "AI Knowledge Base",
+    tagline: "AI-Powered Knowledge Base",
     description: "Upload docs, ask questions, get answers with citations. RAG-powered SaaS with Stripe billing.",
     image: "/portfolio/getknoah.png",
     url: "https://www.getknoah.com",
@@ -26,7 +26,7 @@ const showcase = [
   },
   {
     name: "ResumeIdol",
-    tagline: "AI Resume Tailor",
+    tagline: "AI-Powered Resume Tailor",
     description: "Paste a job description, get a tailored resume in seconds. Magic-link auth + Stripe.",
     image: "/portfolio/resumeidol.png",
     url: "https://resumeidol.com",
@@ -36,7 +36,7 @@ const showcase = [
   {
     name: "BlushWed",
     tagline: "Wedding Planning Platform",
-    description: "Budget tracking, vendor management, AI timelines, custom wedding websites.",
+    description: "Budget tracking, vendor management, AI-powered timelines, custom wedding websites.",
     image: "/portfolio/blushwed.png",
     url: "https://blushwed.com",
     tech: ["Next.js", "Supabase", "Stripe", "Tailwind"],

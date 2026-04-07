@@ -15,8 +15,19 @@ const liveProducts = [
 export default function Hero() {
   return (
     <section className="relative overflow-hidden min-h-[90vh] sm:min-h-[100vh] flex items-center isolate">
-      {/* Animated aurora background - contained within hero only */}
+      {/* Cinematic background video */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/videos/hero-poster.jpg"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
+        {/* Aurora blobs over video for color depth */}
         <div className="aurora-blob aurora-blob-1" />
         <div className="aurora-blob aurora-blob-2" />
         <div className="aurora-blob aurora-blob-3" />
@@ -30,8 +41,8 @@ export default function Hero() {
             WebkitMaskImage: "radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 90%)",
           }}
         />
-        {/* Bottom fade to seamlessly meet next section */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-bg/60 to-bg" />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-bg/50 via-bg/70 to-bg" />
         {/* Noise grain */}
         <div
           className="absolute inset-0 opacity-[0.04] mix-blend-overlay"
