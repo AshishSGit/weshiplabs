@@ -14,14 +14,25 @@ const liveProducts = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[100vh] flex items-center">
-      {/* Animated aurora background */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+    <section className="relative overflow-hidden min-h-[90vh] sm:min-h-[100vh] flex items-center isolate">
+      {/* Animated aurora background - contained within hero only */}
+      <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
         <div className="aurora-blob aurora-blob-1" />
         <div className="aurora-blob aurora-blob-2" />
         <div className="aurora-blob aurora-blob-3" />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg/40 via-bg/70 to-bg" />
-        {/* Noise texture overlay */}
+        {/* Animated grid */}
+        <div
+          className="absolute inset-0 opacity-[0.06]"
+          style={{
+            backgroundImage: `linear-gradient(rgba(139,92,246,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(139,92,246,0.5) 1px, transparent 1px)`,
+            backgroundSize: "60px 60px",
+            maskImage: "radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 90%)",
+            WebkitMaskImage: "radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 90%)",
+          }}
+        />
+        {/* Bottom fade to seamlessly meet next section */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-bg/60 to-bg" />
+        {/* Noise grain */}
         <div
           className="absolute inset-0 opacity-[0.04] mix-blend-overlay"
           style={{
@@ -29,21 +40,6 @@ export default function Hero() {
           }}
         />
       </div>
-
-      {/* Animated orbs */}
-      <div className="orb orb-violet w-[400px] h-[400px] sm:w-[700px] sm:h-[700px] -top-40 sm:-top-60 left-1/2 -translate-x-1/2 z-0" />
-      <div className="orb orb-blue w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] bottom-20 -right-20 z-0" />
-
-      {/* Animated grid background */}
-      <div
-        className="absolute inset-0 opacity-[0.08] z-0"
-        style={{
-          backgroundImage: `linear-gradient(rgba(139,92,246,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(139,92,246,0.4) 1px, transparent 1px)`,
-          backgroundSize: "60px 60px",
-          maskImage: "radial-gradient(ellipse 80% 60% at 50% 50%, black 40%, transparent 90%)",
-          WebkitMaskImage: "radial-gradient(ellipse 80% 60% at 50% 50%, black 40%, transparent 90%)",
-        }}
-      />
 
       <div className="max-w-5xl mx-auto px-5 sm:px-6 py-20 sm:py-32 w-full relative z-10">
         {/* Badge */}
@@ -141,7 +137,7 @@ export default function Hero() {
 
         {/* Scroll indicator */}
         <motion.div
-          className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden sm:block"
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden sm:block pointer-events-none"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}

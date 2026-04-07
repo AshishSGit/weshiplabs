@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function PortfolioPage() {
   return (
-    <div className="section pt-32 relative overflow-hidden">
-      <div className="orb orb-violet w-[500px] h-[500px] -top-20 left-1/2 -translate-x-1/2" />
-      <div className="orb orb-blue w-[300px] h-[300px] bottom-20 -right-20" />
+    <div className="section pt-32 relative overflow-hidden isolate">
+      <div className="orb orb-violet w-[500px] h-[500px] -top-20 left-1/2 -translate-x-1/2 pointer-events-none -z-10" />
+      <div className="orb orb-blue w-[300px] h-[300px] bottom-20 -right-20 pointer-events-none -z-10" />
 
       <div className="max-w-6xl mx-auto px-5 sm:px-6 relative z-10">
         <div className="text-center mb-12 sm:mb-16">

@@ -69,9 +69,9 @@ function BrowserFrame({ src, alt }: { src: string; alt: string }) {
 
 export default function Showcase() {
   return (
-    <section className="section relative overflow-hidden" id="showcase">
-      <div className="orb orb-violet w-[500px] h-[500px] top-20 -left-40" />
-      <div className="orb orb-blue w-[400px] h-[400px] bottom-20 -right-20" />
+    <section className="section relative overflow-hidden isolate" id="showcase">
+      <div className="orb orb-violet w-[500px] h-[500px] top-20 -left-40 pointer-events-none -z-10" />
+      <div className="orb orb-blue w-[400px] h-[400px] bottom-20 -right-20 pointer-events-none -z-10" />
 
       <div className="max-w-6xl mx-auto px-5 sm:px-6 relative z-10">
         <motion.div
