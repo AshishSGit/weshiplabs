@@ -10,6 +10,46 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "hire-react-native-developer-2026",
+    title: "How to Hire a React Native Developer in 2026 (Without Getting Burned)",
+    description: "What to look for, what to avoid, and what it actually costs to hire a React Native developer or agency in 2026.",
+    date: "2026-04-08",
+    readTime: "9 min",
+    category: "Engineering",
+  },
+  {
+    slug: "nextjs-vs-react-native-for-startups",
+    title: "Next.js vs React Native: Which Should Your Startup Build First?",
+    description: "Web app or mobile app first? A practical comparison of cost, time to market, and reach for early-stage startups.",
+    date: "2026-04-08",
+    readTime: "7 min",
+    category: "Engineering",
+  },
+  {
+    slug: "how-much-does-saas-mvp-cost",
+    title: "How Much Does a SaaS MVP Cost in 2026?",
+    description: "Real pricing for SaaS MVPs - from $5K landing pages to $50K production-ready platforms. What you get at each tier.",
+    date: "2026-04-08",
+    readTime: "8 min",
+    category: "Engineering",
+  },
+  {
+    slug: "rag-implementation-cost-and-timeline",
+    title: "RAG Implementation Cost and Timeline: A Real Breakdown",
+    description: "What it actually costs and takes to build a RAG (Retrieval-Augmented Generation) system in 2026 - from prototype to production.",
+    date: "2026-04-08",
+    readTime: "8 min",
+    category: "AI",
+  },
+  {
+    slug: "claude-vs-gpt-4-for-product-builders",
+    title: "Claude vs GPT-4 for Product Builders: Which to Pick in 2026",
+    description: "An honest comparison of Claude and GPT-4 for building real products. Cost, quality, latency, and use cases.",
+    date: "2026-04-08",
+    readTime: "8 min",
+    category: "AI",
+  },
+  {
     slug: "add-ai-to-existing-product",
     title: "How to Add AI to Your Existing Product (Without Starting Over)",
     description: "A practical guide to integrating AI features into your current app. What works, what doesn't, and what it costs.",

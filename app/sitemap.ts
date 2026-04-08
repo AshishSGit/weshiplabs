@@ -2,6 +2,11 @@ import type { MetadataRoute } from "next";
 import { projects } from "@/lib/site-data";
 
 const blogSlugs = [
+  "hire-react-native-developer-2026",
+  "nextjs-vs-react-native-for-startups",
+  "how-much-does-saas-mvp-cost",
+  "rag-implementation-cost-and-timeline",
+  "claude-vs-gpt-4-for-product-builders",
   "how-much-does-ai-chatbot-cost",
   "rag-vs-fine-tuning",
   "ship-mvp-in-4-weeks",
