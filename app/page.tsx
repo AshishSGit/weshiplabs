@@ -6,6 +6,7 @@ import Packages from "@/components/landing/packages";
 import HowWeWork from "@/components/landing/how-we-work";
 import Comparison from "@/components/landing/comparison";
 import TechMarquee from "@/components/landing/tech-marquee";
+import LatestInsights from "@/components/landing/latest-insights";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <HowWeWork />
       <Comparison />
       <TechMarquee />
+      <LatestInsights />
     </>
   );
 }
