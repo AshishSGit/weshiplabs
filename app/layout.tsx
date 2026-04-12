@@ -54,6 +54,9 @@ export const metadata: Metadata = {
     "app development cost",
     "website development cost",
   ],
+  alternates: {
+    canonical: "https://weshiplabs.com",
+  },
   icons: { icon: "/icon.svg", apple: "/icon.svg" },
   openGraph: {
     title: `${SITE.name} — Software That Ships`,

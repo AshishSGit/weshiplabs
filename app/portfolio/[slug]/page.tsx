@@ -15,6 +15,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${project.name}  - ${project.tagline}`,
     description: project.description,
+    alternates: {
+      canonical: `https://weshiplabs.com/portfolio/${slug}`,
+    },
   };
 }
 
