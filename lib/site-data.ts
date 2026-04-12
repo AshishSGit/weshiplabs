@@ -118,16 +118,16 @@ export const projects: Project[] = [
   {
     slug: "karaoke-lover",
     name: "KaraokeLover",
-    tagline: "YouTube Karaoke Platform",
+    tagline: "Online Karaoke Platform",
     description:
-      "Search any song, get the YouTube video with synchronized lyrics. Firebase auth, Firestore favorites, and a beautiful singing experience.",
+      "Search any song, get the video with synchronized lyrics. Firebase auth, Firestore favorites, and a beautiful singing experience.",
     challenge:
       "Karaoke apps are either expensive monthly subscriptions or have terrible song libraries. YouTube has every song but no lyrics overlay.",
     solution:
       "Combined YouTube Data API for video search with LRCLib for synchronized lyrics. Firebase Auth for user accounts, Firestore for favorites and history.",
     results:
       "Live at karaokelover.com with real users. Deployed on Railway with automatic deploys from GitHub.",
-    techStack: ["Python", "Flask", "YouTube API", "LRCLib", "Firebase Auth", "Firestore", "Railway"],
+    techStack: ["Python", "Flask", "LRCLib", "Firebase Auth", "Firestore", "Railway"],
     category: "web",
     liveUrl: "https://www.karaokelover.com",
     image: "/portfolio/karaokelover.png",

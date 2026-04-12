@@ -7,12 +7,21 @@ import { ExternalLink, ArrowRight } from "lucide-react";
 
 const showcase = [
   {
+    name: "BlushWed",
+    tagline: "AI Wedding Planning Platform",
+    description: "AI-powered wedding planning with smart vendor recommendations, budget tracking, timeline management, and a beautiful website builder. Stripe subscriptions + SEO blog.",
+    image: "/portfolio/blushwed.png",
+    url: "https://blushwed.com",
+    tech: ["Next.js", "Claude AI", "Supabase", "Stripe"],
+    accent: "from-rose-500/20 to-pink-500/10",
+  },
+  {
     name: "KaraokeLover",
-    tagline: "YouTube Karaoke Platform",
-    description: "Search any song, get the YouTube video with synchronized lyrics. Firebase auth + Firestore favorites.",
+    tagline: "Online Karaoke Platform",
+    description: "Search any song, get the video with synchronized lyrics. Firebase auth + Firestore favorites.",
     image: "/portfolio/karaokelover.png",
     url: "https://www.karaokelover.com",
-    tech: ["Python", "Flask", "Firebase", "YouTube API"],
+    tech: ["Python", "Flask", "Firebase"],
     accent: "from-violet-500/20 to-pink-500/10",
   },
   {
