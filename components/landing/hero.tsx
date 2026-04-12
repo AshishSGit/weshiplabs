@@ -88,13 +88,13 @@ export default function Hero() {
 
         {/* Subtext */}
         <motion.p
-          className="text-base sm:text-lg md:text-xl text-text-muted text-center max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2"
+          className="text-lg sm:text-xl md:text-2xl text-slate-200 text-center max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
           We design, build, and deploy web apps, mobile apps, and smart features.
-          <span className="block mt-1 text-text-subtle text-sm sm:text-base">
+          <span className="block mt-2 text-slate-300 text-base sm:text-lg">
             Working software every week. Not status updates.
           </span>
         </motion.p>
