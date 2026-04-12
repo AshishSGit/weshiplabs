@@ -26,7 +26,7 @@ export default function StatsBar() {
               <p className="font-heading text-3xl md:text-4xl font-bold gradient-text mb-1">
                 {stat.value}
               </p>
-              <p className="text-sm text-text-subtle">{stat.label}</p>
+              <p className="text-base text-text-subtle">{stat.label}</p>
             </motion.div>
           ))}
         </div>

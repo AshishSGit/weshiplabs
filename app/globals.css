@@ -9,8 +9,8 @@
   --color-border-hover: rgba(148, 163, 184, 0.16);
 
   --color-text-primary: #F1F5F9;
-  --color-text-muted: #94A3B8;
-  --color-text-subtle: #64748B;
+  --color-text-muted: #C1CCDB;
+  --color-text-subtle: #94A3B8;
 
   --color-violet-400: #A78BFA;
   --color-violet-500: #8B5CF6;
@@ -330,7 +330,7 @@ body {
   }
 
   table {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   table th, table td {
@@ -351,14 +351,21 @@ body {
 }
 
 /* === Badge === */
+/* === Form selects === */
+select option {
+  background: #12121A;
+  color: #F1F5F9;
+  padding: 8px;
+}
+
 .tech-badge {
   display: inline-flex;
   align-items: center;
-  padding: 4px 12px;
+  padding: 4px 14px;
   background: rgba(139, 92, 246, 0.1);
   border: 1px solid rgba(139, 92, 246, 0.15);
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   color: #A78BFA;
 }

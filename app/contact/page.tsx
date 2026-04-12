@@ -43,7 +43,9 @@ export default function ContactPage() {
   };
 
   const inputClass =
-    "w-full bg-surface-elevated border border-border rounded-xl px-4 py-3 text-sm text-text-primary placeholder:text-text-subtle focus:outline-none focus:border-violet-500/40 transition-colors";
+    "w-full bg-surface-elevated border border-border rounded-xl px-4 py-3.5 text-base text-text-primary placeholder:text-text-subtle focus:outline-none focus:border-violet-500/40 transition-colors";
+  const selectClass =
+    inputClass + " appearance-none cursor-pointer bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2394A3B8%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22m6%209%206%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-[length:16px] bg-[right_16px_center] bg-no-repeat pr-10";
 
   return (
     <div className="section pt-32">
@@ -69,7 +71,7 @@ export default function ContactPage() {
                   <Send className="text-emerald-400" size={24} />
                 </div>
                 <h3 className="font-heading text-xl font-bold mb-2">Got it!</h3>
-                <p className="text-sm text-text-muted">We&apos;ll get back to you within 24 hours with a quote.</p>
+                <p className="text-base text-text-muted">We&apos;ll get back to you within 24 hours with a quote.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -94,7 +96,7 @@ export default function ContactPage() {
                 <select
                   value={form.type}
                   onChange={(e) => setForm({ ...form, type: e.target.value })}
-                  className={inputClass}
+                  className={selectClass}
                   required
                 >
                   <option value="">What do you need? *</option>
@@ -105,7 +107,7 @@ export default function ContactPage() {
                 <select
                   value={form.budget}
                   onChange={(e) => setForm({ ...form, budget: e.target.value })}
-                  className={inputClass}
+                  className={selectClass}
                 >
                   <option value="">Budget range (optional)</option>
                   {budgetRanges.map((b) => (
@@ -148,8 +150,8 @@ export default function ContactPage() {
                   "If you like it, we start building that week",
                   "You see working software every 7 days",
                 ].map((step, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm text-text-muted">
-                    <span className="w-5 h-5 rounded-full bg-violet-600/10 flex items-center justify-center text-violet-400 text-xs flex-shrink-0 mt-0.5">
+                  <li key={i} className="flex items-start gap-3 text-base text-text-muted">
+                    <span className="w-6 h-6 rounded-full bg-violet-600/10 flex items-center justify-center text-violet-400 text-sm flex-shrink-0 mt-0.5">
                       {i + 1}
                     </span>
                     {step}
@@ -164,7 +166,7 @@ export default function ContactPage() {
                   <Clock size={18} className="text-violet-400" />
                   Prefer a call instead?
                 </h3>
-                <p className="text-sm text-text-muted mb-4">
+                <p className="text-base text-text-muted mb-4">
                   Totally fine. Book a free 30-minute call.
                 </p>
                 <a
@@ -183,7 +185,7 @@ export default function ContactPage() {
                 <Mail size={18} className="text-violet-400" />
                 Response time
               </h3>
-              <p className="text-sm text-text-muted">We reply to every quote request within <span className="text-text-primary font-medium">24 hours</span>. Usually faster.</p>
+              <p className="text-base text-text-muted">We reply to every quote request within <span className="text-text-primary font-medium">24 hours</span>. Usually faster.</p>
             </div>
           </div>
         </div>

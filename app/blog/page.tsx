@@ -109,16 +109,16 @@ export default function BlogPage() {
           {posts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="glass-card p-6 block group">
               <div className="flex items-center gap-3 mb-3">
-                <span className="tech-badge text-[11px]">{post.category}</span>
-                <span className="text-xs text-text-subtle flex items-center gap-1">
-                  <Clock size={12} /> {post.readTime}
+                <span className="tech-badge text-xs">{post.category}</span>
+                <span className="text-sm text-text-subtle flex items-center gap-1">
+                  <Clock size={13} /> {post.readTime}
                 </span>
-                <span className="text-xs text-text-subtle">{post.date}</span>
+                <span className="text-sm text-text-subtle">{post.date}</span>
               </div>
               <h2 className="font-heading text-xl font-bold mb-2 group-hover:text-violet-400 transition-colors">
                 {post.title}
               </h2>
-              <p className="text-sm text-text-muted leading-relaxed mb-3">{post.description}</p>
+              <p className="text-base text-text-muted leading-relaxed mb-3">{post.description}</p>
               <span className="text-sm text-violet-400 font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
                 Read more <ArrowRight size={14} />
               </span>

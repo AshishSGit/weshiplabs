@@ -62,7 +62,7 @@ export default function Hero() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/20 bg-violet-500/5 backdrop-blur-sm">
             <Sparkles size={12} className="text-violet-400" />
-            <span className="text-[11px] sm:text-xs text-violet-300 font-medium tracking-wide uppercase">
+            <span className="text-xs sm:text-sm text-violet-300 font-medium tracking-wide uppercase">
               Software Studio
             </span>
           </div>
@@ -123,7 +123,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.05 }}
         >
-          <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-text-subtle mb-4">
+          <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-text-subtle mb-4">
             Live products built by us
           </p>
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 px-2">
@@ -140,7 +140,7 @@ export default function Hero() {
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                 <span className="text-text-primary font-medium group-hover:text-violet-400 transition-colors">{product.name}</span>
-                <span className="text-text-subtle text-[10px] sm:text-xs hidden sm:inline">{product.desc}</span>
+                <span className="text-text-subtle text-xs sm:text-sm hidden sm:inline">{product.desc}</span>
               </motion.a>
             ))}
           </div>
