@@ -7,15 +7,6 @@ import { ExternalLink, ArrowRight } from "lucide-react";
 
 const showcase = [
   {
-    name: "BlushWed",
-    tagline: "AI Wedding Planning Platform",
-    description: "AI-powered wedding planning with smart vendor recommendations, budget tracking, timeline management, and a beautiful website builder. Stripe subscriptions + SEO blog.",
-    image: "/portfolio/blushwed.png",
-    url: "https://blushwed.com",
-    tech: ["Next.js", "Claude AI", "Supabase", "Stripe"],
-    accent: "from-rose-500/20 to-pink-500/10",
-  },
-  {
     name: "KaraokeLover",
     tagline: "Online Karaoke Platform",
     description: "Search any song, get the video with synchronized lyrics. Firebase auth + Firestore favorites.",
@@ -34,13 +25,13 @@ const showcase = [
     accent: "from-emerald-500/20 to-teal-500/10",
   },
   {
-    name: "Knoah",
-    tagline: "AI-Powered Knowledge Base",
-    description: "Upload docs, ask questions, get answers with citations. RAG-powered SaaS with Stripe billing.",
-    image: "/portfolio/getknoah.png",
-    url: "https://www.getknoah.com",
+    name: "BlushWed",
+    tagline: "AI Wedding Planning Platform",
+    description: "AI-powered wedding planning with smart vendor recommendations, budget tracking, timeline management, and a beautiful website builder. Stripe subscriptions + SEO blog.",
+    image: "/portfolio/blushwed.png",
+    url: "https://blushwed.com",
     tech: ["Next.js", "Claude AI", "Supabase", "Stripe"],
-    accent: "from-violet-500/20 to-blue-500/10",
+    accent: "from-rose-500/20 to-pink-500/10",
   },
   {
     name: "Clippified",
@@ -50,6 +41,15 @@ const showcase = [
     url: "https://clippified.com",
     tech: ["Next.js", "Deepgram", "FFmpeg", "R2"],
     accent: "from-amber-500/20 to-orange-500/10",
+  },
+  {
+    name: "Knoah",
+    tagline: "AI-Powered Knowledge Base",
+    description: "Upload docs, ask questions, get answers with citations. RAG-powered SaaS with Stripe billing.",
+    image: "/portfolio/getknoah.png",
+    url: "https://www.getknoah.com",
+    tech: ["Next.js", "Claude AI", "Supabase", "Stripe"],
+    accent: "from-violet-500/20 to-blue-500/10",
   },
 ];
 

@@ -93,29 +93,6 @@ export const services: Service[] = [
 
 export const projects: Project[] = [
   {
-    slug: "blushwed",
-    name: "BlushWed",
-    tagline: "Wedding Planning Platform",
-    description:
-      "Complete wedding planning platform with smart vendor recommendations, budget tracking, and timeline management.",
-    challenge:
-      "Wedding planning is overwhelming  - couples juggle spreadsheets, Pinterest boards, and vendor emails across 12+ months.",
-    solution:
-      "Built a comprehensive planning platform with AI-powered suggestions for venues, vendors, and timelines. Stripe subscriptions for premium features, SEO-optimized blog for organic traffic.",
-    results:
-      "33 routes, 5 blog posts, full Stripe integration. SEO driving organic signups from wedding-related searches.",
-    techStack: ["Next.js", "TypeScript", "Claude API", "Supabase", "Stripe", "Tailwind", "Framer Motion"],
-    category: "web",
-    liveUrl: "https://blushwed.com",
-    image: "/portfolio/blushwed.png",
-    metrics: [
-      { label: "Pages", value: "33 routes" },
-      { label: "Blog Posts", value: "5 SEO" },
-      { label: "Time to Build", value: "2 weeks" },
-    ],
-    featured: true,
-  },
-  {
     slug: "karaoke-lover",
     name: "KaraokeLover",
     tagline: "Online Karaoke Platform",
@@ -162,25 +139,25 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "knoah",
-    name: "Knoah",
-    tagline: "AI-Powered Knowledge Base for Teams",
+    slug: "blushwed",
+    name: "BlushWed",
+    tagline: "AI Wedding Planning Platform",
     description:
-      "Upload docs, get instant answers with source citations. Built for teams drowning in Notion pages and Google Drives nobody reads.",
+      "AI-powered wedding planning platform with smart vendor recommendations, budget tracking, and timeline management.",
     challenge:
-      "Teams waste hours searching through scattered documents. Existing tools require complex setup and per-seat pricing kills adoption.",
+      "Wedding planning is overwhelming  - couples juggle spreadsheets, Pinterest boards, and vendor emails across 12+ months.",
     solution:
-      "Built a RAG-powered knowledge base that ingests PDFs, docs, and URLs. Uses vector embeddings for semantic search and Claude for natural-language answers with exact source citations.",
+      "Built a comprehensive planning platform with AI-powered suggestions for venues, vendors, and timelines. Stripe subscriptions for premium features, SEO-optimized blog for organic traffic.",
     results:
-      "Live SaaS product with paying customers. Sub-2-second response times on 10K+ document corpora. Stripe billing, team invites, and usage analytics built in.",
-    techStack: ["Next.js", "TypeScript", "Claude API", "OpenAI Embeddings", "Supabase", "Stripe", "Tailwind"],
+      "33 routes, 5 blog posts, full Stripe integration. SEO driving organic signups from wedding-related searches.",
+    techStack: ["Next.js", "TypeScript", "Claude API", "Supabase", "Stripe", "Tailwind", "Framer Motion"],
     category: "web",
-    liveUrl: "https://www.getknoah.com",
-    image: "/portfolio/getknoah.png",
+    liveUrl: "https://blushwed.com",
+    image: "/portfolio/blushwed.png",
     metrics: [
-      { label: "Response Time", value: "<2s" },
-      { label: "Document Types", value: "PDF, DOCX, URL" },
-      { label: "Time to Build", value: "3 weeks" },
+      { label: "Pages", value: "33 routes" },
+      { label: "Blog Posts", value: "5 SEO" },
+      { label: "Time to Build", value: "2 weeks" },
     ],
     featured: true,
   },
@@ -204,6 +181,29 @@ export const projects: Project[] = [
       { label: "Processing Time", value: "<90s" },
       { label: "Max Video Length", value: "3 hours" },
       { label: "Time to Build", value: "2 weeks" },
+    ],
+    featured: true,
+  },
+  {
+    slug: "knoah",
+    name: "Knoah",
+    tagline: "AI-Powered Knowledge Base for Teams",
+    description:
+      "Upload docs, get instant answers with source citations. Built for teams drowning in Notion pages and Google Drives nobody reads.",
+    challenge:
+      "Teams waste hours searching through scattered documents. Existing tools require complex setup and per-seat pricing kills adoption.",
+    solution:
+      "Built a RAG-powered knowledge base that ingests PDFs, docs, and URLs. Uses vector embeddings for semantic search and Claude for natural-language answers with exact source citations.",
+    results:
+      "Live SaaS product with paying customers. Sub-2-second response times on 10K+ document corpora. Stripe billing, team invites, and usage analytics built in.",
+    techStack: ["Next.js", "TypeScript", "Claude API", "OpenAI Embeddings", "Supabase", "Stripe", "Tailwind"],
+    category: "web",
+    liveUrl: "https://www.getknoah.com",
+    image: "/portfolio/getknoah.png",
+    metrics: [
+      { label: "Response Time", value: "<2s" },
+      { label: "Document Types", value: "PDF, DOCX, URL" },
+      { label: "Time to Build", value: "3 weeks" },
     ],
     featured: true,
   },
