@@ -63,7 +63,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/20 bg-violet-500/5 backdrop-blur-sm">
             <Sparkles size={12} className="text-violet-400" />
             <span className="text-xs sm:text-sm text-violet-300 font-medium tracking-wide uppercase">
-              Software Studio
+              MVP Development · AI Integration · Mobile Apps
             </span>
           </div>
         </motion.div>
@@ -93,7 +93,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          We design, build, and deploy web apps, mobile apps, and smart features.
+          MVP development agency for founders. We design, build, and deploy custom web apps, iOS &amp; Android apps, and AI-powered features — fixed price, fixed timeline.
           <span className="block mt-2 text-slate-300 text-base sm:text-lg">
             Working software every week. Not status updates.
           </span>

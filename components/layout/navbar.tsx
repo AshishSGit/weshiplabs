@@ -14,7 +14,16 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 font-heading text-lg font-bold text-text-primary">
+        <Link
+          href="/"
+          onClick={(e) => {
+            if (pathname === "/") {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
+          className="flex items-center gap-2 font-heading text-lg font-bold text-text-primary"
+        >
           <span className="gradient-text">&lt;/&gt;</span>
           {SITE.name}
         </Link>

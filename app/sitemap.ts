@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { projects } from "@/lib/site-data";
+import { servicePages } from "@/lib/service-pages";
 
 const blogSlugs = [
   "hire-react-native-developer-2026",
@@ -40,5 +41,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...projectPages, ...blogPages];
+  const servicePagesEntries = servicePages.map((p) => ({
+    url: `${base}/services/${p.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.85,
+  }));
+
+  return [...staticPages, ...servicePagesEntries, ...projectPages, ...blogPages];
 }
