@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ArrowRight } from "lucide-react";
@@ -9,11 +9,33 @@ import { SITE, NAV_LINKS } from "@/lib/constants";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-[rgba(10,10,15,0.78)] backdrop-blur-xl border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
+          : "bg-[rgba(10,10,15,0.4)] backdrop-blur-md border-b border-transparent"
+      }`}
+    >
+      {/* gradient sheen along the bottom edge */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-violet-500/40 to-transparent" />
+
+      <div
+        className={`max-w-6xl mx-auto px-6 flex items-center justify-between transition-all duration-300 ${
+          scrolled ? "h-14" : "h-16"
+        }`}
+      >
+        {/* Logo */}
         <Link
           href="/"
           onClick={(e) => {
@@ -22,32 +44,82 @@ export default function Navbar() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }
           }}
-          className="flex items-center gap-2 font-heading text-lg font-bold text-text-primary"
+          className="group flex items-center gap-2 font-heading text-lg font-bold text-text-primary"
         >
-          <span className="gradient-text">&lt;/&gt;</span>
-          {SITE.name}
+          <span className="gradient-text transition-transform duration-300 group-hover:rotate-[-6deg] group-hover:scale-110">
+            &lt;/&gt;
+          </span>
+          <span className="relative">
+            {SITE.name}
+            <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-gradient-to-r from-violet-400 to-blue-400 transition-all duration-500 group-hover:w-full" />
+          </span>
         </Link>
 
-        {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`text-sm font-medium transition-colors ${
-                pathname === link.href ? "text-violet-400" : "text-text-muted hover:text-text-primary"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-          <Link href="/contact" className="btn-primary text-sm py-2 px-5">
-            Get a Free Quote <ArrowRight size={14} />
+        {/* Desktop links */}
+        <div className="hidden md:flex items-center gap-1">
+          {NAV_LINKS.map((link) => {
+            const active = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`group relative px-3 py-2 text-sm font-medium rounded-md transition-colors duration-200 ${
+                  active ? "text-text-primary" : "text-text-muted hover:text-text-primary"
+                }`}
+              >
+                {/* hover background glow */}
+                <span
+                  aria-hidden
+                  className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-violet-500/10 via-fuchsia-500/5 to-blue-500/10"
+                />
+                {/* radial spotlight */}
+                <span
+                  aria-hidden
+                  className="absolute -inset-px rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md bg-violet-500/20"
+                />
+                <span className="relative z-10">{link.label}</span>
+                {/* animated underline */}
+                <span
+                  aria-hidden
+                  className={`absolute left-3 right-3 -bottom-0.5 h-px bg-gradient-to-r from-violet-400 via-fuchsia-400 to-blue-400 origin-left transition-transform duration-300 ${
+                    active ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+                  }`}
+                />
+              </Link>
+            );
+          })}
+
+          {/* CTA */}
+          <Link
+            href="/contact"
+            className="group relative ml-3 inline-flex items-center gap-1.5 text-sm font-semibold py-2 px-5 rounded-full text-white overflow-hidden"
+          >
+            <span
+              aria-hidden
+              className="absolute inset-0 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-blue-500 transition-transform duration-500 group-hover:scale-110"
+            />
+            <span
+              aria-hidden
+              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.35),transparent_60%)]"
+            />
+            <span
+              aria-hidden
+              className="absolute -inset-1 rounded-full opacity-50 group-hover:opacity-90 transition-opacity duration-500 blur-lg bg-gradient-to-r from-violet-600 via-fuchsia-500 to-blue-500"
+            />
+            <span className="relative z-10">Get a Free Quote</span>
+            <ArrowRight
+              size={14}
+              className="relative z-10 transition-transform duration-300 group-hover:translate-x-1"
+            />
           </Link>
         </div>
 
         {/* Mobile toggle */}
-        <button className="md:hidden text-text-muted" onClick={() => setOpen(!open)}>
+        <button
+          aria-label={open ? "Close menu" : "Open menu"}
+          className="md:hidden text-text-muted hover:text-text-primary transition-colors"
+          onClick={() => setOpen(!open)}
+        >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -59,21 +131,33 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass border-t border-border overflow-hidden"
+            transition={{ duration: 0.25 }}
+            className="md:hidden bg-[rgba(10,10,15,0.95)] backdrop-blur-xl border-t border-white/10 overflow-hidden"
           >
-            <div className="px-6 py-4 flex flex-col gap-3">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="text-text-muted hover:text-text-primary py-2 text-sm font-medium"
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <Link href="/contact" onClick={() => setOpen(false)} className="btn-primary text-sm py-2 px-5 text-center mt-2">
-                Get a Free Quote
+            <div className="px-6 py-4 flex flex-col gap-1">
+              {NAV_LINKS.map((link) => {
+                const active = pathname === link.href;
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className={`relative py-3 px-3 rounded-md text-sm font-medium transition-colors ${
+                      active
+                        ? "text-text-primary bg-violet-500/10"
+                        : "text-text-muted hover:text-text-primary hover:bg-white/5"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+              <Link
+                href="/contact"
+                onClick={() => setOpen(false)}
+                className="mt-3 inline-flex items-center justify-center gap-1.5 text-sm font-semibold py-2.5 px-5 rounded-full text-white bg-gradient-to-r from-violet-600 via-fuchsia-500 to-blue-500"
+              >
+                Get a Free Quote <ArrowRight size={14} />
               </Link>
             </div>
           </motion.div>
