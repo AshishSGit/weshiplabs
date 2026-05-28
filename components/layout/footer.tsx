@@ -38,9 +38,6 @@ export default function Footer() {
                 {link.label}
               </Link>
             ))}
-            <Link href="/contact" className="text-base text-text-muted hover:text-text-primary transition-colors">
-              Contact
-            </Link>
           </div>
         </div>
         <div>
