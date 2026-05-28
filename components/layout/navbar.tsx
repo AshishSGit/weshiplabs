@@ -128,13 +128,23 @@ export default function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25 }}
+            initial={{ opacity: 0, height: 0, y: -8 }}
+            animate={{ opacity: 1, height: "auto", y: 0 }}
+            exit={{ opacity: 0, height: 0, y: -8 }}
+            transition={{
+              height: { duration: 0.32, ease: [0.22, 1, 0.36, 1] },
+              opacity: { duration: 0.22, ease: "easeOut" },
+              y: { duration: 0.28, ease: [0.22, 1, 0.36, 1] },
+            }}
             className="md:hidden bg-[rgba(10,10,15,0.95)] backdrop-blur-xl border-t border-white/10 overflow-hidden"
           >
-            <div className="px-6 py-4 flex flex-col gap-1">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.18, ease: "easeOut", delay: 0.04 }}
+              className="px-6 py-4 flex flex-col gap-1"
+            >
               {NAV_LINKS.map((link) => {
                 const active = pathname === link.href;
                 return (
@@ -159,7 +169,7 @@ export default function Navbar() {
               >
                 Get a Free Quote <ArrowRight size={14} />
               </Link>
-            </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
