@@ -450,7 +450,7 @@ export const servicePages: ServicePage[] = [
     caseStudies: [
       {
         name: "WeShipLabs",
-        url: "https://weshiplabs.com",
+        url: "https://www.weshiplabs.com",
         description:
           "This site you're reading. Built on the same stack we use for client projects.",
       },

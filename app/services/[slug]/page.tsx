@@ -19,12 +19,12 @@ export async function generateMetadata({
   return {
     title: page.metaTitle,
     description: page.metaDescription,
-    alternates: { canonical: `https://weshiplabs.com/services/${page.slug}` },
+    alternates: { canonical: `https://www.weshiplabs.com/services/${page.slug}` },
     openGraph: {
       title: page.metaTitle,
       description: page.metaDescription,
       type: "website",
-      url: `https://weshiplabs.com/services/${page.slug}`,
+      url: `https://www.weshiplabs.com/services/${page.slug}`,
     },
     twitter: {
       card: "summary_large_image",
@@ -51,7 +51,7 @@ export default async function ServiceDetailPage({
     provider: {
       "@type": "Organization",
       name: "WeShipLabs",
-      url: "https://weshiplabs.com",
+      url: "https://www.weshiplabs.com",
     },
     areaServed: "Worldwide",
     offers: {
@@ -80,13 +80,13 @@ export default async function ServiceDetailPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://weshiplabs.com" },
-      { "@type": "ListItem", position: 2, name: "Services", item: "https://weshiplabs.com/services" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.weshiplabs.com" },
+      { "@type": "ListItem", position: 2, name: "Services", item: "https://www.weshiplabs.com/services" },
       {
         "@type": "ListItem",
         position: 3,
         name: page.kicker,
-        item: `https://weshiplabs.com/services/${page.slug}`,
+        item: `https://www.weshiplabs.com/services/${page.slug}`,
       },
     ],
   };

@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     "website development cost",
   ],
   alternates: {
-    canonical: "https://weshiplabs.com",
+    canonical: "https://www.weshiplabs.com",
   },
   icons: { icon: "/icon.svg", apple: "/icon.svg" },
   openGraph: {
@@ -76,8 +76,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "WeShipLabs",
-  url: "https://weshiplabs.com",
-  logo: "https://weshiplabs.com/icon.svg",
+  url: "https://www.weshiplabs.com",
+  logo: "https://www.weshiplabs.com/icon.svg",
   description: "We design, build, and deploy web apps, mobile apps, and AI-powered features. Fixed pricing, delivered in weeks.",
   foundingDate: "2026",
   areaServed: "Worldwide",
@@ -130,7 +130,7 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "WeShipLabs",
-  url: "https://weshiplabs.com",
+  url: "https://www.weshiplabs.com",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

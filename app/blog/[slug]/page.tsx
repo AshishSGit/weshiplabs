@@ -881,7 +881,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: `https://weshiplabs.com/blog/${slug}` },
+    alternates: { canonical: `https://www.weshiplabs.com/blog/${slug}` },
   };
 }
 
@@ -897,9 +897,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     description: post.description,
     datePublished: post.date,
     dateModified: post.date,
-    author: { "@type": "Organization", name: "WeShipLabs", url: "https://weshiplabs.com" },
-    publisher: { "@type": "Organization", name: "WeShipLabs", url: "https://weshiplabs.com" },
-    mainEntityOfPage: `https://weshiplabs.com/blog/${slug}`,
+    author: { "@type": "Organization", name: "WeShipLabs", url: "https://www.weshiplabs.com" },
+    publisher: { "@type": "Organization", name: "WeShipLabs", url: "https://www.weshiplabs.com" },
+    mainEntityOfPage: `https://www.weshiplabs.com/blog/${slug}`,
   };
 
   return (

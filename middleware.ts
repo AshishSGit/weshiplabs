@@ -1,11 +1,13 @@
 import { NextResponse, type NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
-  // Redirect www to non-www (SEO: single canonical domain)
+  // Canonical host is www.weshiplabs.com.
+  // Namecheap also handles bare apex → www via a 301 URL redirect record,
+  // so this branch is defensive — only fires if traffic ever reaches Railway
+  // directly on the bare apex hostname.
   const host = request.headers.get("host");
-  if (host?.startsWith("www.")) {
-    const targetHost = host.replace(/^www\./, "");
-    const target = `https://${targetHost}${request.nextUrl.pathname}${request.nextUrl.search}`;
+  if (host === "weshiplabs.com") {
+    const target = `https://www.weshiplabs.com${request.nextUrl.pathname}${request.nextUrl.search}`;
     return NextResponse.redirect(target, 301);
   }
 
