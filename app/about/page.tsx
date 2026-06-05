@@ -51,7 +51,7 @@ export default function AboutPage() {
         {/* Skills grid */}
         <div className="mb-24">
           <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl font-bold">
+            <h2 className="font-heading text-4xl font-bold">
               What we <span className="gradient-text">work with</span>
             </h2>
           </div>
@@ -74,7 +74,7 @@ export default function AboutPage() {
 
         {/* Approach */}
         <div className="max-w-3xl mx-auto mb-24">
-          <h2 className="font-heading text-3xl font-bold text-center mb-12">
+          <h2 className="font-heading text-4xl font-bold text-center mb-12">
             How we <span className="gradient-text">work</span>
           </h2>
           <div className="space-y-8">

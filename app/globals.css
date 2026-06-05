@@ -122,6 +122,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  /* keep descenders (p, g, y) from being clipped by background-clip: text */
+  padding-bottom: 0.12em;
 }
 
 .gradient-text-warm {
@@ -129,6 +131,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  /* keep descenders (p, g, y) from being clipped by background-clip: text */
+  padding-bottom: 0.12em;
 }
 
 /* === Gradient border === */

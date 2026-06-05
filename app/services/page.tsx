@@ -69,7 +69,7 @@ export default function ServicesPage() {
                   <div className="w-14 h-14 rounded-2xl bg-violet-600/10 flex items-center justify-center text-violet-400 mb-5">
                     {iconMap[service.icon]}
                   </div>
-                  <h2 className="font-heading text-3xl font-bold mb-2">{service.title}</h2>
+                  <h2 className="font-heading text-4xl font-bold mb-2">{service.title}</h2>
                   <p className="text-violet-400 font-medium mb-4">{service.subtitle}</p>
                   <p className="text-text-muted leading-relaxed mb-8">{service.description}</p>
 
@@ -110,7 +110,7 @@ export default function ServicesPage() {
         <div className="mt-32">
           <div className="text-center mb-16">
             <p className="text-sm font-semibold uppercase tracking-wider text-violet-400 mb-3">FAQ</p>
-            <h2 className="font-heading text-3xl font-bold">Common questions</h2>
+            <h2 className="font-heading text-4xl font-bold">Common questions</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {faqs.map((faq) => (

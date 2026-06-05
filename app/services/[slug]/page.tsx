@@ -158,7 +158,7 @@ export default async function ServiceDetailPage({
 
           {/* What you get */}
           <section className="mb-20">
-            <h2 className="font-heading text-3xl font-bold mb-2">What&apos;s included</h2>
+            <h2 className="font-heading text-4xl font-bold mb-2">What&apos;s included</h2>
             <p className="text-text-muted mb-10">
               Every project ships with everything below — no surprise add-ons.
             </p>
@@ -184,7 +184,7 @@ export default async function ServiceDetailPage({
 
           {/* Process */}
           <section className="mb-20">
-            <h2 className="font-heading text-3xl font-bold mb-2">How it works</h2>
+            <h2 className="font-heading text-4xl font-bold mb-2">How it works</h2>
             <p className="text-text-muted mb-10">
               Same playbook for every project. Predictable, weekly demos.
             </p>
@@ -209,7 +209,7 @@ export default async function ServiceDetailPage({
 
           {/* Case studies */}
           <section className="mb-20">
-            <h2 className="font-heading text-3xl font-bold mb-2">Live products built this way</h2>
+            <h2 className="font-heading text-4xl font-bold mb-2">Live products built this way</h2>
             <p className="text-text-muted mb-10">
               Click any of these — they&apos;re running in production right now.
             </p>
@@ -242,7 +242,7 @@ export default async function ServiceDetailPage({
 
           {/* FAQ */}
           <section className="mb-20">
-            <h2 className="font-heading text-3xl font-bold mb-2">Frequently asked</h2>
+            <h2 className="font-heading text-4xl font-bold mb-2">Frequently asked</h2>
             <p className="text-text-muted mb-10">
               The questions we get most often before someone signs.
             </p>

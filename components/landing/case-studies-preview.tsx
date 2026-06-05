@@ -18,7 +18,7 @@ export default function CaseStudiesPreview() {
           viewport={{ once: true }}
         >
           <p className="text-sm font-semibold uppercase tracking-wider text-violet-400 mb-3">Portfolio</p>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold">
             Real products, <span className="gradient-text">live in production</span>
           </h2>
           <p className="text-text-muted mt-3 max-w-lg mx-auto">

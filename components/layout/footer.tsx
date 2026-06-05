@@ -8,7 +8,7 @@ export default function Footer() {
       {/* CTA band */}
       <div className="section py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4">
             Ready to <span className="gradient-text">ship something?</span>
           </h2>
           <p className="text-text-muted text-lg max-w-md mx-auto mb-8">

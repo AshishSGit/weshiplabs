@@ -48,7 +48,7 @@ export default function LatestInsights() {
           viewport={{ once: true }}
         >
           <p className="text-sm font-semibold uppercase tracking-wider text-violet-400 mb-3">Blog</p>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold">
             Latest <span className="gradient-text">Insights</span>
           </h2>
         </motion.div>

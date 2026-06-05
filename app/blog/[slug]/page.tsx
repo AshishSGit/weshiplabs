@@ -916,7 +916,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <span className="text-sm text-text-subtle flex items-center gap-1"><Clock size={13} /> {post.readTime}</span>
             <span className="text-sm text-text-subtle">{post.date}</span>
           </div>
-          <h1 className="font-heading text-3xl md:text-4xl font-bold mb-4">{post.title}</h1>
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
           <p className="text-lg text-text-muted">{post.description}</p>
         </div>
 
