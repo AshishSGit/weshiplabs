@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-violet-500/40 to-transparent" />
 
       <div
-        className={`max-w-6xl mx-auto px-6 flex items-center justify-between transition-all duration-300 ${
+        className={`w-full px-6 md:px-10 flex items-center justify-between transition-all duration-300 ${
           scrolled ? "h-14" : "h-16"
         }`}
       >
