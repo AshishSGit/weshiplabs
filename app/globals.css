@@ -235,26 +235,69 @@ body {
 
 /* === Buttons === */
 .btn-primary {
+  position: relative;
+  isolation: isolate;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 12px 28px;
-  background: linear-gradient(135deg, #7C3AED, #3B82F6);
+  /* wider gradient so it can travel on hover */
+  background: linear-gradient(135deg, #7C3AED, #3B82F6, #22D3EE, #7C3AED);
+  background-size: 280% 280%;
+  background-position: 0% 50%;
   color: white;
   font-weight: 600;
   border-radius: 12px;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  overflow: hidden;
   font-size: 15px;
+  box-shadow: 0 4px 18px rgba(124, 58, 237, 0.28);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.4s ease,
+              background-position 0.7s ease;
+}
+
+/* sweeping sheen of light (washes evenly over the whole face) */
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -90%;
+  width: 60%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 30px rgba(124, 58, 237, 0.3);
-  transform: translateY(-1px);
+  transform: translateY(-2px) scale(1.025);
+  background-position: 100% 50%;
+  box-shadow: 0 12px 38px rgba(124, 58, 237, 0.5),
+              0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+              0 0 60px rgba(34, 211, 238, 0.25);
+}
+
+.btn-primary:hover::after {
+  left: 130%;
+}
+
+.btn-primary:active {
+  transform: translateY(0) scale(0.99);
+  transition-duration: 0.1s;
 }
 
 .btn-ghost {
+  position: relative;
+  isolation: isolate;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -263,15 +306,67 @@ body {
   color: #F1F5F9;
   font-weight: 500;
   border-radius: 12px;
-  border: 1px solid rgba(148, 163, 184, 0.16);
+  border: 1px solid rgba(148, 163, 184, 0.18);
   cursor: pointer;
-  transition: all 0.3s ease;
+  overflow: hidden;
   font-size: 15px;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.4s ease,
+              box-shadow 0.4s ease,
+              color 0.4s ease;
+}
+
+.btn-ghost > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* soft gradient wash that fades in from the left on hover */
+.btn-ghost::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    120deg,
+    rgba(124, 58, 237, 0.16),
+    rgba(59, 130, 246, 0.12),
+    rgba(34, 211, 238, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .btn-ghost:hover {
-  border-color: rgba(139, 92, 246, 0.3);
-  background: rgba(139, 92, 246, 0.06);
+  transform: translateY(-2px);
+  border-color: rgba(139, 92, 246, 0.55);
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2),
+              0 0 0 1px rgba(139, 92, 246, 0.25) inset;
+}
+
+.btn-ghost:hover::before {
+  opacity: 1;
+}
+
+.btn-ghost:active {
+  transform: translateY(0) scale(0.99);
+  transition-duration: 0.1s;
+}
+
+/* respect reduced-motion: keep the color/glow, drop the movement */
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary,
+  .btn-ghost {
+    transition: box-shadow 0.3s ease, border-color 0.3s ease, background-position 0.3s ease;
+  }
+  .btn-primary:hover,
+  .btn-ghost:hover {
+    transform: none;
+  }
+  .btn-primary::after {
+    display: none;
+  }
 }
 
 /* === Terminal === */
