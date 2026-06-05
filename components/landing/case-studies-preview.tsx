@@ -17,7 +17,7 @@ export default function CaseStudiesPreview() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-sm font-semibold uppercase tracking-wider text-violet-400 mb-3">Portfolio</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Portfolio</p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold">
             Real products, <span className="gradient-text">live in production</span>
           </h2>

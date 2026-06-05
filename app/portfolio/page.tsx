@@ -18,7 +18,7 @@ export default function PortfolioPage() {
 
       <div className="max-w-6xl mx-auto px-5 sm:px-6 relative z-10">
         <div className="text-center mb-12 sm:mb-16">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-violet-400 mb-3">Portfolio</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Portfolio</p>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">
             Built, shipped,
             <br />

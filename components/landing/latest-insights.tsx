@@ -47,7 +47,7 @@ export default function LatestInsights() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-sm font-semibold uppercase tracking-wider text-violet-400 mb-3">Blog</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Blog</p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold">
             Latest <span className="gradient-text">Insights</span>
           </h2>

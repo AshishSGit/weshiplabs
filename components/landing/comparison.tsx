@@ -31,7 +31,7 @@ export default function Comparison() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-sm font-semibold uppercase tracking-wider text-violet-400 mb-3">Why Us</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Why Us</p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold">
             Big agency quality. <span className="gradient-text">Freelancer speed.</span>
           </h2>

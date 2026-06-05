@@ -23,7 +23,7 @@ export default function AboutPage() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Hero */}
         <div className="max-w-3xl mx-auto text-center mb-24">
-          <p className="text-sm font-semibold uppercase tracking-wider text-violet-400 mb-3">About</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">About</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
             We build software that
             <br />
