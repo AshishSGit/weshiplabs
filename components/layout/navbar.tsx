@@ -92,19 +92,22 @@ export default function Navbar() {
           {/* CTA */}
           <Link
             href="/contact"
-            className="group relative ml-3 inline-flex items-center gap-1.5 text-sm font-semibold py-2 px-5 rounded-full text-white overflow-hidden"
+            className="group relative ml-3 inline-flex items-center gap-1.5 text-sm font-semibold py-2 px-5 rounded-full text-white overflow-hidden transition-all duration-300 ease-out shadow-[0_4px_16px_rgba(124,58,237,0.35)] hover:-translate-y-0.5 hover:scale-[1.04] hover:shadow-[0_10px_30px_rgba(139,92,246,0.55),0_0_55px_rgba(59,130,246,0.3)] active:scale-100 active:translate-y-0 active:duration-100"
           >
+            {/* base gradient — travels left→right on hover */}
             <span
               aria-hidden
-              className="absolute inset-0 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-blue-500 transition-transform duration-500 group-hover:scale-110"
+              className="absolute inset-0 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-blue-500 bg-[length:200%_100%] bg-[position:0%_50%] transition-[background-position] duration-700 ease-out group-hover:bg-[position:100%_50%]"
             />
+            {/* radial spotlight */}
             <span
               aria-hidden
               className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.35),transparent_60%)]"
             />
+            {/* sweeping light sheen */}
             <span
               aria-hidden
-              className="absolute -inset-1 rounded-full opacity-50 group-hover:opacity-90 transition-opacity duration-500 blur-lg bg-gradient-to-r from-violet-600 via-fuchsia-500 to-blue-500"
+              className="pointer-events-none absolute top-0 left-0 h-full w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-[250%] transition-transform duration-700 ease-out group-hover:translate-x-[450%]"
             />
             <span className="relative z-10">Get a Free Quote</span>
             <ArrowRight
