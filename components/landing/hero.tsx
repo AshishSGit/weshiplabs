@@ -9,7 +9,7 @@ const liveProducts = [
   { name: "ResumeIdol", url: "https://resumeidol.com", desc: "Resume Tailor" },
   { name: "Knoah", url: "https://www.getknoah.com", desc: "Knowledge Base" },
   { name: "Clippified", url: "https://clippified.com", desc: "Clip Generator" },
-  { name: "BlushWed", url: "https://blushwed.com", desc: "Wedding Planner" },
+  { name: "BlushWed", url: "https://blushwed.com", desc: "AI Wedding Planner" },
 ];
 
 export default function Hero() {

@@ -145,7 +145,7 @@ export const projects: Project[] = [
     description:
       "AI-powered wedding planning platform with smart vendor recommendations, budget tracking, and timeline management.",
     challenge:
-      "Wedding planning is overwhelming  - couples juggle spreadsheets, Pinterest boards, and vendor emails across 12+ months.",
+      "Wedding planning is overwhelming. Couples juggle spreadsheets, Pinterest boards, and vendor emails across 12+ months.",
     solution:
       "Built a comprehensive planning platform with AI-powered suggestions for venues, vendors, and timelines. Stripe subscriptions for premium features, SEO-optimized blog for organic traffic.",
     results:
