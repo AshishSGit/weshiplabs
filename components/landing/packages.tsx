@@ -171,7 +171,7 @@ export default function Packages() {
 
               <Link
                 href="/contact"
-                className={`${pkg.popular ? "btn-primary" : "btn-solid"} justify-center w-full`}
+                className="btn-primary justify-center w-full"
               >
                 {pkg.cta} <ArrowRight size={16} />
               </Link>
