@@ -13,11 +13,11 @@ const budgetRanges = [
 ];
 
 const projectTypes = [
-  "AI Chatbot / Knowledge Base",
+  "Chatbot / Knowledge Base",
   "Full Web App / MVP",
   "Mobile App (iOS / Android)",
-  "AI Feature for Existing Product",
-  "AI Audit / Consulting",
+  "Smart Feature for Existing Product",
+  "Technical Audit / Consulting",
   "Something Else",
 ];
 

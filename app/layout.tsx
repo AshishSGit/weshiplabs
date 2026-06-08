@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description:
-    "We design, build, and deploy web apps, mobile apps, and AI-powered features. Fixed pricing, delivered in weeks. Get a free quote today.",
+    "We design, build, and deploy web apps, mobile apps, and smart features. Fixed pricing, delivered in weeks. Get a free quote today.",
   keywords: [
     "custom software development",
     "web app development company",
@@ -78,7 +78,7 @@ const jsonLd = {
   name: "WeShipLabs",
   url: "https://www.weshiplabs.com",
   logo: "https://www.weshiplabs.com/icon.svg",
-  description: "We design, build, and deploy web apps, mobile apps, and AI-powered features. Fixed pricing, delivered in weeks.",
+  description: "We design, build, and deploy web apps, mobile apps, and smart features. Fixed pricing, delivered in weeks.",
   foundingDate: "2026",
   areaServed: "Worldwide",
   serviceType: [
@@ -91,7 +91,7 @@ const jsonLd = {
   knowsAbout: [
     "Next.js", "React", "React Native", "SwiftUI", "TypeScript",
     "Python", "Node.js", "Supabase", "Firebase", "Stripe",
-    "Claude API", "OpenAI", "Deepgram", "RAG", "AI Chatbots",
+    "Claude API", "OpenAI", "Deepgram", "RAG", "Chatbots",
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",

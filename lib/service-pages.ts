@@ -85,7 +85,7 @@ export const servicePages: ServicePage[] = [
       {
         title: "Week 2-3: Core product",
         description:
-          "Payments, the main user flow, dashboards, AI features (if any). Demo every Friday. You give feedback Monday morning, it's in by Wednesday.",
+          "Payments, the main user flow, dashboards, smart features (if any). Demo every Friday. You give feedback Monday morning, it's in by Wednesday.",
       },
       {
         title: "Week 4: Polish + launch",
@@ -98,7 +98,7 @@ export const servicePages: ServicePage[] = [
         name: "ResumeIdol",
         url: "https://resumeidol.com",
         description:
-          "AI resume tailor. Magic link auth, Stripe Pro tier, AI integration, SEO blog. Live in 2 weeks.",
+          "Resume tailor that rewrites your bullets to match any job. Magic link auth, Stripe Pro tier, smart matching, SEO blog. Live in 2 weeks.",
       },
       {
         name: "Knoah",
@@ -110,7 +110,7 @@ export const servicePages: ServicePage[] = [
         name: "BlushWed",
         url: "https://blushwed.com",
         description:
-          "AI wedding planning platform. 33 routes, blog, vendor recommendations, Stripe subscriptions. Live in 2 weeks.",
+          "Smart wedding planning platform. 33 routes, blog, vendor recommendations, Stripe subscriptions. Live in 2 weeks.",
       },
     ],
     faqs: [
@@ -132,7 +132,7 @@ export const servicePages: ServicePage[] = [
       },
       {
         q: "What's NOT included?",
-        a: "Domain registration ($10/yr, you keep it), hosting after the first month (~$5-20/mo on Railway), Stripe fees (2.9%+30¢, paid by you on real transactions), and ongoing AI API usage if you're using Claude/GPT (typically $5-50/mo at MVP scale). We give you a cost estimate up front.",
+        a: "Domain registration ($10/yr, you keep it), hosting after the first month (~$5-20/mo on Railway), Stripe fees (2.9%+30¢, paid by you on real transactions), and ongoing model API usage if you're using Claude/GPT (typically $5-50/mo at MVP scale). We give you a cost estimate up front.",
       },
     ],
     ctaHeadline: "Ready to ship your MVP?",

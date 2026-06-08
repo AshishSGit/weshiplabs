@@ -5,15 +5,15 @@ import { notFound } from "next/navigation";
 
 const posts: Record<string, { title: string; description: string; date: string; readTime: string; category: string; content: string }> = {
   "how-much-does-ai-chatbot-cost": {
-    title: "How Much Does an AI Chatbot Cost in 2026?",
-    description: "A real breakdown of what it costs to build a production AI chatbot  - from simple FAQ bots to full RAG systems.",
+    title: "How Much Does a Chatbot Cost in 2026?",
+    description: "A real breakdown of what it costs to build a production chatbot  - from simple FAQ bots to full RAG systems.",
     date: "2026-03-31",
     readTime: "8 min",
-    category: "AI",
+    category: "Smart Features",
     content: `
 ## The Short Answer
 
-A production AI chatbot costs **$3,000-$25,000+** to build, depending on complexity. Here's the real breakdown.
+A production chatbot costs **$3,000-$25,000+** to build, depending on complexity. Here's the real breakdown.
 
 ## Tier 1: Simple FAQ Bot ($3,000-$5,000)
 
@@ -46,19 +46,19 @@ We built [Knoah](https://www.getknoah.com) as exactly this. Upload your docs, as
 
 **Timeline:** 3-4 weeks.
 
-## Tier 3: Full Conversational AI Product ($15,000-$25,000+)
+## Tier 3: Full Conversational Product ($15,000-$25,000+)
 
-A product where AI is the core feature  - not just a support widget. Think AI-powered onboarding, AI content generation, or AI analysis tools.
+A product where the model is the core feature  - not just a support widget. Think smart onboarding, automated content generation, or intelligent analysis tools.
 
 **What you get:**
 - Everything in Tier 2
-- Custom AI pipeline (multiple models, chained prompts)
+- Custom model pipeline (multiple models, chained prompts)
 - Streaming responses
 - User-specific context and memory
 - Billing integration (Stripe)
 - Production infrastructure (rate limiting, error handling, monitoring)
 
-**Tech:** Multiple AI APIs + custom orchestration + production-grade infrastructure.
+**Tech:** Multiple model APIs + custom orchestration + production-grade infrastructure.
 
 **Timeline:** 4-8 weeks.
 
@@ -71,7 +71,7 @@ A product where AI is the core feature  - not just a support widget. Think AI-po
 
 ## What We'd Recommend
 
-For most businesses, **Tier 2 (RAG-powered)** is the sweet spot. You get genuinely useful AI that understands your specific business, without over-engineering.
+For most businesses, **Tier 2 (RAG-powered)** is the sweet spot. You get a genuinely useful assistant that understands your specific business, without over-engineering.
 
 **Want to talk specifics?** [Get a free quote](/contact) and we'll scope your chatbot in 30 minutes.
     `,
@@ -81,28 +81,28 @@ For most businesses, **Tier 2 (RAG-powered)** is the sweet spot. You get genuine
     description: "We've built both. Here's when RAG makes sense, when fine-tuning wins, and when you need neither.",
     date: "2026-03-28",
     readTime: "6 min",
-    category: "AI",
+    category: "Smart Features",
     content: `
 ## The Quick Version
 
-**Use RAG** when your AI needs to reference specific, changing documents (company knowledge base, product docs, legal documents).
+**Use RAG** when your model needs to reference specific, changing documents (company knowledge base, product docs, legal documents).
 
-**Use fine-tuning** when you need the AI to behave in a specific way consistently (brand voice, domain-specific reasoning, structured outputs).
+**Use fine-tuning** when you need the model to behave in a specific way consistently (brand voice, domain-specific reasoning, structured outputs).
 
 **Use neither** when a well-crafted prompt with examples does the job. Seriously  - start here.
 
 ## What is RAG?
 
-Retrieval-Augmented Generation. Instead of hoping the AI "knows" your content, you feed it relevant documents at query time.
+Retrieval-Augmented Generation. Instead of hoping the model "knows" your content, you feed it relevant documents at query time.
 
 **How it works:**
 1. Upload your documents
 2. Split them into chunks, convert to vector embeddings
 3. When a user asks a question, find the most relevant chunks
-4. Send those chunks + the question to the AI
-5. AI answers based on your actual content
+4. Send those chunks + the question to the model
+5. The model answers based on your actual content
 
-**We built Knoah using this exact approach.** Teams upload their docs, and the AI answers questions with source citations.
+**We built Knoah using this exact approach.** Teams upload their docs, and the model answers questions with source citations.
 
 **Best for:** Knowledge bases, customer support, internal docs search, legal document Q&A.
 
@@ -277,19 +277,19 @@ If an agency can't answer these clearly, keep looking.
     `,
   },
   "add-ai-to-existing-product": {
-    title: "How to Add AI to Your Existing Product (Without Starting Over)",
-    description: "A practical guide to integrating AI features into your current app. What works, what doesn't, and what it costs.",
+    title: "How to Add Smart Features to Your Existing Product (Without Starting Over)",
+    description: "A practical guide to integrating intelligent features into your current app. What works, what doesn't, and what it costs.",
     date: "2026-04-05",
     readTime: "8 min",
-    category: "AI",
+    category: "Smart Features",
     content: `
 ## You Don't Need to Rebuild
 
-The most common mistake: thinking you need to throw away your current product and start from scratch with "AI." You don't. AI features plug into existing products.
+The most common mistake: thinking you need to throw away your current product and start from scratch. You don't. Smart features plug into existing products.
 
 Here's what that actually looks like.
 
-## The 5 Most Useful AI Features You Can Add Today
+## The 5 Most Useful Smart Features You Can Add Today
 
 ### 1. Smart Search ($3,000 - $5,000)
 
@@ -333,7 +333,7 @@ Turn audio into text with Whisper or Deepgram. Then do something useful with tha
 
 ## What It Actually Costs
 
-The AI API costs are tiny. Claude costs $0.003-0.06 per query. The real cost is the engineering to integrate it properly - error handling, streaming, caching, rate limiting, and making it feel good in the UI.
+The model API costs are tiny. Claude costs $0.003-0.06 per query. The real cost is the engineering to integrate it properly - error handling, streaming, caching, rate limiting, and making it feel good in the UI.
 
 **Budget:**
 - Simple feature (search, classification): $2,000-5,000
@@ -342,11 +342,11 @@ The AI API costs are tiny. Claude costs $0.003-0.06 per query. The real cost is 
 
 ## What to Avoid
 
-- **Don't use AI where a simple rule works.** If-else is cheaper and more reliable.
-- **Don't build a "ChatGPT wrapper."** Users can already talk to ChatGPT. Your AI feature needs to do something specific that generic AI can't.
+- **Don't reach for a model where a simple rule works.** If-else is cheaper and more reliable.
+- **Don't build a "ChatGPT wrapper."** Users can already talk to ChatGPT. Your feature needs to do something specific that a generic chatbot can't.
 - **Don't skip the prompt engineering.** A bad prompt with a great model gives bad results. Spend time on this.
 
-## Ready to Add AI to Your Product?
+## Ready to Add Smart Features to Your Product?
 
 [Tell us what you're building](/contact) and we'll recommend the simplest approach that actually works. No obligation - we'll send you a clear plan and price within 24 hours.
     `,
@@ -484,7 +484,7 @@ For everyone else: **start with Next.js**. You can always add a mobile app later
 ## Where Next.js Wins
 
 ### 1. SEO from Day One
-Web apps get organic traffic. Mobile apps don't. If you're building anything where people search Google for "[your category]", say, "wedding planner," "resume builder," "AI chatbot tool", Next.js will compound for years.
+Web apps get organic traffic. Mobile apps don't. If you're building anything where people search Google for "[your category]", say, "wedding planner," "resume builder," "chatbot tool", Next.js will compound for years.
 
 ### 2. No Install Friction
 A new user can use your product 3 seconds after clicking a link. No App Store, no permissions, no "do you really want to install this?" dialog. Conversion rates are 5-10x higher.
@@ -604,8 +604,8 @@ Custom design adds $3,000-8,000. A clean template-based UI is half the price and
 ### 3. Complex Integrations
 Stripe = $1,000-2,000. Twilio = $2,000-4,000. Custom OAuth providers = $3,000-5,000 each. These add up fast.
 
-### 4. AI Features
-A simple AI chatbot adds $3,000-8,000. RAG with vector search adds $8,000-15,000.
+### 4. Smart Features
+A simple chatbot adds $3,000-8,000. RAG with vector search adds $8,000-15,000.
 
 ### 5. Mobile App
 If you also need a React Native app, double the cost.
@@ -650,7 +650,7 @@ Fixed price. We tell you upfront if your scope needs more. We don't do hourly bi
     description: "What it actually costs and takes to build a RAG (Retrieval-Augmented Generation) system in 2026 - from prototype to production.",
     date: "2026-04-08",
     readTime: "8 min",
-    category: "AI",
+    category: "Smart Features",
     content: `
 ## What RAG Actually Costs
 
@@ -772,7 +772,7 @@ We'll also tell you honestly if RAG is overkill for your problem. Sometimes a si
     description: "An honest comparison of Claude and GPT-4 for building real products. Cost, quality, latency, and use cases.",
     date: "2026-04-08",
     readTime: "8 min",
-    category: "AI",
+    category: "Smart Features",
     content: `
 ## The Short Answer
 
@@ -827,7 +827,7 @@ For most production apps, **Claude Sonnet 4.6 and GPT-4o are the workhorses**. U
 
 ## Real-World Pricing for a SaaS App
 
-Let's say you're building an AI feature that gets 10,000 queries/day, average prompt is 500 input tokens + 500 output tokens.
+Let's say you're building a feature that gets 10,000 queries/day, average prompt is 500 input tokens + 500 output tokens.
 
 **With Claude Sonnet 4.6:**
 - Input: 5M tokens × $3/M = $15/day
@@ -863,9 +863,9 @@ For high-volume apps, choosing Haiku or 4o-mini for the right tasks can save you
 
 We pick Claude for most tasks. Not because of brand loyalty, because the quality holds up in production.
 
-## We Build AI Products
+## We Build Smart Products
 
-If you're picking between models for a real product, [we can help](/contact). We've shipped AI features that get used by real customers, and we've made the wrong model choice enough times to know what works.
+If you're picking between models for a real product, [we can help](/contact). We've shipped smart features that get used by real customers, and we've made the wrong model choice enough times to know what works.
     `,
   },
 };

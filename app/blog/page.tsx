@@ -4,7 +4,7 @@ import { ArrowRight, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Blog  - Software Development Insights",
-  description: "Real lessons from building and shipping software. AI chatbot costs, RAG vs fine-tuning, how to ship MVPs fast, and more.",
+  description: "Real lessons from building and shipping software. Chatbot costs, RAG vs fine-tuning, how to ship MVPs fast, and more.",
   alternates: { canonical: "https://www.weshiplabs.com/blog" },
 };
 
@@ -39,7 +39,7 @@ const posts = [
     description: "What it actually costs and takes to build a RAG (Retrieval-Augmented Generation) system in 2026 - from prototype to production.",
     date: "2026-04-08",
     readTime: "8 min",
-    category: "AI",
+    category: "Smart Features",
   },
   {
     slug: "claude-vs-gpt-4-for-product-builders",
@@ -47,15 +47,15 @@ const posts = [
     description: "An honest comparison of Claude and GPT-4 for building real products. Cost, quality, latency, and use cases.",
     date: "2026-04-08",
     readTime: "8 min",
-    category: "AI",
+    category: "Smart Features",
   },
   {
     slug: "add-ai-to-existing-product",
-    title: "How to Add AI to Your Existing Product (Without Starting Over)",
-    description: "A practical guide to integrating AI features into your current app. What works, what doesn't, and what it costs.",
+    title: "How to Add Smart Features to Your Existing Product (Without Starting Over)",
+    description: "A practical guide to integrating intelligent features into your current app. What works, what doesn't, and what it costs.",
     date: "2026-04-05",
     readTime: "8 min",
-    category: "AI",
+    category: "Smart Features",
   },
   {
     slug: "how-much-does-web-app-cost",
@@ -67,11 +67,11 @@ const posts = [
   },
   {
     slug: "how-much-does-ai-chatbot-cost",
-    title: "How Much Does an AI Chatbot Cost in 2026?",
-    description: "A real breakdown of what it costs to build a production AI chatbot - from simple FAQ bots to full RAG systems. No fluff, actual numbers.",
+    title: "How Much Does a Chatbot Cost in 2026?",
+    description: "A real breakdown of what it costs to build a production chatbot - from simple FAQ bots to full RAG systems. No fluff, actual numbers.",
     date: "2026-03-31",
     readTime: "8 min",
-    category: "AI",
+    category: "Smart Features",
   },
   {
     slug: "rag-vs-fine-tuning",
@@ -79,7 +79,7 @@ const posts = [
     description: "We've built both. Here's when RAG makes sense, when fine-tuning wins, and when you need neither.",
     date: "2026-03-28",
     readTime: "6 min",
-    category: "AI",
+    category: "Smart Features",
   },
   {
     slug: "ship-mvp-in-4-weeks",

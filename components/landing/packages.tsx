@@ -13,7 +13,7 @@ const packages = [
     features: [
       "We review your product or business",
       "Written report with recommendations",
-      "Architecture plan or AI-powered opportunity map",
+      "Architecture plan or opportunity map",
       "Implementation roadmap with costs",
       "No obligation. Keep the report either way",
     ],
@@ -76,7 +76,7 @@ const packages = [
     cta: "Get a Quote",
   },
   {
-    name: "AI-Powered Integration",
+    name: "AI Integration",
     price: "From $5,000",
     description: "Add AI-powered features to your existing product or build smart tools from scratch. Chatbots, document processing, voice transcription, automation.",
     icon: <Zap size={24} />,

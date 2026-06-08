@@ -9,7 +9,7 @@ const liveProducts = [
   { name: "ResumeIdol", url: "https://resumeidol.com", desc: "Resume Tailor" },
   { name: "Knoah", url: "https://www.getknoah.com", desc: "Knowledge Base" },
   { name: "Clippified", url: "https://clippified.com", desc: "Clip Generator" },
-  { name: "BlushWed", url: "https://blushwed.com", desc: "AI-Powered Wedding Planner" },
+  { name: "BlushWed", url: "https://blushwed.com", desc: "Smart Wedding Planner" },
 ];
 
 export default function Hero() {
@@ -63,7 +63,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/20 bg-violet-500/5 backdrop-blur-sm">
             <Sparkles size={12} className="text-violet-400" />
             <span className="text-xs sm:text-sm text-violet-300 font-medium tracking-wide uppercase">
-              We build websites, mobile apps & AI tools
+              We build websites, mobile apps & smart tools
             </span>
           </div>
         </motion.div>
@@ -93,7 +93,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          We design and build websites, mobile apps, and AI features for your business. You get a real, working product in weeks, at a fixed price agreed up front.
+          We design and build websites, mobile apps, and smart features for your business. You get a real, working product in weeks, at a fixed price agreed up front.
           <span className="block mt-2 text-slate-300 text-base sm:text-lg">
             Working software every week. Not status updates.
           </span>

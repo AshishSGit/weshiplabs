@@ -4,7 +4,7 @@ import { ArrowRight, Code2, Brain, Smartphone, Zap, Globe, CreditCard } from "lu
 
 export const metadata: Metadata = {
   title: "About  - Who We Are and How We Work",
-  description: "WeShipLabs builds web apps, mobile apps, and AI-powered features. Full-stack expertise across Next.js, React Native, SwiftUI, Python, and more.",
+  description: "WeShipLabs builds web apps, mobile apps, and smart features. Full-stack expertise across Next.js, React Native, SwiftUI, Python, and more.",
   alternates: { canonical: "https://www.weshiplabs.com/about" },
 };
 

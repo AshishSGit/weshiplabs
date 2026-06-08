@@ -23,7 +23,7 @@ const bentoItems = [
     accent: "from-blue-500/30 to-cyan-500/10",
   },
   {
-    title: "AI-Powered Features",
+    title: "Intelligent Features",
     description: "Chatbots, RAG, voice, automation.",
     icon: <Brain size={24} />,
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80",

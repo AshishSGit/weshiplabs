@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "Can you work with our existing codebase?",
-    a: "Yes. We can add AI features to your existing app, fix broken code, refactor problem areas, or build new modules that plug into your current stack.",
+    a: "Yes. We can add smart features to your existing app, fix broken code, refactor problem areas, or build new modules that plug into your current stack.",
   },
   {
     q: "What tech stack do you use?",

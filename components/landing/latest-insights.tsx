@@ -14,7 +14,7 @@ const posts = [
   {
     slug: "rag-implementation-cost-and-timeline",
     title: "RAG Implementation Cost and Timeline: A Real Breakdown",
-    category: "AI",
+    category: "Smart Features",
     readTime: "8 min",
   },
   {
@@ -32,7 +32,7 @@ const posts = [
   {
     slug: "claude-vs-gpt-4-for-product-builders",
     title: "Claude vs GPT-4 for Product Builders: Which to Pick in 2026",
-    category: "AI",
+    category: "Smart Features",
     readTime: "8 min",
   },
 ];

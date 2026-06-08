@@ -6,7 +6,7 @@ import { projects } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Portfolio - Live Products We Built and Shipped",
-  description: "See our live work - web apps, mobile apps, and AI-powered products. Every project here is running in production with real users and payments.",
+  description: "See our live work - web apps, mobile apps, and smart products. Every project here is running in production with real users and payments.",
   alternates: { canonical: "https://www.weshiplabs.com/portfolio" },
 };
 

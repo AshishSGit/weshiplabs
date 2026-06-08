@@ -77,7 +77,7 @@ export const services: Service[] = [
       "Codebase audit & technical debt assessment",
       "Architecture planning & tech stack selection",
       "Performance optimization (speed, SEO, Core Web Vitals)",
-      "AI opportunity assessment for your business",
+      "Opportunity assessment for your business",
       "Rescue & fix broken/abandoned projects",
       "Database design & migration",
       "API design & integration planning",
@@ -118,7 +118,7 @@ export const projects: Project[] = [
   {
     slug: "resumeidol",
     name: "ResumeIdol",
-    tagline: "AI-Powered Resume Tailor",
+    tagline: "Smart Resume Tailor",
     description:
       "Paste your resume and a job description  - get a perfectly tailored version in seconds. Automatically rewrites bullet points to match the role.",
     challenge:
@@ -141,13 +141,13 @@ export const projects: Project[] = [
   {
     slug: "blushwed",
     name: "BlushWed",
-    tagline: "AI Wedding Planning Platform",
+    tagline: "Smart Wedding Planning Platform",
     description:
-      "AI-powered wedding planning platform with smart vendor recommendations, budget tracking, and timeline management.",
+      "Intelligent wedding planning platform with smart vendor recommendations, budget tracking, and timeline management.",
     challenge:
       "Wedding planning is overwhelming. Couples juggle spreadsheets, Pinterest boards, and vendor emails across 12+ months.",
     solution:
-      "Built a comprehensive planning platform with AI-powered suggestions for venues, vendors, and timelines. Stripe subscriptions for premium features, SEO-optimized blog for organic traffic.",
+      "Built a comprehensive planning platform with smart suggestions for venues, vendors, and timelines. Stripe subscriptions for premium features, SEO-optimized blog for organic traffic.",
     results:
       "33 routes, 5 blog posts, full Stripe integration. SEO driving organic signups from wedding-related searches.",
     techStack: ["Next.js", "TypeScript", "Claude API", "Supabase", "Stripe", "Tailwind", "Framer Motion"],
@@ -164,7 +164,7 @@ export const projects: Project[] = [
   {
     slug: "clippified",
     name: "Clippified",
-    tagline: "AI-Powered Clip Generator",
+    tagline: "Smart Clip Generator",
     description:
       "Paste a YouTube URL, get viral-ready clips with captions. Automatically finds the best moments, transcribes with Deepgram, and renders with FFmpeg.",
     challenge:
@@ -187,7 +187,7 @@ export const projects: Project[] = [
   {
     slug: "knoah",
     name: "Knoah",
-    tagline: "AI-Powered Knowledge Base for Teams",
+    tagline: "Smart Knowledge Base for Teams",
     description:
       "Upload docs, get instant answers with source citations. Built for teams drowning in Notion pages and Google Drives nobody reads.",
     challenge:
@@ -218,6 +218,6 @@ export const stats = [
 
 export const techLogos = [
   "Next.js", "React", "React Native", "SwiftUI", "TypeScript", "Python",
-  "Node.js", "Claude AI", "OpenAI", "Deepgram", "Supabase", "Firebase",
+  "Node.js", "Claude", "OpenAI", "Deepgram", "Supabase", "Firebase",
   "Stripe", "Tailwind CSS", "FFmpeg", "Railway", "Vercel", "AWS",
 ];
