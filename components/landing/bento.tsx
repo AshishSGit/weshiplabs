@@ -93,10 +93,10 @@ export default function Bento() {
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                 style={{ backgroundImage: `url(${item.image})` }}
               />
-              {/* Dark overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/95 to-bg/60" />
-              {/* Extra scrim behind text for guaranteed contrast */}
-              <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-bg via-bg/85 to-transparent" />
+              {/* Dark overlay — light enough to let the image read clearly, weighted to the bottom where the text sits */}
+              <div className="absolute inset-0 bg-gradient-to-t from-bg/90 via-bg/40 to-bg/5" />
+              {/* Extra scrim behind text for guaranteed contrast (text also has its own text-shadow) */}
+              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-bg/85 via-bg/30 to-transparent" />
               {/* Accent gradient on hover */}
               <div className={`absolute inset-0 bg-gradient-to-br ${item.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
 
