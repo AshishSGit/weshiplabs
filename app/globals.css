@@ -354,9 +354,44 @@ body {
   transition-duration: 0.1s;
 }
 
+/* filled secondary CTA — appealing at rest, not a thin outline */
+.btn-solid {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  background: linear-gradient(135deg, #7C3AED, #6D28D9);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 16px;
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.22);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.4s ease,
+              filter 0.4s ease;
+}
+
+.btn-solid:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.12);
+  box-shadow: 0 12px 34px rgba(124, 58, 237, 0.42),
+              0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.btn-solid:active {
+  transform: translateY(0) scale(0.99);
+  transition-duration: 0.1s;
+}
+
 /* respect reduced-motion: keep the color/glow, drop the movement */
 @media (prefers-reduced-motion: reduce) {
   .btn-primary,
+  .btn-solid,
   .btn-ghost {
     transition: box-shadow 0.3s ease, border-color 0.3s ease, background-position 0.3s ease;
   }
