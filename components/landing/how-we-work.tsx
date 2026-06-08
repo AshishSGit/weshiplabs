@@ -14,7 +14,7 @@ const steps = [
     desc: "We nail down the plan, pick the stack, and start building immediately. You get a staging link by end of week.",
   },
   {
-    week: "Week 2–3",
+    week: "Week 2-3",
     title: "Core product + features",
     desc: "The real thing comes together  - auth, payments, AI-powered features, mobile responsiveness. You see demos every 7 days.",
   },

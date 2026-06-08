@@ -94,7 +94,9 @@ export default function Bento() {
                 style={{ backgroundImage: `url(${item.image})` }}
               />
               {/* Dark overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/80 to-bg/40" />
+              <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/95 to-bg/60" />
+              {/* Extra scrim behind text for guaranteed contrast */}
+              <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-bg via-bg/85 to-transparent" />
               {/* Accent gradient on hover */}
               <div className={`absolute inset-0 bg-gradient-to-br ${item.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
 
@@ -103,8 +105,8 @@ export default function Bento() {
                 <div className="w-10 h-10 rounded-xl bg-violet-600/20 backdrop-blur-md border border-violet-500/30 flex items-center justify-center text-violet-300 mb-3 group-hover:scale-110 transition-transform">
                   {item.icon}
                 </div>
-                <h3 className="font-heading text-lg sm:text-xl font-bold mb-2 text-text-primary">{item.title}</h3>
-                <p className="text-xs sm:text-sm text-text-muted leading-relaxed">{item.description}</p>
+                <h3 className="font-heading text-lg sm:text-xl font-bold mb-2 text-white [text-shadow:0_2px_12px_rgba(0,0,0,0.9)]">{item.title}</h3>
+                <p className="text-xs sm:text-sm text-text-primary leading-relaxed [text-shadow:0_1px_8px_rgba(0,0,0,0.95)]">{item.description}</p>
               </div>
             </motion.div>
           ))}

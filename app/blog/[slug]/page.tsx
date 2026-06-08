@@ -13,9 +13,9 @@ const posts: Record<string, { title: string; description: string; date: string; 
     content: `
 ## The Short Answer
 
-A production AI chatbot costs **$3,000–$25,000+** to build, depending on complexity. Here's the real breakdown.
+A production AI chatbot costs **$3,000-$25,000+** to build, depending on complexity. Here's the real breakdown.
 
-## Tier 1: Simple FAQ Bot ($3,000–$5,000)
+## Tier 1: Simple FAQ Bot ($3,000-$5,000)
 
 A bot that answers predefined questions from a knowledge base. Think customer support for a small business.
 
@@ -27,9 +27,9 @@ A bot that answers predefined questions from a knowledge base. Think customer su
 
 **Tech:** OpenAI API + simple prompt engineering + a web widget. No vector database needed.
 
-**Timeline:** 1–2 weeks.
+**Timeline:** 1-2 weeks.
 
-## Tier 2: RAG-Powered Knowledge Bot ($8,000–$15,000)
+## Tier 2: RAG-Powered Knowledge Bot ($8,000-$15,000)
 
 This is where it gets interesting. The bot reads your actual documents  - PDFs, Google Docs, Notion pages  - and answers questions with source citations.
 
@@ -44,9 +44,9 @@ We built [Knoah](https://www.getknoah.com) as exactly this. Upload your docs, as
 
 **Tech:** Claude/GPT API + vector database (Supabase pgvector or Pinecone) + document processing pipeline + Next.js frontend.
 
-**Timeline:** 3–4 weeks.
+**Timeline:** 3-4 weeks.
 
-## Tier 3: Full Conversational AI Product ($15,000–$25,000+)
+## Tier 3: Full Conversational AI Product ($15,000-$25,000+)
 
 A product where AI is the core feature  - not just a support widget. Think AI-powered onboarding, AI content generation, or AI analysis tools.
 
@@ -60,14 +60,14 @@ A product where AI is the core feature  - not just a support widget. Think AI-po
 
 **Tech:** Multiple AI APIs + custom orchestration + production-grade infrastructure.
 
-**Timeline:** 4–8 weeks.
+**Timeline:** 4-8 weeks.
 
 ## The Hidden Costs Most Agencies Don't Tell You
 
-1. **API costs**  - Claude/GPT API calls cost $0.003–$0.06 per query depending on model and context length. Budget $50–$500/month for a typical B2B product.
+1. **API costs**  - Claude/GPT API calls cost $0.003-$0.06 per query depending on model and context length. Budget $50-$500/month for a typical B2B product.
 2. **Vector database**  - Supabase pgvector is nearly free at small scale. Pinecone starts at $70/month.
-3. **Hosting**  - $5–$50/month on Railway or Vercel for most apps.
-4. **Ongoing maintenance**  - Models update, APIs change, edge cases surface. Budget $150–$300/month or handle it yourself.
+3. **Hosting**  - $5-$50/month on Railway or Vercel for most apps.
+4. **Ongoing maintenance**  - Models update, APIs change, edge cases surface. Budget $150-$300/month or handle it yourself.
 
 ## What We'd Recommend
 
@@ -106,7 +106,7 @@ Retrieval-Augmented Generation. Instead of hoping the AI "knows" your content, y
 
 **Best for:** Knowledge bases, customer support, internal docs search, legal document Q&A.
 
-**Cost:** $8K–$15K to build. Minimal ongoing API costs.
+**Cost:** $8K-$15K to build. Minimal ongoing API costs.
 
 ## What is Fine-Tuning?
 
@@ -114,7 +114,7 @@ Training a model on your specific data so it "learns" patterns, tone, and domain
 
 **Best for:** Consistent brand voice, domain-specific classification, structured data extraction.
 
-**Cost:** $5K–$20K depending on dataset size and iteration cycles. Higher ongoing costs (custom model hosting).
+**Cost:** $5K-$20K depending on dataset size and iteration cycles. Higher ongoing costs (custom model hosting).
 
 ## Our Honest Take
 
@@ -138,9 +138,9 @@ Every product we build follows the same 4-week cadence. Here's exactly what happ
 
 ## Week 1: Discovery + Architecture
 
-**Day 1–2: Discovery call.** We learn your business, your users, and what success looks like. Not requirements gathering  - understanding.
+**Day 1-2: Discovery call.** We learn your business, your users, and what success looks like. Not requirements gathering  - understanding.
 
-**Day 3–5: Architecture + tech decisions.** We pick the stack, design the database schema, map out the API, and identify the riskiest technical unknowns. You get a document explaining every decision.
+**Day 3-5: Architecture + tech decisions.** We pick the stack, design the database schema, map out the API, and identify the riskiest technical unknowns. You get a document explaining every decision.
 
 **Deliverable:** Architecture doc, database schema, API spec. You approve before we write code.
 
@@ -384,7 +384,7 @@ Lives in React Native daily. Knows Expo vs bare workflow, has shipped 5+ apps, k
 2. **"Walk me through your last App Store rejection and how you fixed it."** If they've never had one, they probably haven't shipped much.
 3. **"Expo or bare workflow? When do you choose each?"** Anyone who says "always Expo" or "never Expo" hasn't done this enough.
 4. **"How do you handle push notifications, deep links, and in-app purchases?"** These are the three areas where bad RN devs fall apart.
-5. **"What's your CI/CD setup for mobile?"** EAS Build, Fastlane, or "I do it manually" — manual is fine for a side project, fatal for a product team.
+5. **"What's your CI/CD setup for mobile?"** EAS Build, Fastlane, or "I do it manually", manual is fine for a side project, fatal for a product team.
 6. **"Show me an app you've shipped and the App Store reviews."** Real apps with real users. Not portfolio mockups.
 7. **"How do you handle native module bridging when you need it?"** They should at least be able to explain when you'd need it.
 
@@ -421,7 +421,7 @@ Lives in React Native daily. Knows Expo vs bare workflow, has shipped 5+ apps, k
 
 ## Why Most Hires Fail
 
-The #1 mistake: hiring based on hourly rate, not on shipped apps. A $40/hour dev who hasn't shipped will cost you 3x more than a $120/hour dev who has — because they'll spend weeks figuring out things the senior dev does in an afternoon.
+The #1 mistake: hiring based on hourly rate, not on shipped apps. A $40/hour dev who hasn't shipped will cost you 3x more than a $120/hour dev who has, because they'll spend weeks figuring out things the senior dev does in an afternoon.
 
 The #2 mistake: not checking that they own their work. We've seen "portfolios" filled with apps the developer never actually built.
 
@@ -476,7 +476,7 @@ For everyone else: **start with Next.js**. You can always add a mobile app later
 | **MVP cost** | $8,000-25,000 | $15,000-40,000 |
 | **Time to ship** | 2-6 weeks | 4-10 weeks |
 | **Reach (instant)** | Anyone with a browser | App Store/Play Store users only |
-| **Distribution friction** | None — share a link | Install + permission grants |
+| **Distribution friction** | None, share a link | Install + permission grants |
 | **App Store review** | None | 1-3 days, can be rejected |
 | **SEO traffic** | Yes, huge advantage | None |
 | **Updates** | Instant | Submit + review (1-3 days) |
@@ -484,7 +484,7 @@ For everyone else: **start with Next.js**. You can always add a mobile app later
 ## Where Next.js Wins
 
 ### 1. SEO from Day One
-Web apps get organic traffic. Mobile apps don't. If you're building anything where people search Google for "[your category]" — say, "wedding planner," "resume builder," "AI chatbot tool" — Next.js will compound for years.
+Web apps get organic traffic. Mobile apps don't. If you're building anything where people search Google for "[your category]", say, "wedding planner," "resume builder," "AI chatbot tool", Next.js will compound for years.
 
 ### 2. No Install Friction
 A new user can use your product 3 seconds after clicking a link. No App Store, no permissions, no "do you really want to install this?" dialog. Conversion rates are 5-10x higher.
@@ -507,7 +507,7 @@ Anything that needs the camera, GPS, accelerometer, or microphone is dramaticall
 React Native can store data locally and sync when online. Web can do this with service workers but it's hard.
 
 ### 4. Native Feel for Consumer Apps
-Consumer apps live and die on UX polish. Native gestures, smooth animations, haptic feedback — all easier in React Native than mobile web.
+Consumer apps live and die on UX polish. Native gestures, smooth animations, haptic feedback, all easier in React Native than mobile web.
 
 ## What We Recommend
 
@@ -521,7 +521,7 @@ This is also cheaper. A Next.js MVP + a React Native app down the line costs les
 
 ## We Build Both
 
-[See our portfolio](/portfolio) — we've shipped Next.js + React Native combos for several products. We can help you decide which to build first based on your specific use case.
+[See our portfolio](/portfolio), we've shipped Next.js + React Native combos for several products. We can help you decide which to build first based on your specific use case.
 
 [Get a free 30-minute consultation](/contact). No obligation, just a clear recommendation.
     `,
@@ -541,7 +541,7 @@ Here's the real breakdown.
 
 ## Tier 1: Landing Page + Waitlist ($5,000-8,000)
 
-The cheapest way to validate a SaaS idea. No product yet — just a beautiful page that explains what you're building and collects emails.
+The cheapest way to validate a SaaS idea. No product yet, just a beautiful page that explains what you're building and collects emails.
 
 **What you get:**
 - Custom landing page (Next.js + Tailwind)
@@ -612,11 +612,11 @@ If you also need a React Native app, double the cost.
 
 ## The Cost Killers (How We Keep Prices Low)
 
-1. **Use Supabase, not custom backend** — saves $5,000-10,000 in auth, database, and storage setup
-2. **Use Stripe Checkout, not custom checkout** — saves $2,000-4,000
-3. **Use Vercel or Railway, not AWS** — saves $1,000-3,000 in DevOps
-4. **Use Tailwind + shadcn/ui, not custom design system** — saves $3,000-6,000
-5. **Use Next.js App Router, not separate API + frontend** — saves $2,000-5,000
+1. **Use Supabase, not custom backend**: saves $5,000-10,000 in auth, database, and storage setup
+2. **Use Stripe Checkout, not custom checkout**: saves $2,000-4,000
+3. **Use Vercel or Railway, not AWS**: saves $1,000-3,000 in DevOps
+4. **Use Tailwind + shadcn/ui, not custom design system**: saves $3,000-6,000
+5. **Use Next.js App Router, not separate API + frontend**: saves $2,000-5,000
 
 These are not corners cut. These are the same tools we'd use even on a $100K project.
 
@@ -638,11 +638,11 @@ We ship SaaS MVPs at:
 - **$25,000** for a 4-week MVP (3 features, billing, dashboard)
 - **$40,000+** for a production-ready SaaS
 
-Fixed price. We tell you upfront if your scope needs more. We don't do hourly billing — surprises are not fun.
+Fixed price. We tell you upfront if your scope needs more. We don't do hourly billing. Surprises are not fun.
 
 ## Get a Real Quote
 
-[Tell us what you're building](/contact) — we'll send you a fixed-price quote within 24 hours. No sales calls, no fluff.
+[Tell us what you're building](/contact), we'll send you a fixed-price quote within 24 hours. No sales calls, no fluff.
     `,
   },
   "rag-implementation-cost-and-timeline": {
@@ -663,11 +663,11 @@ Here's why the range is so wide.
 RAG = Retrieval-Augmented Generation. You give an LLM access to your specific documents so it answers questions about YOUR data, not just whatever it was trained on.
 
 A real RAG system has 5 components:
-1. **Ingestion** — get documents into the system (PDFs, docs, URLs, databases)
-2. **Chunking** — break documents into searchable pieces
-3. **Embedding** — convert chunks to vectors
-4. **Retrieval** — find relevant chunks for a query
-5. **Generation** — use an LLM to answer based on retrieved chunks
+1. **Ingestion**: get documents into the system (PDFs, docs, URLs, databases)
+2. **Chunking**: break documents into searchable pieces
+3. **Embedding**: convert chunks to vectors
+4. **Retrieval**: find relevant chunks for a query
+5. **Generation**: use an LLM to answer based on retrieved chunks
 
 Each step has 50 ways to do it. Some cost nothing, some cost a lot.
 
@@ -743,7 +743,7 @@ Multi-tenant, audit logs, fine-tuned for accuracy, integrates with your existing
 "Does it work?" is harder than it sounds. You need a test set of questions and expected answers, then a way to score the system's responses. Most teams skip this and ship a system that sometimes gives wrong answers confidently.
 
 ### 3. Model Selection and Cost Management
-Claude, GPT-4, GPT-4-turbo, Mistral — each has different costs and quality tradeoffs. A naive implementation can cost $1-5 per query. A tuned one costs $0.05-0.20.
+Claude, GPT-4, GPT-4-turbo, Mistral, each has different costs and quality tradeoffs. A naive implementation can cost $1-5 per query. A tuned one costs $0.05-0.20.
 
 ### 4. Infrastructure
 Vector DBs aren't free at scale. Pinecone Standard tier is $70/month. Self-hosted pgvector is cheaper but needs more setup.
@@ -778,7 +778,7 @@ We'll also tell you honestly if RAG is overkill for your problem. Sometimes a si
 
 We've shipped products using both Claude and GPT-4. Here's what we actually use:
 
-- **Claude (Sonnet 4.6 / Opus 4.6)** for most things — better instruction following, longer context, often cheaper at scale
+- **Claude (Sonnet 4.6 / Opus 4.6)** for most things, better instruction following, longer context, often cheaper at scale
 - **GPT-4 / GPT-4o** when we need lower latency or specific function-calling features
 - **GPT-3.5 / Claude Haiku** for simple classification, summarization, or routing tasks where we don't need top-tier reasoning
 
@@ -815,7 +815,7 @@ For most production apps, **Claude Sonnet 4.6 and GPT-4o are the workhorses**. U
 2. **Complex instructions.** Claude follows multi-step instructions more reliably. If your prompt has 10 rules, Claude is more likely to honor all 10.
 3. **Code generation.** Claude generates more correct code on the first try in our benchmarks. Especially for TypeScript, Python, and SQL.
 4. **JSON outputs.** Claude rarely breaks JSON when you ask for it. GPT-4o is better than it used to be but still occasionally adds explanations.
-5. **Less hallucination.** Claude is more willing to say "I don't know" — which is what you want in production.
+5. **Less hallucination.** Claude is more willing to say "I don't know", which is what you want in production.
 
 ## When to Pick GPT-4o
 
@@ -857,11 +857,11 @@ For high-volume apps, choosing Haiku or 4o-mini for the right tasks can save you
 ## What We Use for Our Own Products
 
 - [Knoah](https://www.getknoah.com) (RAG): Claude Sonnet 4.6 for answers, Claude Haiku for query understanding
-- [ResumeIdol](https://resumeidol.com) (resume tailoring): Claude Sonnet 4.6 — quality matters more than speed
+- [ResumeIdol](https://resumeidol.com) (resume tailoring): Claude Sonnet 4.6, quality matters more than speed
 - [Clippified](https://clippified.com) (video clips): Claude Sonnet 4.6 for transcript analysis
 - [BlushWed](https://www.blushwed.com) (wedding planner): Claude Sonnet 4.6 for chat, Haiku for structured outputs
 
-We pick Claude for most tasks. Not because of brand loyalty — because the quality holds up in production.
+We pick Claude for most tasks. Not because of brand loyalty, because the quality holds up in production.
 
 ## We Build AI Products
 

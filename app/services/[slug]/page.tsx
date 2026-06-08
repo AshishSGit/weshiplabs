@@ -160,7 +160,7 @@ export default async function ServiceDetailPage({
           <section className="mb-20">
             <h2 className="font-heading text-4xl font-bold mb-2">What&apos;s included</h2>
             <p className="text-text-muted mb-10">
-              Every project ships with everything below — no surprise add-ons.
+              Every project ships with everything below, no surprise add-ons.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               {page.whatYouGet.map((item) => (
@@ -211,7 +211,7 @@ export default async function ServiceDetailPage({
           <section className="mb-20">
             <h2 className="font-heading text-4xl font-bold mb-2">Live products built this way</h2>
             <p className="text-text-muted mb-10">
-              Click any of these — they&apos;re running in production right now.
+              Click any of these. They&apos;re running in production right now.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {page.caseStudies.map((c) => (

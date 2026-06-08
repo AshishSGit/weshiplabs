@@ -20,7 +20,7 @@ export const services: Service[] = [
       "Production deployment (Railway, Vercel, AWS)",
     ],
     startingAt: "$3,000",
-    timeline: "1–6 weeks",
+    timeline: "1-6 weeks",
     icon: "rocket",
   },
   {
@@ -42,7 +42,7 @@ export const services: Service[] = [
       "30 days post-launch support",
     ],
     startingAt: "$8,000",
-    timeline: "4–8 weeks",
+    timeline: "4-8 weeks",
     icon: "smartphone",
   },
   {
@@ -64,7 +64,7 @@ export const services: Service[] = [
       "Vector databases & semantic search",
     ],
     startingAt: "$5,000",
-    timeline: "2–6 weeks",
+    timeline: "2-6 weeks",
     icon: "brain",
   },
   {
@@ -86,7 +86,7 @@ export const services: Service[] = [
       "Technical due diligence for investors",
     ],
     startingAt: "$500",
-    timeline: "1–5 days",
+    timeline: "1-5 days",
     icon: "wrench",
   },
 ];

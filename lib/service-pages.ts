@@ -20,25 +20,25 @@ export interface ServicePage {
 export const servicePages: ServicePage[] = [
   {
     slug: "mvp-development",
-    metaTitle: "MVP Development Agency — Build a SaaS in 4 Weeks",
+    metaTitle: "MVP Development Agency: Build a SaaS in 4 Weeks",
     metaDescription:
       "We build production-ready MVPs in 4 weeks for founders. Fixed price from $8,000. Auth, payments, deployment included. See live products we've shipped.",
     kicker: "MVP Development",
     h1: "Build your MVP",
     h1Accent: "in 4 weeks.",
     intro: [
-      "If you've been quoted $50,000 and 6 months for an MVP, you've been quoted wrong. Most MVPs don't need 200 features — they need 5 features that work, a paywall, and a way to get to users.",
-      "We build production-grade MVPs in 4 weeks for non-technical founders, technical founders who don't have time, and operators validating a side bet. Fixed price, fixed scope, weekly demos. You see working software every Friday — not Figma mockups, not Jira tickets, the real thing.",
+      "If you've been quoted $50,000 and 6 months for an MVP, you've been quoted wrong. Most MVPs don't need 200 features, they need 5 features that work, a paywall, and a way to get to users.",
+      "We build production-grade MVPs in 4 weeks for non-technical founders, technical founders who don't have time, and operators validating a side bet. Fixed price, fixed scope, weekly demos. You see working software every Friday, not Figma mockups, not Jira tickets, the real thing.",
       "Every MVP we ship includes authentication, Stripe payments, a database, hosting, SEO basics, and 30 days of free support after launch. The five products at the bottom of this page were all built using this exact playbook.",
     ],
     startingAt: "From $8,000",
     startingAtNumber: "8000",
-    timeline: "2–6 weeks",
+    timeline: "2-6 weeks",
     whatYouGet: [
       {
         title: "Full-stack web app",
         description:
-          "Next.js or your preferred stack. Frontend, backend, database, auth, and payments — wired up end-to-end and deployed to your domain.",
+          "Next.js or your preferred stack. Frontend, backend, database, auth, and payments, wired up end-to-end and deployed to your domain.",
       },
       {
         title: "Authentication that works",
@@ -53,7 +53,7 @@ export const servicePages: ServicePage[] = [
       {
         title: "Admin & analytics dashboards",
         description:
-          "User list, usage metrics, revenue. Either custom-built or wired to Supabase Studio / Stripe Dashboard / GA4 — whatever fits.",
+          "User list, usage metrics, revenue. Either custom-built or wired to Supabase Studio / Stripe Dashboard / GA4, whatever fits.",
       },
       {
         title: "SEO setup",
@@ -63,7 +63,7 @@ export const servicePages: ServicePage[] = [
       {
         title: "Production deployment",
         description:
-          "Custom domain, SSL, automated deploys from GitHub. Hosted on Railway, Vercel, or AWS — your choice or ours.",
+          "Custom domain, SSL, automated deploys from GitHub. Hosted on Railway, Vercel, or AWS, your choice or ours.",
       },
       {
         title: "30 days of free support",
@@ -73,22 +73,22 @@ export const servicePages: ServicePage[] = [
     ],
     process: [
       {
-        title: "Day 1 — Quote in 24 hours",
+        title: "Day 1: Quote in 24 hours",
         description:
           "You fill out the form. We reply with a fixed-price quote, scope, and timeline within a day. No exploratory calls required (but available if you want one).",
       },
       {
-        title: "Week 1 — Architecture + first build",
+        title: "Week 1: Architecture + first build",
         description:
           "We pick the stack, set up the repo, and start shipping. Auth and the core data model usually land by end of week 1. You get a staging link with real working features.",
       },
       {
-        title: "Week 2–3 — Core product",
+        title: "Week 2-3: Core product",
         description:
           "Payments, the main user flow, dashboards, AI features (if any). Demo every Friday. You give feedback Monday morning, it's in by Wednesday.",
       },
       {
-        title: "Week 4 — Polish + launch",
+        title: "Week 4: Polish + launch",
         description:
           "Bug fixes, performance, SEO, responsive design, deploy to your custom domain. Then 30 days of free support kicks in.",
       },
@@ -116,7 +116,7 @@ export const servicePages: ServicePage[] = [
     faqs: [
       {
         q: "What if my MVP needs more than 4 weeks?",
-        a: "Most MVPs fit in 4 weeks if scope is honest. If yours genuinely needs 6 weeks, we'll quote 6 weeks — not 4 with surprise overruns. Larger products can be split into a 4-week MVP launch followed by a maintenance retainer for v2 features.",
+        a: "Most MVPs fit in 4 weeks if scope is honest. If yours genuinely needs 6 weeks, we'll quote 6 weeks, not 4 with surprise overruns. Larger products can be split into a 4-week MVP launch followed by a maintenance retainer for v2 features.",
       },
       {
         q: "Do I own the code?",
@@ -132,7 +132,7 @@ export const servicePages: ServicePage[] = [
       },
       {
         q: "What's NOT included?",
-        a: "Domain registration ($10/yr — you keep it), hosting after the first month (~$5–20/mo on Railway), Stripe fees (2.9%+30¢, paid by you on real transactions), and ongoing AI API usage if you're using Claude/GPT (typically $5–50/mo at MVP scale). We give you a cost estimate up front.",
+        a: "Domain registration ($10/yr, you keep it), hosting after the first month (~$5-20/mo on Railway), Stripe fees (2.9%+30¢, paid by you on real transactions), and ongoing AI API usage if you're using Claude/GPT (typically $5-50/mo at MVP scale). We give you a cost estimate up front.",
       },
     ],
     ctaHeadline: "Ready to ship your MVP?",
@@ -140,7 +140,7 @@ export const servicePages: ServicePage[] = [
   },
   {
     slug: "mobile-app-development",
-    metaTitle: "Mobile App Development Agency — iOS & Android Apps",
+    metaTitle: "Mobile App Development Agency: iOS & Android Apps",
     metaDescription:
       "Cross-platform React Native or native SwiftUI iOS apps from $8,000. App Store submission, in-app purchases, push notifications included. Built to pass review on the first try.",
     kicker: "Mobile App Development",
@@ -149,16 +149,16 @@ export const servicePages: ServicePage[] = [
     intro: [
       "Mobile development is full of landmines: App Store rejections, push notification setup, in-app purchase StoreKit configuration, iOS 17 vs iOS 18 quirks, Android push reliability, App Tracking Transparency, privacy manifests. A first-time submission has a roughly 40% rejection rate.",
       "We build cross-platform apps with React Native (Expo) when you need iOS + Android fast, and native SwiftUI when you need Apple-grade polish or HealthKit-deep integration. Either way, you get a real app in the App Store, not a prototype.",
-      "Every mobile project includes the backend API, in-app purchase setup, push notifications, deep links, App Store and Play Store submission, and the privacy paperwork Apple now requires. We handle the review process — including responding to rejections.",
+      "Every mobile project includes the backend API, in-app purchase setup, push notifications, deep links, App Store and Play Store submission, and the privacy paperwork Apple now requires. We handle the review process, including responding to rejections.",
     ],
     startingAt: "From $8,000",
     startingAtNumber: "8000",
-    timeline: "4–8 weeks",
+    timeline: "4-8 weeks",
     whatYouGet: [
       {
         title: "iOS, Android, or both",
         description:
-          "React Native (Expo) for true cross-platform — one codebase, both stores. SwiftUI for native iOS when you need HealthKit, ARKit, or Apple-grade animation.",
+          "React Native (Expo) for true cross-platform, one codebase, both stores. SwiftUI for native iOS when you need HealthKit, ARKit, or Apple-grade animation.",
       },
       {
         title: "App Store + Play Store submission",
@@ -168,7 +168,7 @@ export const servicePages: ServicePage[] = [
       {
         title: "In-app purchases & subscriptions",
         description:
-          "StoreKit 2 (iOS) and Google Play Billing (Android) wired up properly — receipts validated server-side, restore purchases working, free trials handled.",
+          "StoreKit 2 (iOS) and Google Play Billing (Android) wired up properly, receipts validated server-side, restore purchases working, free trials handled.",
       },
       {
         title: "Push notifications",
@@ -178,12 +178,12 @@ export const servicePages: ServicePage[] = [
       {
         title: "Camera, location, HealthKit",
         description:
-          "Whatever device APIs your app needs. Permissions handled gracefully — no \"why does this app want my camera\" rejection from Apple.",
+          "Whatever device APIs your app needs. Permissions handled gracefully, no \"why does this app want my camera\" rejection from Apple.",
       },
       {
         title: "Backend API",
         description:
-          "Supabase, Firebase, or a custom Node/Python backend. Auth, data, file storage, push triggers — everything the app talks to.",
+          "Supabase, Firebase, or a custom Node/Python backend. Auth, data, file storage, push triggers, everything the app talks to.",
       },
       {
         title: "OTA updates",
@@ -193,24 +193,24 @@ export const servicePages: ServicePage[] = [
     ],
     process: [
       {
-        title: "Week 1 — Stack decision + scaffolding",
+        title: "Week 1: Stack decision + scaffolding",
         description:
           "We decide React Native vs SwiftUI based on your features. Set up the repo, EAS or Xcode project, signing, bundle IDs. By end of week 1 you have a TestFlight build of a 'Hello World' with your branding.",
       },
       {
-        title: "Week 2–4 — Core features",
+        title: "Week 2-4: Core features",
         description:
           "Your main user flows. Auth, data, payments, the screens that make the product feel like itself. New TestFlight build every Friday.",
       },
       {
-        title: "Week 5–6 — Polish + integrations",
+        title: "Week 5-6: Polish + integrations",
         description:
           "Push, deep links, HealthKit/Camera/Location, IAP edge cases, dark mode, accessibility. The 'making it not feel beta' phase.",
       },
       {
-        title: "Week 7–8 — App Store submission",
+        title: "Week 7-8: App Store submission",
         description:
-          "Screenshots, listing, privacy questionnaire, submission. We handle reviewer responses if they push back. Live within 1–2 weeks of submission.",
+          "Screenshots, listing, privacy questionnaire, submission. We handle reviewer responses if they push back. Live within 1-2 weeks of submission.",
       },
     ],
     caseStudies: [
@@ -229,7 +229,7 @@ export const servicePages: ServicePage[] = [
     ],
     faqs: [
       {
-        q: "React Native or SwiftUI — which should I pick?",
+        q: "React Native or SwiftUI, which should I pick?",
         a: "If you need iOS + Android with shared code, React Native (we use Expo). If you need Apple-grade polish, HealthKit-deep features, or expect 80%+ iOS users, SwiftUI. We'll recommend on the call.",
       },
       {
@@ -238,11 +238,11 @@ export const servicePages: ServicePage[] = [
       },
       {
         q: "How long until my app is in the App Store?",
-        a: "Typically 5–7 weeks total. About 4–6 weeks of build + 1–2 weeks of Apple review. We optimize for first-pass approval — most of our submissions clear review in under 24 hours.",
+        a: "Typically 5-7 weeks total. About 4-6 weeks of build + 1-2 weeks of Apple review. We optimize for first-pass approval, most of our submissions clear review in under 24 hours.",
       },
       {
         q: "What if Apple rejects the app?",
-        a: "We respond to the reviewer, fix what they flagged, and resubmit. Most rejections are resolvable in 24–48 hours (privacy strings, screenshots, IAP test accounts). Rejection-handling is included in the price — no extra fees.",
+        a: "We respond to the reviewer, fix what they flagged, and resubmit. Most rejections are resolvable in 24-48 hours (privacy strings, screenshots, IAP test accounts). Rejection-handling is included in the price, no extra fees.",
       },
       {
         q: "Can you do Android only?",
@@ -254,7 +254,7 @@ export const servicePages: ServicePage[] = [
   },
   {
     slug: "ai-integration",
-    metaTitle: "AI Integration Services — RAG, Chatbots, Automation",
+    metaTitle: "AI Integration Services: RAG, Chatbots, Automation",
     metaDescription:
       "Production-grade AI features from $5,000. RAG chatbots, document processing, voice transcription, content generation. Claude, GPT, Deepgram. Not a ChatGPT wrapper.",
     kicker: "AI Integration",
@@ -267,7 +267,7 @@ export const servicePages: ServicePage[] = [
     ],
     startingAt: "From $5,000",
     startingAtNumber: "5000",
-    timeline: "2–6 weeks",
+    timeline: "2-6 weeks",
     whatYouGet: [
       {
         title: "RAG knowledge bases",
@@ -282,7 +282,7 @@ export const servicePages: ServicePage[] = [
       {
         title: "Document processing",
         description:
-          "PDF, DOCX, image OCR, structured data extraction. Process invoices, resumes, contracts, medical records — at scale, with Claude or GPT-4 Vision.",
+          "PDF, DOCX, image OCR, structured data extraction. Process invoices, resumes, contracts, medical records, at scale, with Claude or GPT-4 Vision.",
       },
       {
         title: "Voice transcription & analysis",
@@ -302,27 +302,27 @@ export const servicePages: ServicePage[] = [
       {
         title: "Workflow automation",
         description:
-          "n8n, Zapier, or custom Node workers. Email triage, invoice generation, lead scoring, report writing — anything where a human is currently doing pattern-matching.",
+          "n8n, Zapier, or custom Node workers. Email triage, invoice generation, lead scoring, report writing, anything where a human is currently doing pattern-matching.",
       },
     ],
     process: [
       {
-        title: "Week 1 — Spec + evaluation harness",
+        title: "Week 1: Spec + evaluation harness",
         description:
           "What does \"correct\" mean for your use case? We define eval criteria up front and build a test set. This is the step most agencies skip and most AI products fail on.",
       },
       {
-        title: "Week 2–4 — Build + tune",
+        title: "Week 2-4: Build + tune",
         description:
           "Pipeline implementation, prompt engineering, model selection (Claude Opus vs Sonnet vs Haiku, GPT-4 vs 4o, when to fine-tune). Run against eval set every iteration.",
       },
       {
-        title: "Week 5 — Production hardening",
+        title: "Week 5: Production hardening",
         description:
           "Rate limiting, cost monitoring per query, caching, fallback models, error handling. So a 5x traffic spike doesn't blow your API bill or crash the product.",
       },
       {
-        title: "Week 6 — Launch + handover",
+        title: "Week 6: Launch + handover",
         description:
           "Deploy, monitor in production, hand over the eval harness so you can keep improving after we're gone.",
       },
@@ -350,19 +350,19 @@ export const servicePages: ServicePage[] = [
     faqs: [
       {
         q: "Will it hallucinate?",
-        a: "Less than out-of-the-box GPT, because we ground responses in your data via RAG and force exact citations. We can't promise 0% — nobody can — but we can promise an eval harness so you can measure it.",
+        a: "Less than out-of-the-box GPT, because we ground responses in your data via RAG and force exact citations. We can't promise 0%, nobody can, but we can promise an eval harness so you can measure it.",
       },
       {
         q: "Claude or GPT?",
-        a: "Depends on the task. Claude is better at long-context reasoning, careful instruction-following, and writing. GPT-4o is better at multimodal and faster. We pick per use case and often use both. We're also vendor-agnostic — if you'd rather use only one provider, we'll respect that.",
+        a: "Depends on the task. Claude is better at long-context reasoning, careful instruction-following, and writing. GPT-4o is better at multimodal and faster. We pick per use case and often use both. We're also vendor-agnostic, if you'd rather use only one provider, we'll respect that.",
       },
       {
         q: "What about cost at scale?",
-        a: "We cost-model up front. Typical RAG chatbot is $0.01–$0.10 per query depending on context size and model. We add caching, prompt compression, and routing to cheaper models where possible. You'll know the per-query cost before launch.",
+        a: "We cost-model up front. Typical RAG chatbot is $0.01-$0.10 per query depending on context size and model. We add caching, prompt compression, and routing to cheaper models where possible. You'll know the per-query cost before launch.",
       },
       {
         q: "Can you fine-tune?",
-        a: "Sometimes. 90% of the time, prompt engineering + RAG beats fine-tuning. The other 10% (very specific style, structured output reliability) we'll fine-tune Haiku, Llama, or a small open-source model — usually for $1K–3K extra.",
+        a: "Sometimes. 90% of the time, prompt engineering + RAG beats fine-tuning. The other 10% (very specific style, structured output reliability) we'll fine-tune Haiku, Llama, or a small open-source model, usually for $1K-3K extra.",
       },
       {
         q: "Is my data safe?",
@@ -381,23 +381,23 @@ export const servicePages: ServicePage[] = [
     h1: "A landing page that",
     h1Accent: "converts.",
     intro: [
-      "A WordPress template costs $50 and converts like a WordPress template. We build custom-coded landing pages with the same stack we use for $50K SaaS apps — Next.js, Tailwind, Framer Motion — sized down to a single page that loads under a second and ranks on Google.",
-      "Every landing page we ship includes the page itself, mobile-responsive design, a contact form connected to your email or CRM, analytics, SEO basics (sitemap, structured data, OpenGraph), and deployment to your custom domain. From quote to live in 1–2 weeks.",
+      "A WordPress template costs $50 and converts like a WordPress template. We build custom-coded landing pages with the same stack we use for $50K SaaS apps, Next.js, Tailwind, Framer Motion, sized down to a single page that loads under a second and ranks on Google.",
+      "Every landing page we ship includes the page itself, mobile-responsive design, a contact form connected to your email or CRM, analytics, SEO basics (sitemap, structured data, OpenGraph), and deployment to your custom domain. From quote to live in 1-2 weeks.",
       "Used for product launches, agency sites, lead capture pages, course pages, app marketing, and consultancy sites. All five live products linked at the bottom of this site started with a landing page built on this exact pattern.",
     ],
     startingAt: "From $3,000",
     startingAtNumber: "3000",
-    timeline: "1–2 weeks",
+    timeline: "1-2 weeks",
     whatYouGet: [
       {
-        title: "Custom design — not templates",
+        title: "Custom design, not templates",
         description:
           "Designed for your brand and your product. We don't use Webflow templates or WordPress themes. Every animation and interaction is intentional.",
       },
       {
         title: "Mobile-responsive",
         description:
-          "Designed mobile-first. Tested on real devices, not just Chrome DevTools. Touch targets, font sizes, scroll behavior — the lot.",
+          "Designed mobile-first. Tested on real devices, not just Chrome DevTools. Touch targets, font sizes, scroll behavior, the lot.",
       },
       {
         title: "SEO setup",
@@ -427,22 +427,22 @@ export const servicePages: ServicePage[] = [
     ],
     process: [
       {
-        title: "Day 1–2 — Brief + content",
+        title: "Day 1-2: Brief + content",
         description:
           "You fill out the form. We confirm scope and ask for: your value prop in one sentence, three benefits, social proof, and any visual references you like. No 60-question discovery deck.",
       },
       {
-        title: "Day 3–7 — Design in code",
+        title: "Day 3-7: Design in code",
         description:
-          "We design directly in Next.js — no Figma round-trips. You see the actual page, on real devices, by end of week 1. One round of revisions included.",
+          "We design directly in Next.js, no Figma round-trips. You see the actual page, on real devices, by end of week 1. One round of revisions included.",
       },
       {
-        title: "Day 8–10 — Polish + integrations",
+        title: "Day 8-10: Polish + integrations",
         description:
           "Form integration, analytics, SEO, performance tuning, the loading-state details that separate a $50 page from a $3K page.",
       },
       {
-        title: "Day 11–14 — Launch",
+        title: "Day 11-14: Launch",
         description:
           "Deploy to your custom domain. Submit to Google Search Console. 30 days of free support starts.",
       },
@@ -458,33 +458,33 @@ export const servicePages: ServicePage[] = [
         name: "ResumeIdol",
         url: "https://resumeidol.com",
         description:
-          "Marketing landing + product. Hero, social proof, pricing, blog — converting paid signups since launch.",
+          "Marketing landing + product. Hero, social proof, pricing, blog, converting paid signups since launch.",
       },
     ],
     faqs: [
       {
         q: "Why $3K when I can get a Webflow site for $500?",
-        a: "You can — and if a Webflow template fits your brand, do that. Our pages are for founders who've tried templates and want something that looks like their own product, loads faster, ranks better, and doesn't have a Webflow URL in the source. Different tier of work.",
+        a: "You can, and if a Webflow template fits your brand, do that. Our pages are for founders who've tried templates and want something that looks like their own product, loads faster, ranks better, and doesn't have a Webflow URL in the source. Different tier of work.",
       },
       {
         q: "Can you also do the copywriting?",
-        a: "We can write a draft based on your brief and refine with you, but copy is your superpower — you know your customer better than we do. If you want a copywriter, we partner with a couple of good ones we can refer.",
+        a: "We can write a draft based on your brief and refine with you, but copy is your superpower, you know your customer better than we do. If you want a copywriter, we partner with a couple of good ones we can refer.",
       },
       {
         q: "What if I want to add more pages later?",
-        a: "Easy. Either you take over the GitHub repo and add pages yourself, or we add them on a maintenance retainer ($150–300/mo). Multi-page sites scope into the $5–8K range.",
+        a: "Easy. Either you take over the GitHub repo and add pages yourself, or we add them on a maintenance retainer ($150-300/mo). Multi-page sites scope into the $5-8K range.",
       },
       {
         q: "Do you do branding (logo, colors)?",
-        a: "If you have a brand, we'll use it. If you don't, we'll pick smart defaults (one accent color, a font pair, a vibe). We don't do full brand identity work — for that you want a brand designer.",
+        a: "If you have a brand, we'll use it. If you don't, we'll pick smart defaults (one accent color, a font pair, a vibe). We don't do full brand identity work, for that you want a brand designer.",
       },
       {
         q: "Will it rank on Google?",
-        a: "It'll be technically optimized to rank: clean HTML, structured data, Core Web Vitals, sitemap, semantic headings. Whether it actually ranks depends on your domain authority and content depth — which we can't fix in a single landing page. We'll be honest about expectations.",
+        a: "It'll be technically optimized to rank: clean HTML, structured data, Core Web Vitals, sitemap, semantic headings. Whether it actually ranks depends on your domain authority and content depth, which we can't fix in a single landing page. We'll be honest about expectations.",
       },
     ],
     ctaHeadline: "Build a landing page that converts",
-    ctaSubtext: "Live on your domain in 1–2 weeks. Quote in 24 hours.",
+    ctaSubtext: "Live on your domain in 1-2 weeks. Quote in 24 hours.",
   },
 ];
 

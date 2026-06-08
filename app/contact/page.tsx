@@ -6,8 +6,8 @@ import { SITE } from "@/lib/constants";
 
 const budgetRanges = [
   "Under $5,000",
-  "$5,000 – $10,000",
-  "$10,000 – $25,000",
+  "$5,000 - $10,000",
+  "$10,000 - $25,000",
   "$25,000+",
   "Not sure yet",
 ];

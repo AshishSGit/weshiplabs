@@ -94,7 +94,7 @@ export default function Navbar() {
             href="/contact"
             className="group relative ml-3 inline-flex items-center gap-1.5 text-sm font-semibold py-2 px-5 rounded-full text-white overflow-hidden transition-all duration-300 ease-out shadow-[0_4px_16px_rgba(124,58,237,0.35)] hover:-translate-y-0.5 hover:scale-[1.04] hover:shadow-[0_10px_30px_rgba(139,92,246,0.55),0_0_55px_rgba(59,130,246,0.3)] active:scale-100 active:translate-y-0 active:duration-100"
           >
-            {/* base gradient — travels left→right on hover */}
+            {/* base gradient, travels left→right on hover */}
             <span
               aria-hidden
               className="absolute inset-0 bg-gradient-to-r from-violet-600 via-fuchsia-500 to-blue-500 bg-[length:200%_100%] bg-[position:0%_50%] transition-[background-position] duration-700 ease-out group-hover:bg-[position:100%_50%]"
