@@ -47,7 +47,7 @@ export default function Comparison() {
             <thead>
               <tr className="border-b border-border">
                 <th className="text-left p-3 md:p-4 text-text-subtle font-medium text-xs md:text-sm"></th>
-                <th className="p-3 md:p-4 text-center whitespace-nowrap">
+                <th className="p-3 md:p-4 text-center whitespace-nowrap bg-violet-500/[0.08] border-x border-violet-500/20 rounded-t-xl">
                   <span className="gradient-text font-bold text-xs md:text-sm">WeShipLabs</span>
                 </th>
                 <th className="p-3 md:p-4 text-center text-text-subtle font-medium text-xs md:text-sm whitespace-nowrap">Big Agency</th>
@@ -55,10 +55,16 @@ export default function Comparison() {
               </tr>
             </thead>
             <tbody>
-              {rows.map((row) => (
+              {rows.map((row, i) => (
                 <tr key={row.feature} className="border-b border-border/50 hover:bg-surface-elevated/30 transition-colors">
                   <td className="p-3 md:p-4 text-text-muted text-xs md:text-sm">{row.feature}</td>
-                  <td className="p-3 md:p-4 text-center"><Cell val={row.us} /></td>
+                  <td
+                    className={`p-3 md:p-4 text-center bg-violet-500/[0.06] border-x border-violet-500/20 ${
+                      i === rows.length - 1 ? "rounded-b-xl border-b" : ""
+                    }`}
+                  >
+                    <Cell val={row.us} />
+                  </td>
                   <td className="p-3 md:p-4 text-center"><Cell val={row.agency} /></td>
                   <td className="p-3 md:p-4 text-center"><Cell val={row.freelancer} /></td>
                 </tr>

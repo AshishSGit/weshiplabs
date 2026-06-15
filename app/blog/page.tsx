@@ -91,10 +91,34 @@ const posts = [
   },
 ];
 
+const categoryStyles: Record<string, string> = {
+  Engineering: "bg-blue-500/10 border-blue-500/20 text-blue-300",
+  "Smart Features": "bg-cyan-400/10 border-cyan-400/20 text-cyan-300",
+};
+
+function fmtDate(iso: string) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  return `${months[m - 1]} ${d}, ${y}`;
+}
+
+function CatBadge({ category }: { category: string }) {
+  return (
+    <span
+      className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border ${
+        categoryStyles[category] ?? "bg-violet-500/10 border-violet-500/20 text-violet-300"
+      }`}
+    >
+      {category}
+    </span>
+  );
+}
+
 export default function BlogPage() {
+  const [featured, ...rest] = posts;
   return (
     <div className="section pt-32">
-      <div className="max-w-3xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Blog</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
@@ -105,23 +129,60 @@ export default function BlogPage() {
           </p>
         </div>
 
-        <div className="space-y-6">
-          {posts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="glass-card p-6 block group">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="tech-badge text-xs">{post.category}</span>
+        {/* Featured post */}
+        <Link
+          href={`/blog/${featured.slug}`}
+          className="glass-card p-7 sm:p-10 block group mb-6 relative overflow-hidden"
+        >
+          <div
+            aria-hidden
+            className="absolute -right-24 -top-24 w-72 h-72 rounded-full bg-violet-600/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          />
+          <div className="flex flex-wrap items-center gap-3 mb-4">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-violet-600 text-white">
+              Featured
+            </span>
+            <CatBadge category={featured.category} />
+            <span className="text-sm text-text-subtle flex items-center gap-1">
+              <Clock size={13} /> {featured.readTime}
+            </span>
+            <span className="text-sm text-text-subtle">{fmtDate(featured.date)}</span>
+          </div>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3 max-w-3xl group-hover:text-violet-300 transition-colors">
+            {featured.title}
+          </h2>
+          <p className="text-base sm:text-lg text-text-muted leading-relaxed mb-4 max-w-3xl">
+            {featured.description}
+          </p>
+          <span className="text-sm text-violet-400 font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+            Read more <ArrowRight size={14} />
+          </span>
+        </Link>
+
+        {/* Rest in a 2-column grid */}
+        <div className="grid sm:grid-cols-2 gap-6">
+          {rest.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="glass-card p-6 flex flex-col group h-full"
+            >
+              <div className="flex flex-wrap items-center gap-2.5 mb-3">
+                <CatBadge category={post.category} />
                 <span className="text-sm text-text-subtle flex items-center gap-1">
                   <Clock size={13} /> {post.readTime}
                 </span>
-                <span className="text-sm text-text-subtle">{post.date}</span>
               </div>
-              <h2 className="font-heading text-xl font-bold mb-2 group-hover:text-violet-400 transition-colors">
+              <h2 className="font-heading text-lg font-bold mb-2 group-hover:text-violet-400 transition-colors">
                 {post.title}
               </h2>
-              <p className="text-base text-text-muted leading-relaxed mb-3">{post.description}</p>
-              <span className="text-sm text-violet-400 font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                Read more <ArrowRight size={14} />
-              </span>
+              <p className="text-[15px] text-text-muted leading-relaxed mb-4 flex-1">{post.description}</p>
+              <div className="flex items-center justify-between">
+                <span className="text-xs text-text-subtle">{fmtDate(post.date)}</span>
+                <span className="text-sm text-violet-400 font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Read more <ArrowRight size={14} />
+                </span>
+              </div>
             </Link>
           ))}
         </div>
