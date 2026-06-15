@@ -100,27 +100,27 @@ const jsonLd = {
       {
         "@type": "Offer",
         itemOffered: { "@type": "Service", name: "Quick Audit", description: "Business and codebase review with recommendations" },
-        priceSpecification: { "@type": "PriceSpecification", price: "500", priceCurrency: "USD" },
+        priceSpecification: { "@type": "PriceSpecification", price: "250", priceCurrency: "USD" },
       },
       {
         "@type": "Offer",
         itemOffered: { "@type": "Service", name: "Landing Page / Website", description: "Custom-built SEO-optimized website" },
-        priceSpecification: { "@type": "PriceSpecification", price: "3000", priceCurrency: "USD", minPrice: "3000" },
+        priceSpecification: { "@type": "PriceSpecification", price: "1500", priceCurrency: "USD", minPrice: "1500" },
       },
       {
         "@type": "Offer",
         itemOffered: { "@type": "Service", name: "Web App / MVP", description: "Full-stack web application with auth, payments, and deployment" },
-        priceSpecification: { "@type": "PriceSpecification", price: "8000", priceCurrency: "USD", minPrice: "8000" },
+        priceSpecification: { "@type": "PriceSpecification", price: "4000", priceCurrency: "USD", minPrice: "4000" },
       },
       {
         "@type": "Offer",
         itemOffered: { "@type": "Service", name: "Mobile App", description: "iOS and Android app with App Store submission" },
-        priceSpecification: { "@type": "PriceSpecification", price: "8000", priceCurrency: "USD", minPrice: "8000" },
+        priceSpecification: { "@type": "PriceSpecification", price: "4500", priceCurrency: "USD", minPrice: "4500" },
       },
       {
         "@type": "Offer",
         itemOffered: { "@type": "Service", name: "AI Integration", description: "AI-powered features for existing or new products" },
-        priceSpecification: { "@type": "PriceSpecification", price: "5000", priceCurrency: "USD", minPrice: "5000" },
+        priceSpecification: { "@type": "PriceSpecification", price: "2500", priceCurrency: "USD", minPrice: "2500" },
       },
     ],
   },
@@ -148,8 +148,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       </head>
       <body>
+        <a href="#main" className="skip-link">Skip to content</a>
         <Navbar />
-        <main className="min-h-screen pt-16">{children}</main>
+        <main id="main" className="min-h-screen pt-16">{children}</main>
         <Footer />
       </body>
     </html>

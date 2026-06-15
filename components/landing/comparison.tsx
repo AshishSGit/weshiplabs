@@ -11,7 +11,7 @@ const rows = [
   { feature: "Full-stack (web + mobile + backend)", us: true, agency: true, freelancer: false },
   { feature: "Auth, payments, deployment included", us: true, agency: true, freelancer: false },
   { feature: "Live portfolio you can click", us: true, agency: false, freelancer: false },
-  { feature: "Post-launch support included", us: true, agency: "maybe", freelancer: false },
+  { feature: "Post-ship support included", us: true, agency: "maybe", freelancer: false },
   { feature: "Under $8K for an MVP", us: true, agency: false, freelancer: true },
 ];
 

@@ -22,14 +22,14 @@ export const servicePages: ServicePage[] = [
     slug: "mvp-development",
     metaTitle: "MVP Development Agency: Build a SaaS in 4 Weeks",
     metaDescription:
-      "We build production-ready MVPs in 4 weeks for founders. Fixed price from $4,000. Auth, payments, deployment included. See live products we've shipped.",
+      "We build production-ready MVPs in 4 weeks for builders. Fixed price from $4,000. Auth, payments, deployment included. See live products we've shipped.",
     kicker: "MVP Development",
     h1: "Build your MVP",
     h1Accent: "in 4 weeks.",
     intro: [
       "If you've been quoted $50,000 and 6 months for an MVP, you've been quoted wrong. Most MVPs don't need 200 features, they need 5 features that work, a paywall, and a way to get to users.",
-      "We build production-grade MVPs in 4 weeks for non-technical founders, technical founders who don't have time, and operators validating a side bet. Fixed price, fixed scope, weekly demos. You see working software every Friday, not Figma mockups, not Jira tickets, the real thing.",
-      "Every MVP we ship includes authentication, Stripe payments, a database, hosting, SEO basics, and 30 days of free support after launch. The five products at the bottom of this page were all built using this exact playbook.",
+      "We build production-grade MVPs in 4 weeks for non-technical builders, technical builders who don't have time, and operators validating a side bet. Fixed price, fixed scope, weekly demos. You see working software every Friday, not Figma mockups, not Jira tickets, the real thing.",
+      "Every MVP we ship includes authentication, Stripe payments, a database, hosting, SEO basics, and 30 days of free support after you go live. The five products at the bottom of this page were all built using this exact playbook.",
     ],
     startingAt: "From $4,000",
     startingAtNumber: "4000",
@@ -58,7 +58,7 @@ export const servicePages: ServicePage[] = [
       {
         title: "SEO setup",
         description:
-          "Sitemap, structured data, meta tags, OpenGraph, Core Web Vitals optimization. Submitted to Google Search Console on launch day.",
+          "Sitemap, structured data, meta tags, OpenGraph, Core Web Vitals optimization. Submitted to Google Search Console the day you go live.",
       },
       {
         title: "Production deployment",
@@ -88,7 +88,7 @@ export const servicePages: ServicePage[] = [
           "Payments, the main user flow, dashboards, smart features (if any). Demo every Friday. You give feedback Monday morning, it's in by Wednesday.",
       },
       {
-        title: "Week 4: Polish + launch",
+        title: "Week 4: Polish + go live",
         description:
           "Bug fixes, performance, SEO, responsive design, deploy to your custom domain. Then 30 days of free support kicks in.",
       },
@@ -116,15 +116,15 @@ export const servicePages: ServicePage[] = [
     faqs: [
       {
         q: "What if my MVP needs more than 4 weeks?",
-        a: "Most MVPs fit in 4 weeks if scope is honest. If yours genuinely needs 6 weeks, we'll quote 6 weeks, not 4 with surprise overruns. Larger products can be split into a 4-week MVP launch followed by a maintenance retainer for v2 features.",
+        a: "Most MVPs fit in 4 weeks if scope is honest. If yours genuinely needs 6 weeks, we'll quote 6 weeks, not 4 with surprise overruns. Larger products can be split into a 4-week MVP, followed by a maintenance retainer for v2 features.",
       },
       {
         q: "Do I own the code?",
-        a: "Yes, fully. Everything goes into a GitHub repo you own from day one. We commit to your repo, not ours. You can hire anyone else to take it over the day after launch.",
+        a: "Yes, fully. Everything goes into a GitHub repo you own from day one. We commit to your repo, not ours. You can hire anyone else to take it over the day after you go live.",
       },
       {
-        q: "Can you work with my designer / co-founder?",
-        a: "Yes. If you have a designer with Figma files, we'll build to spec. If you have a technical co-founder, we'll work alongside them in the same repo with PR reviews.",
+        q: "Can you work with my designer or technical partner?",
+        a: "Yes. If you have a designer with Figma files, we'll build to spec. If you have a technical partner, we'll work alongside them in the same repo with PR reviews.",
       },
       {
         q: "What if I don't know what I want yet?",
@@ -261,7 +261,7 @@ export const servicePages: ServicePage[] = [
     h1: "AI features that ship",
     h1Accent: "to production.",
     intro: [
-      "Every founder has been pitched AI. Most of what's been built is a thin ChatGPT wrapper that answers wrong, hallucinates citations, and falls over the moment you upload a real document. We build the kind that doesn't.",
+      "Every builder has been pitched AI. Most of what's been built is a thin ChatGPT wrapper that answers wrong, hallucinates citations, and falls over the moment you upload a real document. We build the kind that doesn't.",
       "We add AI to existing products and build AI-first products from scratch. RAG knowledge bases with proper citation, document processing pipelines for PDFs and DOCX, voice transcription with Deepgram or Whisper, content generation with Claude, and workflow automation that actually replaces a human task.",
       "What you don't get: generic GPT-4 wrapper, demo that breaks on real data, vague \"AI strategy\" decks. What you do get: working code, evaluation against real inputs, cost estimates per query, and a system that's safe to put in front of paying customers.",
     ],
@@ -322,7 +322,7 @@ export const servicePages: ServicePage[] = [
           "Rate limiting, cost monitoring per query, caching, fallback models, error handling. So a 5x traffic spike doesn't blow your API bill or crash the product.",
       },
       {
-        title: "Week 6: Launch + handover",
+        title: "Week 6: Go live + handover",
         description:
           "Deploy, monitor in production, hand over the eval harness so you can keep improving after we're gone.",
       },
@@ -358,7 +358,7 @@ export const servicePages: ServicePage[] = [
       },
       {
         q: "What about cost at scale?",
-        a: "We cost-model up front. Typical RAG chatbot is $0.01-$0.10 per query depending on context size and model. We add caching, prompt compression, and routing to cheaper models where possible. You'll know the per-query cost before launch.",
+        a: "We cost-model up front. Typical RAG chatbot is $0.01-$0.10 per query depending on context size and model. We add caching, prompt compression, and routing to cheaper models where possible. You'll know the per-query cost before you go live.",
       },
       {
         q: "Can you fine-tune?",
@@ -383,7 +383,7 @@ export const servicePages: ServicePage[] = [
     intro: [
       "A WordPress template costs $50 and converts like a WordPress template. We build custom-coded landing pages with the same stack we use for $50K SaaS apps, Next.js, Tailwind, Framer Motion, sized down to a single page that loads under a second and ranks on Google.",
       "Every landing page we ship includes the page itself, mobile-responsive design, a contact form connected to your email or CRM, analytics, SEO basics (sitemap, structured data, OpenGraph), and deployment to your custom domain. From quote to live in 1-2 weeks.",
-      "Used for product launches, agency sites, lead capture pages, course pages, app marketing, and consultancy sites. All five live products linked at the bottom of this site started with a landing page built on this exact pattern.",
+      "Used for product sites, agency sites, lead capture pages, course pages, app marketing, and consultancy sites. All five live products linked at the bottom of this site started with a landing page built on this exact pattern.",
     ],
     startingAt: "From $1,500",
     startingAtNumber: "1500",
@@ -442,7 +442,7 @@ export const servicePages: ServicePage[] = [
           "Form integration, analytics, SEO, performance tuning, the loading-state details that separate a $50 page from a $1.5K page.",
       },
       {
-        title: "Day 11-14: Launch",
+        title: "Day 11-14: Go live",
         description:
           "Deploy to your custom domain. Submit to Google Search Console. 30 days of free support starts.",
       },
@@ -458,13 +458,13 @@ export const servicePages: ServicePage[] = [
         name: "ResumeIdol",
         url: "https://resumeidol.com",
         description:
-          "Marketing landing + product. Hero, social proof, pricing, blog, converting paid signups since launch.",
+          "Marketing landing + product. Hero, social proof, pricing, blog, converting paid signups since day one.",
       },
     ],
     faqs: [
       {
         q: "Why $1.5K when I can get a Webflow site for $500?",
-        a: "You can, and if a Webflow template fits your brand, do that. Our pages are for founders who've tried templates and want something that looks like their own product, loads faster, ranks better, and doesn't have a Webflow URL in the source. Different tier of work.",
+        a: "You can, and if a Webflow template fits your brand, do that. Our pages are for builders who've tried templates and want something that looks like their own product, loads faster, ranks better, and doesn't have a Webflow URL in the source. Different tier of work.",
       },
       {
         q: "Can you also do the copywriting?",

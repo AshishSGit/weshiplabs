@@ -39,7 +39,7 @@ export const services: Service[] = [
       "Offline support & local storage",
       "Deep linking & universal links",
       "Backend API included",
-      "30 days post-launch support",
+      "30 days post-ship support",
     ],
     startingAt: "$4,500",
     timeline: "4-8 weeks",
@@ -212,7 +212,7 @@ export const projects: Project[] = [
 export const stats = [
   { value: "5", label: "Live Products You Can Click Right Now" },
   { value: "3", label: "Platforms (Web, iOS, Android)" },
-  { value: "<4wk", label: "Average Time from Call to Launch" },
+  { value: "<4wk", label: "Average Time from Call to Live" },
   { value: "$0", label: "Quote  - Always Free" },
 ];
 

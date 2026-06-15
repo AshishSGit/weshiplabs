@@ -74,7 +74,7 @@ export default function Bento() {
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
             Everything you need
             <br />
-            <span className="gradient-text">to launch.</span>
+            <span className="gradient-text">to ship.</span>
           </h2>
         </motion.div>
 

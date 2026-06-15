@@ -23,11 +23,11 @@ const faqs = [
     a: "You fill out a form, we reply with a quote in 24 hours. If you approve, we start that week. Weekly demos so you see progress. Final week: testing, deployment, and handoff.",
   },
   {
-    q: "Do you work with non-technical founders?",
+    q: "Do you work with non-technical builders?",
     a: "Absolutely. Most of our clients are non-technical. We translate your vision into architecture decisions and keep you updated in plain English.",
   },
   {
-    q: "What happens after launch?",
+    q: "What happens after you go live?",
     a: "Every project includes 30 days of free support. After that, we offer maintenance retainers ($150-300/mo) for updates, bug fixes, and scaling. Or we hand over the code and docs. It's your product.",
   },
   {
@@ -55,7 +55,7 @@ export default function ServicesPage() {
             What we <span className="gradient-text">build for you</span>
           </h1>
           <p className="text-text-muted max-w-lg mx-auto text-lg">
-            Every project includes architecture, development, testing, deployment, and 30 days of post-launch support.
+            Every project includes architecture, development, testing, deployment, and 30 days of post-ship support.
           </p>
         </div>
 

@@ -20,7 +20,7 @@ const steps = [
   },
   {
     week: "Week 4",
-    title: "Polish + launch",
+    title: "Polish + go live",
     desc: "Bug fixes, performance, SEO, production deploy. Your product goes live on your domain. 30 days of free support starts.",
   },
 ];
@@ -37,7 +37,7 @@ export default function HowWeWork() {
         >
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Process</p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold">
-            Idea to launch. <span className="gradient-text">4 weeks.</span>
+            Idea to live. <span className="gradient-text">4 weeks.</span>
           </h2>
         </motion.div>
 

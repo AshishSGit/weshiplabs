@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const proofPoints = [
   { value: "Web, iOS, Android", label: "Platforms We Build For" },
-  { value: "<4 weeks", label: "Average Time to Launch" },
+  { value: "<4 weeks", label: "Average Time to Ship" },
   { value: "30 days", label: "Free Support on Every Project" },
   { value: "Fixed price", label: "No Hourly Billing" },
 ];

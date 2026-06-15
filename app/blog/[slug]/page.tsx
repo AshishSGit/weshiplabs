@@ -167,7 +167,7 @@ Auth, payments, deployment, error handling. The stuff that turns a prototype int
 
 **Deliverable:** Feature-complete product on staging.
 
-## Week 4: Polish + Launch
+## Week 4: Polish + Go Live
 
 - Bug fixes from your testing
 - Performance optimization
@@ -255,7 +255,7 @@ A complete software product with billing, teams, and advanced features.
 
 **Timeline:** 4-8 weeks.
 
-**When you need this:** You're launching a product that people pay monthly for. You need billing, teams, and a polished experience.
+**When you need this:** You're shipping a product that people pay monthly for. You need billing, teams, and a polished experience.
 
 ## What Drives the Cost Up
 
@@ -268,7 +268,7 @@ A complete software product with billing, teams, and advanced features.
 
 - Can I see your live work? (not mockups)
 - Is the price fixed or hourly?
-- What's included in post-launch support?
+- What's included in post-ship support?
 - How often will I see working software during development?
 
 If an agency can't answer these clearly, keep looking.
@@ -429,7 +429,7 @@ The #2 mistake: not checking that they own their work. We've seen "portfolios" f
 
 Hire an agency if:
 - You need iOS, Android, backend, and design under one roof
-- You're a non-technical founder and need someone who can make architectural decisions for you
+- You're a non-technical builder and need someone who can make architectural decisions for you
 - You want a fixed price, not hourly billing
 - You need it shipped in weeks, not months
 
@@ -447,7 +447,7 @@ Hire an agency if:
     readTime: "7 min",
     category: "Engineering",
     content: `
-## The Question Every Founder Asks
+## The Question Every Builder Asks
 
 You have an idea. You have a limited budget. Should you build a web app with Next.js or a mobile app with React Native?
 
@@ -535,7 +535,7 @@ This is also cheaper. A Next.js MVP + a React Native app down the line costs les
     content: `
 ## The Honest Answer
 
-A SaaS MVP costs **$5,000 to $50,000** to build, depending on what "MVP" means to you. Most fail because the founder thinks "MVP" means "less features" when it actually means "ship the smallest thing that proves people want this."
+A SaaS MVP costs **$5,000 to $50,000** to build, depending on what "MVP" means to you. Most fail because the builder thinks "MVP" means "less features" when it actually means "ship the smallest thing that proves people want this."
 
 Here's the real breakdown.
 
