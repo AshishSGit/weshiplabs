@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, Check } from "lucide-react";
 import { motion } from "framer-motion";
 
 const liveProducts = [
@@ -115,6 +115,21 @@ export default function Hero() {
             <ArrowRight size={14} />
           </Link>
         </motion.div>
+
+        {/* Trust line: reduce friction at the decision point */}
+        <motion.ul
+          className="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 mb-12 sm:mb-16 text-xs sm:text-sm text-text-subtle"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.95 }}
+        >
+          {["Free quote in 24 hours", "No calls required", "You own the code"].map((item) => (
+            <li key={item} className="flex items-center gap-1.5">
+              <Check size={14} className="text-emerald-400" />
+              {item}
+            </li>
+          ))}
+        </motion.ul>
 
         {/* Live products strip */}
         <motion.div
