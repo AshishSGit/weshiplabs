@@ -5,10 +5,10 @@ import { Send, Mail, Clock, ArrowRight, MessageSquare } from "lucide-react";
 import { SITE } from "@/lib/constants";
 
 const budgetRanges = [
-  "Under $5,000",
+  "Under $2,000",
+  "$2,000 - $5,000",
   "$5,000 - $10,000",
-  "$10,000 - $25,000",
-  "$25,000+",
+  "$10,000+",
   "Not sure yet",
 ];
 

@@ -22,7 +22,7 @@ export const servicePages: ServicePage[] = [
     slug: "mvp-development",
     metaTitle: "MVP Development Agency: Build a SaaS in 4 Weeks",
     metaDescription:
-      "We build production-ready MVPs in 4 weeks for founders. Fixed price from $8,000. Auth, payments, deployment included. See live products we've shipped.",
+      "We build production-ready MVPs in 4 weeks for founders. Fixed price from $4,000. Auth, payments, deployment included. See live products we've shipped.",
     kicker: "MVP Development",
     h1: "Build your MVP",
     h1Accent: "in 4 weeks.",
@@ -31,8 +31,8 @@ export const servicePages: ServicePage[] = [
       "We build production-grade MVPs in 4 weeks for non-technical founders, technical founders who don't have time, and operators validating a side bet. Fixed price, fixed scope, weekly demos. You see working software every Friday, not Figma mockups, not Jira tickets, the real thing.",
       "Every MVP we ship includes authentication, Stripe payments, a database, hosting, SEO basics, and 30 days of free support after launch. The five products at the bottom of this page were all built using this exact playbook.",
     ],
-    startingAt: "From $8,000",
-    startingAtNumber: "8000",
+    startingAt: "From $4,000",
+    startingAtNumber: "4000",
     timeline: "2-6 weeks",
     whatYouGet: [
       {
@@ -128,7 +128,7 @@ export const servicePages: ServicePage[] = [
       },
       {
         q: "What if I don't know what I want yet?",
-        a: "Start with the $500 Quick Audit. We'll review your idea, suggest the smallest version that proves the concept, and give you a roadmap. Most clients realize their MVP is 30% smaller than they thought.",
+        a: "Start with the $250 Quick Audit. We'll review your idea, suggest the smallest version that proves the concept, and give you a roadmap. Most clients realize their MVP is 30% smaller than they thought.",
       },
       {
         q: "What's NOT included?",
@@ -142,7 +142,7 @@ export const servicePages: ServicePage[] = [
     slug: "mobile-app-development",
     metaTitle: "Mobile App Development Agency: iOS & Android Apps",
     metaDescription:
-      "Cross-platform React Native or native SwiftUI iOS apps from $8,000. App Store submission, in-app purchases, push notifications included. Built to pass review on the first try.",
+      "Cross-platform React Native or native SwiftUI iOS apps from $4,500. App Store submission, in-app purchases, push notifications included. Built to pass review on the first try.",
     kicker: "Mobile App Development",
     h1: "Mobile apps that ship to",
     h1Accent: "the App Store.",
@@ -151,8 +151,8 @@ export const servicePages: ServicePage[] = [
       "We build cross-platform apps with React Native (Expo) when you need iOS + Android fast, and native SwiftUI when you need Apple-grade polish or HealthKit-deep integration. Either way, you get a real app in the App Store, not a prototype.",
       "Every mobile project includes the backend API, in-app purchase setup, push notifications, deep links, App Store and Play Store submission, and the privacy paperwork Apple now requires. We handle the review process, including responding to rejections.",
     ],
-    startingAt: "From $8,000",
-    startingAtNumber: "8000",
+    startingAt: "From $4,500",
+    startingAtNumber: "4500",
     timeline: "4-8 weeks",
     whatYouGet: [
       {
@@ -256,7 +256,7 @@ export const servicePages: ServicePage[] = [
     slug: "ai-integration",
     metaTitle: "AI Integration Services: RAG, Chatbots, Automation",
     metaDescription:
-      "Production-grade AI features from $5,000. RAG chatbots, document processing, voice transcription, content generation. Claude, GPT, Deepgram. Not a ChatGPT wrapper.",
+      "Production-grade AI features from $2,500. RAG chatbots, document processing, voice transcription, content generation. Claude, GPT, Deepgram. Not a ChatGPT wrapper.",
     kicker: "AI Integration",
     h1: "AI features that ship",
     h1Accent: "to production.",
@@ -265,8 +265,8 @@ export const servicePages: ServicePage[] = [
       "We add AI to existing products and build AI-first products from scratch. RAG knowledge bases with proper citation, document processing pipelines for PDFs and DOCX, voice transcription with Deepgram or Whisper, content generation with Claude, and workflow automation that actually replaces a human task.",
       "What you don't get: generic GPT-4 wrapper, demo that breaks on real data, vague \"AI strategy\" decks. What you do get: working code, evaluation against real inputs, cost estimates per query, and a system that's safe to put in front of paying customers.",
     ],
-    startingAt: "From $5,000",
-    startingAtNumber: "5000",
+    startingAt: "From $2,500",
+    startingAtNumber: "2500",
     timeline: "2-6 weeks",
     whatYouGet: [
       {
@@ -374,9 +374,9 @@ export const servicePages: ServicePage[] = [
   },
   {
     slug: "landing-page-design",
-    metaTitle: "Custom Landing Page Design & Development from $3,000",
+    metaTitle: "Custom Landing Page Design & Development from $1,500",
     metaDescription:
-      "Custom-coded landing pages that convert. SEO setup, analytics, contact forms, deployed to your domain. From $3,000. Not a WordPress template.",
+      "Custom-coded landing pages that convert. SEO setup, analytics, contact forms, deployed to your domain. From $1,500. Not a WordPress template.",
     kicker: "Landing Page Design",
     h1: "A landing page that",
     h1Accent: "converts.",
@@ -385,8 +385,8 @@ export const servicePages: ServicePage[] = [
       "Every landing page we ship includes the page itself, mobile-responsive design, a contact form connected to your email or CRM, analytics, SEO basics (sitemap, structured data, OpenGraph), and deployment to your custom domain. From quote to live in 1-2 weeks.",
       "Used for product launches, agency sites, lead capture pages, course pages, app marketing, and consultancy sites. All five live products linked at the bottom of this site started with a landing page built on this exact pattern.",
     ],
-    startingAt: "From $3,000",
-    startingAtNumber: "3000",
+    startingAt: "From $1,500",
+    startingAtNumber: "1500",
     timeline: "1-2 weeks",
     whatYouGet: [
       {
@@ -439,7 +439,7 @@ export const servicePages: ServicePage[] = [
       {
         title: "Day 8-10: Polish + integrations",
         description:
-          "Form integration, analytics, SEO, performance tuning, the loading-state details that separate a $50 page from a $3K page.",
+          "Form integration, analytics, SEO, performance tuning, the loading-state details that separate a $50 page from a $1.5K page.",
       },
       {
         title: "Day 11-14: Launch",
@@ -463,7 +463,7 @@ export const servicePages: ServicePage[] = [
     ],
     faqs: [
       {
-        q: "Why $3K when I can get a Webflow site for $500?",
+        q: "Why $1.5K when I can get a Webflow site for $500?",
         a: "You can, and if a Webflow template fits your brand, do that. Our pages are for founders who've tried templates and want something that looks like their own product, loads faster, ranks better, and doesn't have a Webflow URL in the source. Different tier of work.",
       },
       {
@@ -472,7 +472,7 @@ export const servicePages: ServicePage[] = [
       },
       {
         q: "What if I want to add more pages later?",
-        a: "Easy. Either you take over the GitHub repo and add pages yourself, or we add them on a maintenance retainer ($150-300/mo). Multi-page sites scope into the $5-8K range.",
+        a: "Easy. Either you take over the GitHub repo and add pages yourself, or we add them on a maintenance retainer ($150-300/mo). Multi-page sites scope into the $2.5-4K range.",
       },
       {
         q: "Do you do branding (logo, colors)?",

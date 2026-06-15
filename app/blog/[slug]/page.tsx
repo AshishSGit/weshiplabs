@@ -473,7 +473,7 @@ For everyone else: **start with Next.js**. You can always add a mobile app later
 
 | Feature | Next.js Web | React Native Mobile |
 |---------|-------------|--------------------|
-| **MVP cost** | $8,000-25,000 | $15,000-40,000 |
+| **MVP cost** | $4,000-12,500 | $4,500-20,000 |
 | **Time to ship** | 2-6 weeks | 4-10 weeks |
 | **Reach (instant)** | Anyone with a browser | App Store/Play Store users only |
 | **Distribution friction** | None, share a link | Install + permission grants |
@@ -634,9 +634,9 @@ You can't iterate on that. You'll throw it away and start over. **A $25,000 MVP 
 ## Our Pricing
 
 We ship SaaS MVPs at:
-- **$15,000** for a 2-week sprint MVP (1 feature, basic auth, deployed)
-- **$25,000** for a 4-week MVP (3 features, billing, dashboard)
-- **$40,000+** for a production-ready SaaS
+- **$7,500** for a 2-week sprint MVP (1 feature, basic auth, deployed)
+- **$12,500** for a 4-week MVP (3 features, billing, dashboard)
+- **$20,000+** for a production-ready SaaS
 
 Fixed price. We tell you upfront if your scope needs more. We don't do hourly billing. Surprises are not fun.
 

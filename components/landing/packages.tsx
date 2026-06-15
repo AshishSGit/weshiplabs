@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const packages = [
   {
     name: "Quick Audit",
-    price: "$500",
+    price: "$250",
     description: "We look at your business, product, or codebase and tell you exactly what to build, fix, or automate, and what it will cost.",
     icon: <Search size={24} />,
     features: [
@@ -23,7 +23,7 @@ const packages = [
   },
   {
     name: "Landing Page / Website",
-    price: "From $3,000",
+    price: "From $1,500",
     description: "A fast, beautiful, SEO-optimized website that converts visitors into customers. Not a WordPress template. Fully custom built.",
     icon: <Globe size={24} />,
     features: [
@@ -40,7 +40,7 @@ const packages = [
   },
   {
     name: "Web App / MVP",
-    price: "From $8,000",
+    price: "From $4,000",
     description: "A complete web application: designed, built, and deployed. Auth, payments, dashboards, everything included. Ready for users.",
     icon: <Rocket size={24} />,
     features: [
@@ -59,7 +59,7 @@ const packages = [
   },
   {
     name: "Mobile App",
-    price: "From $8,000",
+    price: "From $4,500",
     description: "iOS, Android, or both. App Store submission included. In-app purchases, push notifications, HealthKit, whatever you need.",
     icon: <Smartphone size={24} />,
     features: [
@@ -77,7 +77,7 @@ const packages = [
   },
   {
     name: "AI Integration",
-    price: "From $5,000",
+    price: "From $2,500",
     description: "Add AI-powered features to your existing product or build smart tools from scratch. Chatbots, document processing, voice transcription, automation.",
     icon: <Zap size={24} />,
     features: [
@@ -96,7 +96,7 @@ const packages = [
   },
   {
     name: "Rescue & Fix",
-    price: "From $2,000",
+    price: "From $1,000",
     description: "Your last developer disappeared. Your app is slow. Something's broken. We'll fix it fast.",
     icon: <Wrench size={24} />,
     features: [

@@ -12,7 +12,7 @@ const rows = [
   { feature: "Auth, payments, deployment included", us: true, agency: true, freelancer: false },
   { feature: "Live portfolio you can click", us: true, agency: false, freelancer: false },
   { feature: "Post-launch support included", us: true, agency: "maybe", freelancer: false },
-  { feature: "Under $15K for an MVP", us: true, agency: false, freelancer: true },
+  { feature: "Under $8K for an MVP", us: true, agency: false, freelancer: true },
 ];
 
 function Cell({ val }: { val: boolean | string }) {
