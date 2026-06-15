@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
+/* Fonts (DM Sans, Inter, JetBrains Mono) are self-hosted via next/font in layout.tsx.
+   The render-blocking Google Fonts @import was removed to improve LCP. */
 
 @theme {
   --color-bg: #0A0A0F;
