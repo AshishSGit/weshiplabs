@@ -3,6 +3,7 @@ import { DM_Sans, Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
+import ScrollToTop from "@/components/layout/scroll-to-top";
 import { SITE } from "@/lib/constants";
 import "./globals.css";
 
@@ -152,6 +153,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main id="main" className="min-h-screen pt-16">{children}</main>
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

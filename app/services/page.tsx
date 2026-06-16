@@ -62,7 +62,7 @@ export default function ServicesPage() {
         {/* Service sections */}
         <div className="space-y-24">
           {services.map((service, i) => (
-            <section key={service.id} id={service.id} className="scroll-mt-24">
+            <section key={service.id} id={service.id}>
               <div className="grid md:grid-cols-2 gap-12 items-start">
                 {/* Info */}
                 <div className={i % 2 === 1 ? "md:order-2" : ""}>
