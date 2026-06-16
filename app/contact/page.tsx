@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Send, Mail, Clock, ArrowRight, MessageSquare } from "lucide-react";
+import { Send, Mail, Clock, ArrowRight, MessageSquare, Loader2 } from "lucide-react";
 import { SITE } from "@/lib/constants";
 
 const budgetRanges = [
@@ -43,7 +43,7 @@ export default function ContactPage() {
   };
 
   const inputClass =
-    "w-full bg-surface-elevated border border-border rounded-xl px-4 py-3.5 text-base text-text-primary placeholder:text-text-subtle focus:outline-none focus:border-violet-500/40 transition-colors";
+    "w-full bg-surface-elevated border border-border rounded-xl px-4 py-3.5 text-base text-text-primary placeholder:text-text-subtle focus:outline-none focus:border-violet-500/60 focus:ring-2 focus:ring-violet-500/25 transition-all";
   const selectClass =
     inputClass + " appearance-none cursor-pointer bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2394A3B8%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22m6%209%206%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-[length:16px] bg-[right_16px_center] bg-no-repeat pr-10";
 
@@ -79,6 +79,8 @@ export default function ContactPage() {
                   <input
                     type="text"
                     placeholder="Your name *"
+                    aria-label="Your name"
+                    autoComplete="name"
                     required
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -87,6 +89,8 @@ export default function ContactPage() {
                   <input
                     type="email"
                     placeholder="Email *"
+                    aria-label="Email address"
+                    autoComplete="email"
                     required
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -97,6 +101,7 @@ export default function ContactPage() {
                   value={form.type}
                   onChange={(e) => setForm({ ...form, type: e.target.value })}
                   className={selectClass}
+                  aria-label="What do you need?"
                   required
                 >
                   <option value="">What do you need? *</option>
@@ -108,6 +113,7 @@ export default function ContactPage() {
                   value={form.budget}
                   onChange={(e) => setForm({ ...form, budget: e.target.value })}
                   className={selectClass}
+                  aria-label="Budget range (optional)"
                 >
                   <option value="">Budget range (optional)</option>
                   {budgetRanges.map((b) => (
@@ -116,6 +122,7 @@ export default function ContactPage() {
                 </select>
                 <textarea
                   placeholder="Describe your project in a few sentences *"
+                  aria-label="Describe your project"
                   required
                   rows={4}
                   value={form.message}
@@ -125,9 +132,17 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="btn-primary w-full justify-center text-base py-3"
+                  className="btn-primary w-full justify-center text-base py-3 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  {status === "sending" ? "Sending..." : "Get My Free Quote"} <ArrowRight size={16} />
+                  {status === "sending" ? (
+                    <>
+                      <Loader2 size={16} className="animate-spin" /> Sending...
+                    </>
+                  ) : (
+                    <>
+                      Get My Free Quote <ArrowRight size={16} />
+                    </>
+                  )}
                 </button>
                 {status === "error" && (
                   <p className="text-sm text-red-400 text-center">Something went wrong. Try emailing us directly.</p>
