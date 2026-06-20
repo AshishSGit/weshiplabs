@@ -36,7 +36,7 @@ const showcase = [
   {
     name: "Clippified",
     tagline: "Smart Clip Generator",
-    description: "Paste a YouTube URL, get viral-ready clips with captions. Deepgram + FFmpeg pipeline.",
+    description: "Upload any long video, get viral-ready clips with captions. Deepgram + FFmpeg pipeline.",
     image: "/portfolio/clippified.png",
     url: "https://clippified.com",
     tech: ["Next.js", "Deepgram", "FFmpeg", "R2"],

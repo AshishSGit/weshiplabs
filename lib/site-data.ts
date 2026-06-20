@@ -166,7 +166,7 @@ export const projects: Project[] = [
     name: "Clippified",
     tagline: "Smart Clip Generator",
     description:
-      "Paste a YouTube URL, get viral-ready clips with captions. Automatically finds the best moments, transcribes with Deepgram, and renders with FFmpeg.",
+      "Upload any long video, get viral-ready clips with captions. Automatically finds the best moments, transcribes with Deepgram, and renders with FFmpeg.",
     challenge:
       "Content creators spend 4-6 hours editing a single long video into short clips. Existing tools are either expensive or produce low-quality captions.",
     solution:

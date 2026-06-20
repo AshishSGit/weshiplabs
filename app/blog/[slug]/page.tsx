@@ -149,7 +149,7 @@ Every product we build follows the same 4-week cadence. Here's exactly what happ
 The core product loop. The one thing your app does that makes it valuable.
 
 For Knoah, this was: upload a doc → ask a question → get an answer with citations.
-For Clippified, this was: paste a URL → select a clip → download with captions.
+For Clippified, this was: upload a video → select a clip → download with captions.
 
 **No auth, no payments, no settings.** Just the core thing, working end-to-end.
 
