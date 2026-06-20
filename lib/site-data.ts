@@ -97,11 +97,11 @@ export const projects: Project[] = [
     name: "KaraokeLover",
     tagline: "Online Karaoke Platform",
     description:
-      "Search any song, get the video with synchronized lyrics. Firebase auth, Firestore favorites, and a beautiful singing experience.",
+      "Search any song, sing along with on-screen lyrics, then record yourself and get a pitch score. Firebase auth, Firestore favorites, and a built-in studio mixer.",
     challenge:
       "Karaoke apps are either expensive monthly subscriptions or have terrible song libraries. YouTube has every song but no lyrics overlay.",
     solution:
-      "Combined YouTube Data API for video search with LRCLib for synchronized lyrics. Firebase Auth for user accounts, Firestore for favorites and history.",
+      "Combined YouTube Data API for video search with LRCLib for on-screen lyrics, plus pitch scoring and in-browser recording. Firebase Auth for user accounts, Firestore for favorites and history.",
     results:
       "Live at karaokelover.com with real users. Deployed on Railway with automatic deploys from GitHub.",
     techStack: ["Python", "Flask", "LRCLib", "Firebase Auth", "Firestore", "Railway"],
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     image: "/portfolio/karaokelover.png",
     metrics: [
       { label: "Songs Available", value: "Unlimited" },
-      { label: "Lyrics Sync", value: "Real-time" },
+      { label: "Pitch Scoring", value: "Built-in" },
       { label: "Time to Build", value: "3 weeks" },
     ],
     featured: true,

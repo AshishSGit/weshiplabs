@@ -218,7 +218,7 @@ export const servicePages: ServicePage[] = [
         name: "KaraokeLover (web + mobile)",
         url: "https://www.karaokelover.com",
         description:
-          "Real-time karaoke with synced lyrics, recording, and voice scoring. SwiftUI iOS app on the way.",
+          "Karaoke with on-screen lyrics, recording, voice scoring, and a studio mixer. SwiftUI iOS app on the way.",
       },
       {
         name: "HerSync iOS",

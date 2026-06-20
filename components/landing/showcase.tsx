@@ -9,7 +9,7 @@ const showcase = [
   {
     name: "KaraokeLover",
     tagline: "Online Karaoke Platform",
-    description: "Search any song, get the video with synchronized lyrics. Firebase auth + Firestore favorites.",
+    description: "Search any song, sing along with on-screen lyrics, then record yourself and get a pitch score. Firebase auth + Firestore favorites.",
     image: "/portfolio/karaokelover.png",
     url: "https://www.karaokelover.com",
     tech: ["Python", "Flask", "Firebase"],
