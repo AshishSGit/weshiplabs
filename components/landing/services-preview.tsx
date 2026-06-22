@@ -22,7 +22,7 @@ export default function ServicesPreview() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Services</p>
+          <p className="text-base font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Services</p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold">
             Everything you need to <span className="gradient-text">ship</span>
           </h2>

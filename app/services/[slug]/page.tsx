@@ -123,7 +123,7 @@ export default async function ServiceDetailPage({
 
           {/* Hero */}
           <header className="mb-16">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">
+            <p className="text-base font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">
               {page.kicker}
             </p>
             <h1 className="font-heading text-4xl md:text-6xl font-bold tracking-tight mb-6">

@@ -138,7 +138,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.05 }}
         >
-          <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-text-subtle mb-4">
+          <p className="text-xs sm:text-base font-semibold uppercase tracking-[0.2em] text-text-subtle mb-4">
             Live products built by us
           </p>
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 px-2">

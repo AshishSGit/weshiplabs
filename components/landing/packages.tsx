@@ -123,7 +123,7 @@ export default function Packages() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Packages</p>
+          <p className="text-base font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Packages</p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold">
             Clear scope. <span className="gradient-text">Fixed price.</span>
           </h2>

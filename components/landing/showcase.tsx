@@ -89,7 +89,7 @@ export default function Showcase() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Our Work</p>
+          <p className="text-base font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Our Work</p>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
             Real products,
             <br />

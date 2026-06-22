@@ -50,7 +50,7 @@ export default function ServicesPage() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Services</p>
+          <p className="text-base font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Services</p>
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
             What we <span className="gradient-text">build for you</span>
           </h1>
@@ -109,7 +109,7 @@ export default function ServicesPage() {
         {/* FAQ */}
         <div className="mt-32">
           <div className="text-center mb-16">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">FAQ</p>
+            <p className="text-base font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">FAQ</p>
             <h2 className="font-heading text-4xl font-bold">Common questions</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">

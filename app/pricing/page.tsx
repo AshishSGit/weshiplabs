@@ -56,7 +56,7 @@ export default function PricingPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-bg/30 via-bg/60 to-bg" />
         </div>
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Pricing</p>
+          <p className="text-base font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Pricing</p>
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-5">
             Simple pricing. <span className="gradient-text">No surprises.</span>
           </h1>
@@ -96,7 +96,7 @@ export default function PricingPage() {
       <section className="section">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">FAQ</p>
+            <p className="text-base font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">FAQ</p>
             <h2 className="font-heading text-4xl font-bold">Pricing questions</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">

@@ -112,7 +112,7 @@ export default function Navbar() {
           {/* CTA */}
           <Link
             href="/contact"
-            className="group relative ml-3 inline-flex items-center gap-1.5 text-sm font-semibold py-2 px-5 rounded-full text-white overflow-hidden transition-all duration-300 ease-out shadow-[0_4px_16px_rgba(124,58,237,0.35)] hover:-translate-y-0.5 hover:scale-[1.04] hover:shadow-[0_10px_30px_rgba(139,92,246,0.55),0_0_55px_rgba(59,130,246,0.3)] active:scale-100 active:translate-y-0 active:duration-100"
+            className="group relative ml-3 inline-flex items-center gap-2 text-[15px] font-bold py-2.5 px-6 rounded-full text-white overflow-hidden transition-all duration-300 ease-out shadow-[0_4px_16px_rgba(124,58,237,0.35)] hover:-translate-y-0.5 hover:scale-[1.04] hover:shadow-[0_10px_30px_rgba(139,92,246,0.55),0_0_55px_rgba(59,130,246,0.3)] active:scale-100 active:translate-y-0 active:duration-100"
           >
             {/* base gradient, travels left→right on hover */}
             <span
@@ -131,7 +131,7 @@ export default function Navbar() {
             />
             <span className="relative z-10">Get a Free Quote</span>
             <ArrowRight
-              size={14}
+              size={16}
               className="relative z-10 transition-transform duration-300 group-hover:translate-x-1"
             />
           </Link>
@@ -188,7 +188,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setOpen(false)}
-                className="mt-3 inline-flex items-center justify-center gap-1.5 text-sm font-semibold py-2.5 px-5 rounded-full text-white bg-gradient-to-r from-violet-600 via-fuchsia-500 to-blue-500"
+                className="mt-3 inline-flex items-center justify-center gap-2 text-[15px] font-bold py-3 px-6 rounded-full text-white bg-gradient-to-r from-violet-600 via-fuchsia-500 to-blue-500"
               >
                 Get a Free Quote <ArrowRight size={14} />
               </Link>
