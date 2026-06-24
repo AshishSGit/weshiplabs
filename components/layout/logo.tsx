@@ -19,11 +19,11 @@ export default function Logo({
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
       <span
         aria-hidden
-        className="relative shrink-0 transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-110"
+        className="relative shrink-0"
         style={{ width: size, height: size }}
       >
-        {/* soft outer glow halo — brightens on hover */}
-        <span className="absolute -inset-1.5 rounded-[14px] bg-gradient-to-br from-violet-500 via-fuchsia-500 to-blue-500 opacity-35 blur-md transition-opacity duration-300 group-hover:opacity-70" />
+        {/* soft constant glow halo */}
+        <span className="absolute -inset-1.5 rounded-[14px] bg-gradient-to-br from-violet-500 via-fuchsia-500 to-blue-500 opacity-40 blur-md" />
         <svg
           width={size}
           height={size}

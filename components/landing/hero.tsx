@@ -10,6 +10,7 @@ const liveProducts = [
   { name: "Knoah", url: "https://www.getknoah.com", desc: "Knowledge Base" },
   { name: "Clippified", url: "https://clippified.com", desc: "Clip Generator" },
   { name: "BlushWed", url: "https://blushwed.com", desc: "Smart Wedding Planner" },
+  { name: "AstroZodly", url: "https://www.astrozodly.com", desc: "Astrology & Horoscopes" },
 ];
 
 export default function Hero() {
@@ -140,10 +141,10 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.05 }}
         >
-          <p className="text-xs sm:text-base font-semibold uppercase tracking-[0.2em] text-text-subtle mb-4">
+          <p className="text-xs sm:text-base font-semibold uppercase tracking-[0.2em] mb-5 bg-gradient-to-r from-violet-300 via-fuchsia-200 to-blue-300 bg-clip-text text-transparent">
             Live products built by us
           </p>
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 px-2">
+          <div className="flex flex-wrap justify-center gap-2.5 sm:gap-3 px-2">
             {liveProducts.map((product, i) => (
               <motion.a
                 key={product.name}
@@ -153,11 +154,11 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 1.2 + i * 0.08 }}
-                className="group glass-card px-3 py-2 sm:px-4 sm:py-2.5 flex items-center gap-2 text-xs sm:text-sm hover:border-violet-500/40 hover:scale-[1.03] transition-all"
+                className="group relative px-3.5 py-2 sm:px-4 sm:py-2.5 flex items-center gap-2 text-xs sm:text-sm rounded-full border border-white/15 bg-gradient-to-br from-white/[0.09] to-white/[0.02] backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.05] hover:border-violet-400/60 hover:bg-white/[0.12] hover:shadow-[0_10px_34px_-8px_rgba(139,92,246,0.55),0_0_0_1px_rgba(167,139,250,0.25)_inset]"
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span className="text-text-primary font-medium group-hover:text-violet-400 transition-colors">{product.name}</span>
-                <span className="text-text-subtle text-xs sm:text-sm hidden sm:inline">{product.desc}</span>
+                <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_2px_rgba(52,211,153,0.7)] animate-pulse" />
+                <span className="text-white font-semibold group-hover:[text-shadow:0_0_12px_rgba(167,139,250,0.6)] transition-all">{product.name}</span>
+                <span className="text-slate-300 text-xs sm:text-sm hidden sm:inline">{product.desc}</span>
               </motion.a>
             ))}
           </div>
