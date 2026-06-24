@@ -207,10 +207,33 @@ export const projects: Project[] = [
     ],
     featured: true,
   },
+  {
+    slug: "zodly",
+    name: "Zodly",
+    tagline: "Astrology & Horoscope Platform",
+    description:
+      "Daily horoscopes, instant birth-chart readings, compatibility matching, and a per-minute chat with the stars. Geo-aware pricing in rupees and dollars with a credit wallet.",
+    challenge:
+      "Astrology apps either bury the reading behind sign-ups or feel cheap. People want an instant, personal reading and a way to ask real questions.",
+    solution:
+      "Built a premium astrology platform with daily horoscopes, instant birth-chart generation, kundli matching, and a credit-wallet model for per-action and per-minute consultations. Geo-detected pricing for India and the US.",
+    results:
+      "Deployed on Railway with a light saffron-portal theme. Credit-wallet monetization with geo-aware recharge and strikethrough anchors built in.",
+    techStack: ["Next.js", "TypeScript", "Claude API", "Supabase", "Stripe", "Tailwind"],
+    category: "web",
+    liveUrl: "https://astrozodly.com",
+    image: "/portfolio/zodly.png",
+    metrics: [
+      { label: "Birth Chart", value: "Instant" },
+      { label: "Pricing", value: "Geo ₹ & $" },
+      { label: "Time to Build", value: "2 weeks" },
+    ],
+    featured: true,
+  },
 ];
 
 export const stats = [
-  { value: "5", label: "Live Products You Can Click Right Now" },
+  { value: "6", label: "Live Products You Can Click Right Now" },
   { value: "3", label: "Platforms (Web, iOS, Android)" },
   { value: "<4wk", label: "Average Time from Call to Live" },
   { value: "$0", label: "Quote  - Always Free" },

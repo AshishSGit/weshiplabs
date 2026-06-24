@@ -51,6 +51,15 @@ const showcase = [
     tech: ["Next.js", "Claude", "Supabase", "Stripe"],
     accent: "from-violet-500/20 to-blue-500/10",
   },
+  {
+    name: "Zodly",
+    tagline: "Astrology & Horoscope Platform",
+    description: "Daily horoscopes, instant birth-chart readings, and a per-minute chat with the stars. Credit-wallet with geo-aware pricing in ₹ and $.",
+    image: "/portfolio/zodly.png",
+    url: "https://astrozodly.com",
+    tech: ["Next.js", "Claude", "Supabase", "Stripe"],
+    accent: "from-amber-500/20 to-violet-500/10",
+  },
 ];
 
 function BrowserFrame({ src, alt }: { src: string; alt: string }) {

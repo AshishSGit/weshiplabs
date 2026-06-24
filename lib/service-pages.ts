@@ -383,7 +383,7 @@ export const servicePages: ServicePage[] = [
     intro: [
       "A WordPress template costs $50 and converts like a WordPress template. We build custom-coded landing pages with the same stack we use for $50K SaaS apps, Next.js, Tailwind, Framer Motion, sized down to a single page that loads under a second and ranks on Google.",
       "Every landing page we ship includes the page itself, mobile-responsive design, a contact form connected to your email or CRM, analytics, SEO basics (sitemap, structured data, OpenGraph), and deployment to your custom domain. From quote to live in 1-2 weeks.",
-      "Used for product sites, agency sites, lead capture pages, course pages, app marketing, and consultancy sites. All five live products linked at the bottom of this site started with a landing page built on this exact pattern.",
+      "Used for product sites, agency sites, lead capture pages, course pages, app marketing, and consultancy sites. All six live products linked at the bottom of this site started with a landing page built on this exact pattern.",
     ],
     startingAt: "From $1,500",
     startingAtNumber: "1500",
