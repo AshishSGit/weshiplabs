@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.weshiplabs.com",
   },
-  icons: { icon: "/icon.svg", apple: "/icon.svg" },
+  icons: { icon: "/icon.svg?v=2", apple: "/icon.svg?v=2" },
   openGraph: {
     title: `${SITE.name}: Software That Ships`,
     description: "We design, build, and deploy web apps, mobile apps, and smart features. From idea to production in weeks.",
