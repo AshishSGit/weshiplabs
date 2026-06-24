@@ -56,7 +56,7 @@ const showcase = [
     tagline: "Astrology & Horoscope Platform",
     description: "Daily horoscopes, instant birth-chart readings, and a per-minute chat with the stars. Credit-wallet with geo-aware pricing in ₹ and $.",
     image: "/portfolio/zodly.png",
-    url: "https://zodly-production.up.railway.app",
+    url: "https://www.astrozodly.com",
     tech: ["Next.js", "Claude", "Supabase", "Stripe"],
     accent: "from-amber-500/20 to-violet-500/10",
   },

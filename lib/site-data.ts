@@ -221,7 +221,7 @@ export const projects: Project[] = [
       "Deployed on Railway with a light saffron-portal theme. Credit-wallet monetization with geo-aware recharge and strikethrough anchors built in.",
     techStack: ["Next.js", "TypeScript", "Claude API", "Supabase", "Stripe", "Tailwind"],
     category: "web",
-    liveUrl: "https://zodly-production.up.railway.app",
+    liveUrl: "https://www.astrozodly.com",
     image: "/portfolio/zodly.png",
     metrics: [
       { label: "Birth Chart", value: "Instant" },
