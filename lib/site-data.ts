@@ -208,8 +208,8 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "zodly",
-    name: "Zodly",
+    slug: "astrozodly",
+    name: "AstroZodly",
     tagline: "Astrology & Horoscope Platform",
     description:
       "Daily horoscopes, instant birth-chart readings, compatibility matching, and a per-minute chat with the stars. Geo-aware pricing in rupees and dollars with a credit wallet.",

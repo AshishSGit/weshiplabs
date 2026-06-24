@@ -52,7 +52,7 @@ const showcase = [
     accent: "from-violet-500/20 to-blue-500/10",
   },
   {
-    name: "Zodly",
+    name: "AstroZodly",
     tagline: "Astrology & Horoscope Platform",
     description: "Daily horoscopes, instant birth-chart readings, and a per-minute chat with the stars. Credit-wallet with geo-aware pricing in ₹ and $.",
     image: "/portfolio/zodly.png",
