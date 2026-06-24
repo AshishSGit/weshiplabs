@@ -33,15 +33,15 @@ export default function OpengraphImage() {
         >
           <svg width="56" height="56" viewBox="0 0 40 40" fill="none">
             <defs>
-              <linearGradient id="og-mark" x1="4" y1="2" x2="38" y2="38" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#A78BFA" />
-                <stop offset="0.5" stopColor="#7C3AED" />
+              <linearGradient id="og-badge" x1="3" y1="2" x2="37" y2="38" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#8B5CF6" />
+                <stop offset="0.55" stopColor="#6D28D9" />
                 <stop offset="1" stopColor="#2563EB" />
               </linearGradient>
             </defs>
-            <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#og-mark)" />
-            <path d="M20 8.5 L30 28.5 L20 23.2 L10 28.5 Z" fill="#fff" />
-            <circle cx="20" cy="31.5" r="1.7" fill="#fff" fillOpacity="0.9" />
+            <rect x="1" y="1" width="38" height="38" rx="12" fill="url(#og-badge)" />
+            <path d="M30.5 9.5 L18.5 21 L22 30.5 Z" fill="#fff" />
+            <path d="M30.5 9.5 L9.5 18 L18.5 21 Z" fill="#fff" fillOpacity="0.78" />
           </svg>
           <span>
             <span style={{ color: "#F1F5F9" }}>We</span>
