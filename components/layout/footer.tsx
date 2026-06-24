@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { SITE, NAV_LINKS } from "@/lib/constants";
+import Logo from "./logo";
 
 export default function Footer() {
   return (
@@ -23,9 +24,9 @@ export default function Footer() {
       {/* Links */}
       <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div>
-          <p className="font-heading font-bold text-text-primary mb-4">
-            <span className="gradient-text">&lt;/&gt;</span> {SITE.name}
-          </p>
+          <div className="mb-4">
+            <Logo size={28} />
+          </div>
           <p className="text-base text-text-subtle leading-relaxed">
             Software that ships. From idea to production in weeks, not months.
           </p>

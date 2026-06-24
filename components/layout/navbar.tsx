@@ -5,7 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { SITE, NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS } from "@/lib/constants";
+import Logo from "./logo";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -43,12 +44,14 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[rgba(10,10,15,0.78)] backdrop-blur-xl border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
-          : "bg-[rgba(10,10,15,0.4)] backdrop-blur-md border-b border-transparent"
+          ? "bg-[rgba(17,16,30,0.82)] backdrop-blur-xl border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
+          : "bg-[rgba(15,14,26,0.55)] backdrop-blur-lg border-b border-white/[0.06]"
       }`}
     >
+      {/* soft violet glow wash across the whole bar */}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-violet-500/[0.07] to-transparent" />
       {/* gradient sheen along the bottom edge */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-violet-500/40 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
 
       <div
         className={`w-full px-6 md:px-10 flex items-center justify-between transition-all duration-300 ${
@@ -64,15 +67,9 @@ export default function Navbar() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }
           }}
-          className="group flex items-center gap-2 font-heading text-lg font-bold text-text-primary"
+          className="group flex items-center text-lg"
         >
-          <span className="gradient-text transition-transform duration-300 group-hover:rotate-[-6deg] group-hover:scale-110">
-            &lt;/&gt;
-          </span>
-          <span className="relative">
-            {SITE.name}
-            <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-gradient-to-r from-violet-400 to-blue-400 transition-all duration-500 group-hover:w-full" />
-          </span>
+          <Logo size={scrolled ? 28 : 32} />
         </Link>
 
         {/* Desktop links */}
@@ -83,25 +80,27 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`group relative px-3 py-2 text-sm font-medium rounded-md transition-colors duration-200 ${
-                  active ? "text-text-primary" : "text-text-muted hover:text-text-primary"
+                className={`group relative px-3.5 py-2 text-sm font-semibold rounded-lg transition-colors duration-200 ${
+                  active ? "text-white" : "text-slate-200/90 hover:text-white"
                 }`}
               >
                 {/* hover background glow */}
                 <span
                   aria-hidden
-                  className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-violet-500/10 via-fuchsia-500/5 to-blue-500/10"
+                  className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-violet-500/25 via-fuchsia-500/15 to-blue-500/25"
                 />
                 {/* radial spotlight */}
                 <span
                   aria-hidden
-                  className="absolute -inset-px rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md bg-violet-500/20"
+                  className="absolute -inset-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md bg-violet-500/30"
                 />
-                <span className="relative z-10">{link.label}</span>
+                <span className="relative z-10 inline-block transition-transform duration-300 group-hover:-translate-y-px group-hover:[text-shadow:0_0_12px_rgba(167,139,250,0.65)]">
+                  {link.label}
+                </span>
                 {/* animated underline */}
                 <span
                   aria-hidden
-                  className={`absolute left-3 right-3 -bottom-0.5 h-px bg-gradient-to-r from-violet-400 via-fuchsia-400 to-blue-400 origin-left transition-transform duration-300 ${
+                  className={`absolute left-3 right-3 -bottom-0.5 h-0.5 rounded-full bg-gradient-to-r from-violet-400 via-fuchsia-400 to-blue-400 shadow-[0_0_10px_rgba(167,139,250,0.7)] origin-left transition-transform duration-300 ${
                     active ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
                   }`}
                 />

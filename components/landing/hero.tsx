@@ -23,7 +23,7 @@ export default function Hero() {
           loop
           playsInline
           poster="/videos/hero-poster.jpg"
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-50"
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
@@ -33,16 +33,18 @@ export default function Hero() {
         <div className="aurora-blob aurora-blob-3" />
         {/* Animated grid */}
         <div
-          className="absolute inset-0 opacity-[0.06]"
+          className="absolute inset-0 opacity-[0.11]"
           style={{
-            backgroundImage: `linear-gradient(rgba(139,92,246,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(139,92,246,0.5) 1px, transparent 1px)`,
-            backgroundSize: "60px 60px",
+            backgroundImage: `linear-gradient(rgba(139,92,246,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(139,92,246,0.6) 1px, transparent 1px)`,
+            backgroundSize: "56px 56px",
             maskImage: "radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 90%)",
             WebkitMaskImage: "radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 90%)",
           }}
         />
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-bg/50 via-bg/70 to-bg" />
+        {/* Overlay: light enough that the aurora reads, dark enough to keep text crisp.
+            Vignette keeps the headline legible without flattening the motion. */}
+        <div className="absolute inset-0 bg-gradient-to-b from-bg/25 via-bg/45 to-bg" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_55%_45%_at_50%_50%,rgba(11,11,22,0.55),transparent_75%)]" />
         {/* Noise grain */}
         <div
           className="absolute inset-0 opacity-[0.04] mix-blend-overlay"
