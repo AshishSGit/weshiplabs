@@ -136,19 +136,19 @@ export default function Packages() {
           {packages.map((pkg, i) => (
             <motion.div
               key={pkg.name}
-              className={`glass-card p-6 flex flex-col relative ${pkg.popular ? "border-violet-500/30 shadow-[0_0_40px_rgba(139,92,246,0.08)]" : ""}`}
+              className={`group glass-card p-6 flex flex-col relative transition-all duration-300 hover:-translate-y-1.5 ${pkg.popular ? "border-violet-500/40 shadow-[0_0_50px_rgba(139,92,246,0.12)]" : "hover:shadow-[0_0_40px_rgba(139,92,246,0.10)]"}`}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
             >
               {pkg.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-violet-600 text-white text-[11px] font-semibold">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-violet-600 text-white text-[11px] font-semibold shadow-[0_4px_20px_rgba(139,92,246,0.45)]">
                   Most Popular
                 </div>
               )}
 
-              <div className="w-10 h-10 rounded-xl bg-violet-600/10 flex items-center justify-center text-violet-400 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-violet-600/10 flex items-center justify-center text-violet-400 mb-4 transition-all duration-300 group-hover:bg-violet-600/20 group-hover:scale-105">
                 {pkg.icon}
               </div>
 

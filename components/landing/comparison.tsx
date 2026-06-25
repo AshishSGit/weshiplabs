@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { Check, X, Minus } from "lucide-react";
+import { Check, X, Minus, ArrowRight } from "lucide-react";
 
 const rows = [
   { feature: "Fixed pricing upfront", us: true, agency: false, freelancer: false },
@@ -15,10 +16,33 @@ const rows = [
   { feature: "Under $8K for an MVP", us: true, agency: false, freelancer: true },
 ];
 
-function Cell({ val }: { val: boolean | string }) {
-  if (val === true) return <Check size={16} className="text-emerald-400 mx-auto" />;
-  if (val === false) return <X size={16} className="text-red-400/60 mx-auto" />;
-  return <Minus size={16} className="text-text-subtle mx-auto" />;
+function Cell({ val, highlight = false }: { val: boolean | string; highlight?: boolean }) {
+  if (val === true) {
+    return (
+      <span
+        className={`inline-flex items-center justify-center rounded-full ${
+          highlight
+            ? "w-7 h-7 bg-emerald-500/15 ring-1 ring-emerald-400/40"
+            : "w-6 h-6 bg-emerald-500/10"
+        }`}
+      >
+        <Check size={highlight ? 16 : 14} strokeWidth={3} className="text-emerald-400" />
+      </span>
+    );
+  }
+  if (val === false) {
+    return (
+      <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/[0.03]">
+        <X size={14} strokeWidth={2.5} className="text-slate-600" />
+      </span>
+    );
+  }
+  // "maybe"
+  return (
+    <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-amber-500/[0.08]">
+      <Minus size={14} strokeWidth={2.5} className="text-amber-400/70" />
+    </span>
+  );
 }
 
 export default function Comparison() {
@@ -31,46 +55,86 @@ export default function Comparison() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-base font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Why Us</p>
+          <p className="text-base font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">Why us</p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold">
             Big agency quality. <span className="gradient-text">Freelancer speed.</span>
           </h2>
+          <p className="text-text-muted mt-3 max-w-lg mx-auto">
+            The reach of a full team, the pace and price of working with one person who actually ships.
+          </p>
         </motion.div>
 
         <motion.div
-          className="glass-card overflow-x-auto"
+          className="glass-card overflow-hidden"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <table className="w-full text-sm min-w-[480px]">
-            <thead>
-              <tr className="border-b border-border">
-                <th className="text-left p-3 md:p-4 text-text-subtle font-medium text-xs md:text-sm"></th>
-                <th className="p-3 md:p-4 text-center whitespace-nowrap bg-violet-500/[0.08] border-x border-violet-500/20 rounded-t-xl">
-                  <span className="gradient-text font-bold text-xs md:text-sm">WeShipLabs</span>
-                </th>
-                <th className="p-3 md:p-4 text-center text-text-subtle font-medium text-xs md:text-sm whitespace-nowrap">Big Agency</th>
-                <th className="p-3 md:p-4 text-center text-text-subtle font-medium text-xs md:text-sm whitespace-nowrap">Freelancer</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row, i) => (
-                <tr key={row.feature} className="border-b border-border/50 hover:bg-surface-elevated/30 transition-colors">
-                  <td className="p-3 md:p-4 text-text-muted text-xs md:text-sm">{row.feature}</td>
-                  <td
-                    className={`p-3 md:p-4 text-center bg-violet-500/[0.06] border-x border-violet-500/20 ${
-                      i === rows.length - 1 ? "rounded-b-xl border-b" : ""
-                    }`}
-                  >
-                    <Cell val={row.us} />
-                  </td>
-                  <td className="p-3 md:p-4 text-center"><Cell val={row.agency} /></td>
-                  <td className="p-3 md:p-4 text-center"><Cell val={row.freelancer} /></td>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm min-w-[520px] border-separate border-spacing-0">
+              <thead>
+                <tr>
+                  <th className="text-left p-4 align-bottom font-medium text-text-subtle text-xs md:text-sm w-[40%]"></th>
+                  <th className="p-4 pt-5 text-center align-bottom whitespace-nowrap bg-gradient-to-b from-violet-500/[0.14] to-violet-500/[0.05] border-x border-t border-violet-500/30 rounded-t-2xl relative">
+                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-violet-600 text-white text-[10px] font-semibold tracking-wide whitespace-nowrap">
+                      Best value
+                    </span>
+                    <span className="gradient-text font-heading font-bold text-sm md:text-base">WeShipLabs</span>
+                  </th>
+                  <th className="p-4 text-center align-bottom text-text-subtle font-medium text-xs md:text-sm whitespace-nowrap">Big agency</th>
+                  <th className="p-4 text-center align-bottom text-text-subtle font-medium text-xs md:text-sm whitespace-nowrap">Freelancer</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {rows.map((row, i) => {
+                  const last = i === rows.length - 1;
+                  return (
+                    <tr key={row.feature} className="group">
+                      <td className="p-4 text-text-primary text-xs md:text-[15px] border-b border-border/40 group-hover:bg-surface-elevated/20 transition-colors">
+                        {row.feature}
+                      </td>
+                      <td
+                        className={`p-4 text-center bg-gradient-to-b from-violet-500/[0.07] to-violet-500/[0.04] border-x border-violet-500/30 ${
+                          last ? "rounded-b-2xl border-b" : "border-b border-b-violet-500/10"
+                        }`}
+                      >
+                        <Cell val={row.us} highlight />
+                      </td>
+                      <td className="p-4 text-center border-b border-border/40 group-hover:bg-surface-elevated/20 transition-colors">
+                        <Cell val={row.agency} />
+                      </td>
+                      <td className="p-4 text-center border-b border-border/40 group-hover:bg-surface-elevated/20 transition-colors">
+                        <Cell val={row.freelancer} />
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-6 text-xs text-text-subtle"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          <span className="flex items-center gap-1.5"><Check size={13} strokeWidth={3} className="text-emerald-400" /> Included</span>
+          <span className="flex items-center gap-1.5"><Minus size={13} strokeWidth={2.5} className="text-amber-400/70" /> Sometimes, costs extra</span>
+          <span className="flex items-center gap-1.5"><X size={13} strokeWidth={2.5} className="text-slate-600" /> Not on offer</span>
+        </motion.div>
+
+        <motion.div
+          className="text-center mt-10"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <Link href="/contact" className="btn-primary group justify-center">
+            Get a free quote
+            <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+          </Link>
         </motion.div>
       </div>
     </section>
