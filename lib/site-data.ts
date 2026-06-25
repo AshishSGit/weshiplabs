@@ -132,7 +132,7 @@ export const projects: Project[] = [
     liveUrl: "https://resumeidol.com",
     image: "/portfolio/resumeidol.png",
     metrics: [
-      { label: "Tailor Time", value: "<10s" },
+      { label: "Tailor Time", value: "<60s" },
       { label: "Auth", value: "Magic Link" },
       { label: "Time to Build", value: "2 weeks" },
     ],
