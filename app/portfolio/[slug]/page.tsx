@@ -30,7 +30,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
     <div className="section pt-32">
       <div className="max-w-3xl mx-auto px-6">
         {/* Back link */}
-        <Link href="/portfolio" className="inline-flex items-center gap-2 text-sm text-text-subtle hover:text-violet-400 transition-colors mb-8">
+        <Link href="/portfolio" className="inline-flex items-center gap-2 text-sm text-text-muted hover:text-violet-400 transition-colors mb-8">
           <ArrowLeft size={14} /> All Projects
         </Link>
 
@@ -41,13 +41,13 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
               {project.category === "web" ? "Web" : "Mobile"}
             </span>
             {project.liveUrl && (
-              <a href={project.liveUrl} target="_blank" rel="noopener" className="text-xs text-text-subtle hover:text-violet-400 flex items-center gap-1 transition-colors">
-                <ExternalLink size={12} /> Visit Live Site
+              <a href={project.liveUrl} target="_blank" rel="noopener" className="text-sm font-medium text-text-muted hover:text-violet-400 flex items-center gap-1.5 transition-colors">
+                <ExternalLink size={14} /> Visit Live Site
               </a>
             )}
           </div>
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-2">{project.name}</h1>
-          <p className="text-xl text-violet-400 font-medium mb-4">{project.tagline}</p>
+          <p className="text-xl text-violet-300 font-medium mb-4">{project.tagline}</p>
           <p className="text-text-muted text-lg leading-relaxed">{project.description}</p>
         </div>
 
@@ -55,7 +55,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <div className="grid grid-cols-3 gap-4 mb-12">
           {project.metrics.map((m) => (
             <div key={m.label} className="glass-card p-4 text-center">
-              <p className="text-xs text-text-subtle mb-1">{m.label}</p>
+              <p className="text-xs text-text-muted mb-1">{m.label}</p>
               <p className="font-heading text-2xl font-bold gradient-text">{m.value}</p>
             </div>
           ))}
@@ -88,7 +88,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
         {/* Tech stack */}
         <div className="glass-card p-6 mb-12">
-          <p className="text-xs font-semibold uppercase tracking-wider text-text-subtle mb-4">Tech Stack</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-4">Tech Stack</p>
           <div className="flex flex-wrap gap-2">
             {project.techStack.map((tech) => (
               <span key={tech} className="tech-badge">{tech}</span>

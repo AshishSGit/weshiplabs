@@ -63,22 +63,22 @@ export default function PortfolioPage() {
                     {project.category === "web" ? "Web" : "Mobile"}
                   </span>
                   {project.liveUrl && (
-                    <a href={project.liveUrl} target="_blank" rel="noopener" className="text-text-subtle hover:text-violet-400 transition-colors flex items-center gap-1 text-xs">
-                      <ExternalLink size={12} /> Visit Live
+                    <a href={project.liveUrl} target="_blank" rel="noopener" className="text-text-muted hover:text-violet-400 transition-colors flex items-center gap-1.5 text-sm font-medium">
+                      <ExternalLink size={14} /> Visit Live
                     </a>
                   )}
                 </div>
 
                 <h2 className="font-heading text-2xl font-bold mb-1">{project.name}</h2>
-                <p className="text-sm text-violet-400 font-medium mb-3">{project.tagline}</p>
-                <p className="text-sm text-text-muted leading-relaxed mb-5 flex-1">{project.description}</p>
+                <p className="text-sm text-violet-300 font-medium mb-3">{project.tagline}</p>
+                <p className="text-[15px] text-text-muted leading-relaxed mb-5 flex-1">{project.description}</p>
 
                 {/* Metrics */}
                 <div className="grid grid-cols-3 gap-2 mb-4">
                   {project.metrics.map((m) => (
                     <div key={m.label} className="text-center p-2 rounded-lg bg-bg/50 border border-border">
-                      <p className="text-[10px] text-text-subtle">{m.label}</p>
-                      <p className="text-xs sm:text-sm font-semibold text-text-primary">{m.value}</p>
+                      <p className="text-[11px] text-text-muted">{m.label}</p>
+                      <p className="text-sm font-semibold text-text-primary">{m.value}</p>
                     </div>
                   ))}
                 </div>
@@ -86,12 +86,12 @@ export default function PortfolioPage() {
                 {/* Tech */}
                 <div className="flex flex-wrap gap-1.5 mb-5">
                   {project.techStack.slice(0, 5).map((tech) => (
-                    <span key={tech} className="text-[10px] sm:text-[11px] px-2 py-0.5 rounded-md bg-surface-elevated text-text-subtle">
+                    <span key={tech} className="text-[10px] sm:text-[11px] px-2 py-0.5 rounded-md bg-surface-elevated text-text-muted">
                       {tech}
                     </span>
                   ))}
                   {project.techStack.length > 5 && (
-                    <span className="text-[10px] sm:text-[11px] px-2 py-0.5 rounded-md bg-surface-elevated text-text-subtle">
+                    <span className="text-[10px] sm:text-[11px] px-2 py-0.5 rounded-md bg-surface-elevated text-text-muted">
                       +{project.techStack.length - 5}
                     </span>
                   )}
