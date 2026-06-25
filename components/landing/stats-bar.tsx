@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const proofPoints = [
-  { value: "Web, iOS, Android", label: "Platforms We Build For" },
-  { value: "<4 weeks", label: "Average Time to Ship" },
-  { value: "30 days", label: "Free Support on Every Project" },
-  { value: "Fixed price", label: "No Hourly Billing" },
+  { value: "6 products", label: "Live & running in production" },
+  { value: "Real revenue", label: "Live payments in our own apps" },
+  { value: "<4 weeks", label: "Typical time to ship" },
+  { value: "100% yours", label: "You own all the code" },
 ];
 
 export default function StatsBar() {

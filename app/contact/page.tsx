@@ -22,7 +22,7 @@ const projectTypes = [
 ];
 
 export default function ContactPage() {
-  const [form, setForm] = useState({ name: "", email: "", type: "", budget: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", company: "", type: "", budget: "", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -45,7 +45,7 @@ export default function ContactPage() {
           { project_type: form.type || "unspecified", budget: form.budget || "unspecified" }
         );
       }
-      setForm({ name: "", email: "", type: "", budget: "", message: "" });
+      setForm({ name: "", email: "", company: "", type: "", budget: "", message: "" });
     } catch {
       setStatus("error");
     }
@@ -80,7 +80,16 @@ export default function ContactPage() {
                   <Send className="text-emerald-400" size={24} />
                 </div>
                 <h3 className="font-heading text-xl font-bold mb-2">Got it!</h3>
-                <p className="text-base text-text-muted">We&apos;ll get back to you within 24 hours with a quote.</p>
+                <p className="text-base text-text-muted">
+                  We&apos;ll review your project and reply within 24 hours with a clear scope and price. Keep an eye on your inbox.
+                </p>
+                <p className="text-sm text-text-subtle mt-3">
+                  Didn&apos;t hear back? Email us directly at{" "}
+                  <a href={`mailto:${SITE.email}`} className="text-violet-400 hover:underline">
+                    {SITE.email}
+                  </a>
+                  .
+                </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -106,6 +115,15 @@ export default function ContactPage() {
                     className={inputClass}
                   />
                 </div>
+                <input
+                  type="text"
+                  placeholder="Company (optional)"
+                  aria-label="Company"
+                  autoComplete="organization"
+                  value={form.company}
+                  onChange={(e) => setForm({ ...form, company: e.target.value })}
+                  className={inputClass}
+                />
                 <select
                   value={form.type}
                   onChange={(e) => setForm({ ...form, type: e.target.value })}
