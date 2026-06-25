@@ -73,19 +73,19 @@ export default function Hero() {
 
         {/* Headline */}
         <motion.h1
-          className="font-heading text-[2.5rem] leading-[1.05] sm:text-6xl md:text-7xl lg:text-8xl font-bold text-center mb-5 sm:mb-6 tracking-tight"
+          className="font-heading text-[2rem] leading-[1.1] sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-center mb-5 sm:mb-6 tracking-[-0.02em]"
           initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         >
-          <span className="block text-text-primary">Your idea.</span>
+          <span className="text-text-primary">Your idea, </span>
           <motion.span
-            className="block gradient-text"
+            className="gradient-text"
             initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           >
-            Live in weeks.
+            live in weeks.
           </motion.span>
         </motion.h1>
 
