@@ -3,7 +3,7 @@ export const SITE = {
   tagline: "Software that ships.",
   url: "https://www.weshiplabs.com",
   email: "hello@weshiplabs.com",
-  calendly: "", // Set up Calendly and paste your link here
+  calendly: "https://calendly.com/ashishstav/30min",
   socials: {},
 };
 
