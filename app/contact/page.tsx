@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Send, Mail, Clock, ArrowRight, MessageSquare, Loader2 } from "lucide-react";
+import { Send, Mail, Clock, ArrowRight, MessageSquare, Loader2, CalendarClock } from "lucide-react";
 import { SITE } from "@/lib/constants";
 
 const budgetRanges = [
@@ -209,15 +209,17 @@ export default function ContactPage() {
                   Prefer a call instead?
                 </h3>
                 <p className="text-base text-text-muted mb-4">
-                  Totally fine. Book a free 30-minute call.
+                  Totally fine. Pick a time that works for you, no pressure.
                 </p>
                 <a
                   href={SITE.calendly}
                   target="_blank"
                   rel="noopener"
-                  className="btn-ghost text-sm w-full justify-center"
+                  className="btn-primary group w-full justify-center"
                 >
-                  Open Calendly <ArrowRight size={14} />
+                  <CalendarClock size={16} />
+                  Book a free 30-min call
+                  <ArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </a>
               </div>
             )}
