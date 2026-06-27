@@ -60,11 +60,11 @@ export default function AboutPage() {
               <div key={skill.label} className="glass-card p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <span className="text-violet-400">{skill.icon}</span>
-                  <h3 className="font-heading font-bold text-sm">{skill.label}</h3>
+                  <h3 className="font-heading font-bold text-base">{skill.label}</h3>
                 </div>
-                <ul className="space-y-1.5">
+                <ul className="space-y-2">
                   {skill.items.map((item) => (
-                    <li key={item} className="text-xs text-text-muted">{item}</li>
+                    <li key={item} className="text-sm text-text-muted leading-relaxed">{item}</li>
                   ))}
                 </ul>
               </div>
@@ -85,7 +85,7 @@ export default function AboutPage() {
               { num: "04", title: "Your product, your code", desc: "We hand over everything  - clean codebase, documentation, deployment access. No lock-in, no hostage situations." },
             ].map((step) => (
               <div key={step.num} className="flex gap-5">
-                <span className="font-heading text-2xl font-bold text-violet-500/30">{step.num}</span>
+                <span className="font-heading text-3xl font-bold gradient-text shrink-0 w-12 leading-none">{step.num}</span>
                 <div>
                   <h3 className="font-heading font-bold mb-1">{step.title}</h3>
                   <p className="text-sm text-text-muted">{step.desc}</p>

@@ -15,7 +15,7 @@ const liveProducts = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[calc(100vh-4rem)] flex items-center isolate">
+    <section className="relative overflow-hidden min-h-[calc(100svh-4rem)] flex items-center isolate">
       {/* Cinematic background video */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
         <video
@@ -55,10 +55,10 @@ export default function Hero() {
         />
       </div>
 
-      <div className="max-w-5xl mx-auto px-5 sm:px-6 py-14 sm:py-20 w-full relative z-10">
+      <div className="max-w-5xl mx-auto px-5 sm:px-6 py-10 sm:py-12 w-full relative z-10">
         {/* Badge */}
         <motion.div
-          className="flex justify-center mb-5 sm:mb-7"
+          className="flex justify-center mb-4 sm:mb-5"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -75,7 +75,7 @@ export default function Hero() {
 
         {/* Headline */}
         <motion.h1
-          className="font-heading text-[2.25rem] leading-[1.05] sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-center mb-5 sm:mb-6 tracking-[-0.03em]"
+          className="font-heading text-[2.25rem] leading-[1.05] sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-center mb-4 sm:mb-5 tracking-[-0.03em]"
           initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
@@ -93,7 +93,7 @@ export default function Hero() {
 
         {/* Subtext */}
         <motion.p
-          className="text-lg sm:text-xl md:text-[1.375rem] text-slate-200 text-center max-w-2xl mx-auto mb-7 sm:mb-9 leading-relaxed px-2"
+          className="text-lg sm:text-xl md:text-[1.375rem] text-slate-200 text-center max-w-2xl mx-auto mb-5 sm:mb-6 leading-relaxed px-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
@@ -106,7 +106,7 @@ export default function Hero() {
 
         {/* CTAs */}
         <motion.div
-          className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-6 sm:mb-7 px-4 sm:px-0"
+          className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-5 sm:mb-5 px-4 sm:px-0"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.85 }}
@@ -123,7 +123,7 @@ export default function Hero() {
 
         {/* Trust line: reduce friction at the decision point */}
         <motion.ul
-          className="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 mb-10 sm:mb-12 text-xs sm:text-sm text-text-subtle"
+          className="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 mb-6 sm:mb-7 text-xs sm:text-sm text-text-subtle"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.95 }}
