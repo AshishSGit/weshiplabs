@@ -261,8 +261,8 @@ export default function ContactPage() {
                 </a>
               </div>
 
-              <p className="text-xs text-text-subtle mt-4 text-center break-all">
-                <a href={`mailto:${SITE.email}`} className="hover:text-violet-300 transition-colors">
+              <p className="text-sm font-medium text-text-primary mt-4 text-center break-all">
+                <a href={`mailto:${SITE.email}`} className="text-violet-300 hover:text-violet-200 transition-colors">
                   {SITE.email}
                 </a>
               </p>
