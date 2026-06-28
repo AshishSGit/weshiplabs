@@ -115,9 +115,9 @@ export default function Hero() {
             Get a Free Quote
             <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
           </Link>
-          <Link href="/portfolio" className="btn-ghost text-sm sm:text-base py-3.5 sm:py-4 px-8 sm:px-10 justify-center">
+          <Link href="/portfolio" className="btn-primary text-sm sm:text-base py-3.5 sm:py-4 px-8 sm:px-10 justify-center group">
             See Our Work
-            <ArrowRight size={14} />
+            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </motion.div>
 
