@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Check, X, Minus, ArrowRight } from "lucide-react";
+import { Check, X, Minus, ArrowRight, Sparkles } from "lucide-react";
 
 const rows = [
   { feature: "Fixed pricing upfront", us: true, agency: false, freelancer: false },
@@ -75,8 +75,9 @@ export default function Comparison() {
               <thead>
                 <tr>
                   <th className="text-left p-4 align-bottom font-medium text-text-subtle text-xs md:text-sm w-[40%]"></th>
-                  <th className="p-4 pt-9 text-center align-bottom whitespace-nowrap bg-gradient-to-b from-violet-500/[0.14] to-violet-500/[0.05] border-x border-t border-violet-500/30 rounded-t-2xl relative">
-                    <span className="absolute top-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-violet-600 text-white text-[10px] font-semibold tracking-wide whitespace-nowrap">
+                  <th className="p-4 pt-12 text-center align-bottom whitespace-nowrap bg-gradient-to-b from-violet-500/[0.14] to-violet-500/[0.05] border-x border-t border-violet-500/30 rounded-t-2xl relative">
+                    <span className="absolute top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-violet-500 via-fuchsia-500 to-violet-500 bg-[length:200%_100%] animate-[gradient-shift_4s_ease-in-out_infinite] text-white text-[11px] font-bold uppercase tracking-[0.14em] whitespace-nowrap shadow-[0_6px_24px_-4px_rgba(168,85,247,0.85)] ring-1 ring-white/25">
+                      <Sparkles size={12} strokeWidth={2.5} className="text-white drop-shadow" />
                       Best value
                     </span>
                     <span className="gradient-text font-heading font-bold text-sm md:text-base">WeShipLabs</span>
