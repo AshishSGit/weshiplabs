@@ -253,7 +253,7 @@ export default function ContactPage() {
                 )}
                 <a
                   href={`mailto:${SITE.email}?subject=Project%20enquiry`}
-                  className="btn-ghost group w-full justify-center py-3.5"
+                  className="btn-primary group w-full justify-center py-3.5"
                 >
                   <Mail size={18} />
                   Email us directly
