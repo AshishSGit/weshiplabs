@@ -75,8 +75,8 @@ export default function Comparison() {
               <thead>
                 <tr>
                   <th className="text-left p-4 align-bottom font-medium text-text-subtle text-xs md:text-sm w-[40%]"></th>
-                  <th className="p-4 pt-5 text-center align-bottom whitespace-nowrap bg-gradient-to-b from-violet-500/[0.14] to-violet-500/[0.05] border-x border-t border-violet-500/30 rounded-t-2xl relative">
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-violet-600 text-white text-[10px] font-semibold tracking-wide whitespace-nowrap">
+                  <th className="p-4 pt-9 text-center align-bottom whitespace-nowrap bg-gradient-to-b from-violet-500/[0.14] to-violet-500/[0.05] border-x border-t border-violet-500/30 rounded-t-2xl relative">
+                    <span className="absolute top-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-violet-600 text-white text-[10px] font-semibold tracking-wide whitespace-nowrap">
                       Best value
                     </span>
                     <span className="gradient-text font-heading font-bold text-sm md:text-base">WeShipLabs</span>
