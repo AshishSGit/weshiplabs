@@ -97,7 +97,7 @@ export const projects: Project[] = [
     name: "KaraokeLover",
     tagline: "Online Karaoke Platform",
     description:
-      "Search any song, sing along with on-screen lyrics, then record yourself and get a pitch score. Firebase auth, Firestore favorites, and a built-in studio mixer.",
+      "Search any track, sing along with the lyrics on screen, then record your performance and get an instant pitch score. Secure accounts, saved favorites, and a built-in studio mixer with vocal effects turn any browser into a real karaoke studio.",
     challenge:
       "Karaoke apps are either expensive monthly subscriptions or have terrible song libraries. YouTube has every song but no lyrics overlay.",
     solution:
@@ -120,7 +120,7 @@ export const projects: Project[] = [
     name: "ResumeIdol",
     tagline: "Smart Resume Tailor",
     description:
-      "Paste your resume and a job description  - get a perfectly tailored version in seconds. Automatically rewrites bullet points to match the role.",
+      "Paste your resume and a job description, then watch it transform into a perfectly tailored version in seconds. Every bullet rewritten to match the role, with magic-link sign in, saved resumes, one-click job URL import, and a Pro tier.",
     challenge:
       "Job seekers send the same generic resume everywhere. Tailoring manually takes 30-60 minutes per application.",
     solution:
@@ -143,7 +143,7 @@ export const projects: Project[] = [
     name: "BlushWed",
     tagline: "Smart Wedding Planning Platform",
     description:
-      "Intelligent wedding planning platform with smart vendor recommendations, budget tracking, and timeline management.",
+      "A complete wedding planning platform with smart vendor matching, budget tracking, and guest and timeline management. 33 polished routes, secure accounts, Stripe payments, and 5 SEO blog posts pulling in organic traffic, everything a couple needs in one beautiful place.",
     challenge:
       "Wedding planning is overwhelming. Couples juggle spreadsheets, Pinterest boards, and vendor emails across 12+ months.",
     solution:
@@ -166,7 +166,7 @@ export const projects: Project[] = [
     name: "Clippified",
     tagline: "Smart Clip Generator",
     description:
-      "Upload any long video, get viral-ready clips with captions. Automatically finds the best moments, transcribes with Deepgram, and renders with FFmpeg.",
+      "Upload one long video and get a batch of viral-ready vertical clips with styled captions in under 90 seconds. Finds the strongest moments automatically, transcribes with Deepgram, and renders broadcast-clean shorts with FFmpeg, no editing skills required.",
     challenge:
       "Content creators spend 4-6 hours editing a single long video into short clips. Existing tools are either expensive or produce low-quality captions.",
     solution:
@@ -189,7 +189,7 @@ export const projects: Project[] = [
     name: "Knoah",
     tagline: "Smart Knowledge Base for Teams",
     description:
-      "Upload docs, get instant answers with source citations. Built for teams drowning in Notion pages and Google Drives nobody reads.",
+      "Upload your docs and get instant, cited answers from a knowledge base your whole team can actually trust. Semantic search across thousands of pages, sub-2-second responses, team invites, and Stripe billing, built for teams drowning in Notion pages and Drives nobody reads.",
     challenge:
       "Teams waste hours searching through scattered documents. Existing tools require complex setup and per-seat pricing kills adoption.",
     solution:
@@ -212,7 +212,7 @@ export const projects: Project[] = [
     name: "AstroZodly",
     tagline: "Astrology & Horoscope Platform",
     description:
-      "Daily horoscopes, instant birth-chart readings, compatibility matching, and a per-minute chat with the stars. Geo-aware pricing in rupees and dollars with a credit wallet.",
+      "Daily horoscopes, instant birth-chart readings, compatibility matching, and a per-minute chat with the stars. A premium credit-wallet experience with geo-aware pricing in rupees and dollars, polished to feel like a true cosmic portal.",
     challenge:
       "Astrology apps either bury the reading behind sign-ups or feel cheap. People want an instant, personal reading and a way to ask real questions.",
     solution:
