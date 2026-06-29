@@ -120,7 +120,7 @@ export const projects: Project[] = [
     name: "ResumeIdol",
     tagline: "Smart Resume Tailor",
     description:
-      "Paste your resume and a job description, then watch it transform into a perfectly tailored version in seconds. Every bullet rewritten to match the role, with magic-link sign in, saved resumes, one-click job URL import, and a Pro tier.",
+      "Paste your resume and a job description, then watch it transform into a perfectly tailored version in seconds, every bullet rewritten to match the role. Now with mock interview practice that drills you on the exact questions for the job, scores every answer out of 100 with strengths and fixes, and reveals complete model answers including full SQL and Python for technical roles.",
     challenge:
       "Job seekers send the same generic resume everywhere. Tailoring manually takes 30-60 minutes per application.",
     solution:
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     image: "/portfolio/resumeidol.png",
     metrics: [
       { label: "Tailor Time", value: "<60s" },
-      { label: "Auth", value: "Magic Link" },
+      { label: "Mock Interview", value: "Scored 0-100" },
       { label: "Time to Build", value: "2 weeks" },
     ],
     featured: true,
