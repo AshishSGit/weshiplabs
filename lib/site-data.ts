@@ -130,7 +130,7 @@ export const projects: Project[] = [
     techStack: ["Next.js", "TypeScript", "Claude API", "Supabase Auth", "Stripe", "Tailwind"],
     category: "web",
     liveUrl: "https://resumeidol.com",
-    image: "/portfolio/resumeidol.png",
+    image: "/portfolio/resumeidol-v2.png",
     metrics: [
       { label: "Tailor Time", value: "<60s" },
       { label: "Mock Interview", value: "Scored 0-100" },
