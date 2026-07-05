@@ -50,11 +50,18 @@ export default function ContactPage() {
       // GA4 key event: a real lead came through the contact form. Fire only
       // after a successful POST so it maps 1:1 to a quote request.
       if (typeof window !== "undefined") {
-        (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag?.(
+        const g = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+        g?.(
           "event",
           "lead_submitted",
           { project_type: form.type || "unspecified", budget: form.budget || "unspecified" }
         );
+        // Google Ads conversion on a real lead (dormant until env vars set).
+        const adsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
+        const label = process.env.NEXT_PUBLIC_GADS_LEAD_LABEL;
+        if (adsId && label) {
+          g?.("event", "conversion", { send_to: `${adsId}/${label}` });
+        }
       }
       setForm({ name: "", email: "", company: "", type: "", budget: "", message: "" });
     } catch {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Brain, Rocket, Smartphone, Wrench, Check } from "lucide-react";
 import { services } from "@/lib/site-data";
+import FaqAccordion from "@/components/faq-accordion";
 
 export const metadata: Metadata = {
   title: "Services: Web Apps, Mobile Apps, AI Integration",
@@ -112,14 +113,7 @@ export default function ServicesPage() {
             <p className="text-base font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">FAQ</p>
             <h2 className="font-heading text-4xl font-bold">Common questions</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {faqs.map((faq) => (
-              <div key={faq.q} className="glass-card p-6">
-                <h3 className="font-heading font-bold mb-2">{faq.q}</h3>
-                <p className="text-sm text-text-muted leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
+          <FaqAccordion items={faqs} />
         </div>
       </div>
     </div>

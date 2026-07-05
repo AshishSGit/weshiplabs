@@ -145,6 +145,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('js', new Date());
             gtag('config', '${GA_ID}');`}
         </Script>
+        {process.env.NEXT_PUBLIC_GOOGLE_ADS_ID && (
+          <Script id="gads-init" strategy="afterInteractive">
+            {`gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}');`}
+          </Script>
+        )}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       </head>

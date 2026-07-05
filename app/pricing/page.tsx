@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Check, ShieldCheck, Clock, Wallet, Repeat } from "lucide-react";
+import { ArrowRight, ShieldCheck, Clock, Wallet, Repeat } from "lucide-react";
+import FaqAccordion from "@/components/faq-accordion";
 import Packages from "@/components/landing/packages";
 import Comparison from "@/components/landing/comparison";
 
@@ -99,17 +100,7 @@ export default function PricingPage() {
             <p className="text-base font-semibold uppercase tracking-[0.2em] text-violet-400 mb-4">FAQ</p>
             <h2 className="font-heading text-4xl font-bold">Pricing questions</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {faqs.map((faq) => (
-              <div key={faq.q} className="glass-card p-6">
-                <h3 className="font-heading font-bold mb-2 flex items-start gap-2">
-                  <Check size={18} className="text-emerald-400 mt-1 flex-shrink-0" />
-                  {faq.q}
-                </h3>
-                <p className="text-sm text-text-muted leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
+          <FaqAccordion items={faqs} />
         </div>
       </section>
     </div>
