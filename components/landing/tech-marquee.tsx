@@ -12,7 +12,7 @@ export default function TechMarquee() {
           Technologies We Ship With
         </p>
       </div>
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-bg to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-bg to-transparent z-10" />
         <div className="marquee-track">
