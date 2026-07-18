@@ -64,7 +64,19 @@ export default function Logo({
       {showWordmark && (
         <span className="font-heading font-bold tracking-tight leading-none">
           <span className="text-text-primary">We</span>
-          <span className="gradient-text">Ship</span>
+          {/* Brighter, higher-luminance gradient than the global .gradient-text
+              so "Ship" stays legible on the dark navbar/footer. */}
+          <span
+            style={{
+              background: "linear-gradient(135deg, #C4B5FD, #7DD3FC 55%, #67E8F9)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              paddingBottom: "0.12em",
+            }}
+          >
+            Ship
+          </span>
           <span className="text-slate-300">{SITE.name.replace("WeShip", "")}</span>
         </span>
       )}
