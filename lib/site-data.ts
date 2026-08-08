@@ -212,13 +212,13 @@ export const projects: Project[] = [
     name: "AstroZodly",
     tagline: "Astrology & Horoscope Platform",
     description:
-      "Daily horoscopes, instant birth-chart readings, compatibility matching, and a per-minute chat with the stars. A premium credit-wallet experience with geo-aware pricing in rupees and dollars, polished to feel like a true cosmic portal.",
+      "Daily horoscopes, instant birth-chart readings, compatibility matching, and a per-minute chat with the stars. A premium experience polished to feel like a true cosmic portal.",
     challenge:
       "Astrology apps either bury the reading behind sign-ups or feel cheap. People want an instant, personal reading and a way to ask real questions.",
     solution:
-      "Built a premium astrology platform with daily horoscopes, instant birth-chart generation, kundli matching, and a credit-wallet model for per-action and per-minute consultations. Geo-detected pricing for India and the US.",
+      "Built a premium astrology platform with daily horoscopes, instant birth-chart generation, kundli matching, and per-minute chat consultations, on a simple free-to-Plus subscription with clean USD pricing.",
     results:
-      "Deployed on Railway with a light saffron-portal theme. Credit-wallet monetization with geo-aware recharge and strikethrough anchors built in.",
+      "Deployed on Railway with a light saffron-portal theme. A free daily tier converts into a Plus subscription, with the whole flow polished to feel premium.",
     techStack: ["Next.js", "TypeScript", "Claude API", "Supabase", "Stripe", "Tailwind"],
     category: "web",
     liveUrl: "https://www.astrozodly.com",

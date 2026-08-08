@@ -54,7 +54,7 @@ const showcase = [
   {
     name: "AstroZodly",
     tagline: "Astrology & Horoscope Platform",
-    description: "Daily horoscopes, instant birth-chart readings, and a per-minute chat with the stars. Credit-wallet with geo-aware pricing in ₹ and $.",
+    description: "Daily horoscopes, instant birth-chart readings, compatibility matching, and a per-minute chat with the stars, polished to feel like a true cosmic portal.",
     image: "/portfolio/zodly.png",
     url: "https://www.astrozodly.com",
     tech: ["Next.js", "Claude", "Supabase", "Stripe"],
